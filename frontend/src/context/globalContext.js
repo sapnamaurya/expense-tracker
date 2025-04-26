@@ -50,10 +50,18 @@ export const GlobalProvider = ({ children }) => {
     getExpenses();
   };
 
+  // const getExpenses = async () => {
+  //   const response = await axios.get(`${BASE_URL}get-expenses`);
+  //   setExpenses(response.data);
+  //   console.log(response.data);
+  // };
   const getExpenses = async () => {
-    const response = await axios.get(`${BASE_URL}get-expenses`);
-    setExpenses(response.data);
-    console.log(response.data);
+    try {
+      const response = await axios.get("http://localhost:5000/api/v1/expenses");
+      setExpenses(response.data);
+    } catch (error) {
+      console.error("Error fetching expenses:", error);
+    }
   };
 
   const deleteExpense = async (id) => {
