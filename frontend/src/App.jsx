@@ -4,6 +4,7 @@ import styled from "styled-components";
 import bg from "./assests/Images/bg.png";
 import { MainLayout } from "./styles/Layouts";
 import Orb from "./components/Orb/Orb";
+import Navigation from "./components/Navigation/Navigation";
 // import Login from "./components/Login";
 // import "bootstrap/dist/css/bootstrap.min.css";
 // import Register from "./components/Register/index.jsx";
@@ -19,7 +20,7 @@ function App() {
       <AppStyled bg={bg} className="App">
         <Orb />
         <MainLayout>
-          <h1>hello</h1>
+          <Navigation />
         </MainLayout>
       </AppStyled>
     </>
