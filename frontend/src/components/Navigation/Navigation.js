@@ -72,6 +72,7 @@ const NavStyled = styled.nav`
 
   .menu-items {
     flex: 1;
+    text-align: left;
     display: flex;
     flex-direction: column;
     li {

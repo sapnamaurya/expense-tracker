@@ -1,54 +1,64 @@
 // import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React, { useMemo, useState } from "react";
+
 import "./App.css";
 import styled from "styled-components";
 import bg from "./assests/Images/bg.png";
 import { MainLayout } from "./styles/Layouts";
 import Orb from "./components/Orb/Orb";
 import Navigation from "./components/Navigation/Navigation";
-// import Login from "./components/Login";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import Register from "./components/Register/index.jsx";
-// import MainPage from "./pages/MainPage/index.jsx";
-// import HomePage from "./pages/HomePage";
-// import ExpenseNotes from "./components/ExpenseNotes";
-// import ExpenseAnalysis from "./components/Analysis/index.jsx";
-// import Footer from "./components/Footer/Footer.jsx";
+import Dashboard from "./components/Dashboard/Dashboard";
+import Income from "./components/Income/Income.js";
+import Expenses from "./components/Expenses/Expenses.js";
 function App() {
-  // const [expenses, setExpenses] = useState([]);
+  const [active, setActive] = React.useState(1);
+
+  const displayData = () => {
+    switch (active) {
+      case 1:
+        return <Dashboard />;
+      case 2:
+        return <Dashboard />;
+      case 3:
+        return <Income />;
+      case 4:
+        return <Expenses />;
+      default:
+        return <Dashboard />;
+    }
+  };
+
+  const orbMemo = useMemo(() => {
+    return <Orb />;
+  }, []);
+
   return (
     <>
       <AppStyled bg={bg} className="App">
-        <Orb />
+        {orbMemo}
         <MainLayout>
-          <Navigation />
+          <Navigation active={active} setActive={setActive} />
+          <main>{displayData()}</main>
         </MainLayout>
       </AppStyled>
     </>
-    // <BrowserRouter>
-    //   <Routes>
-    //     {/* <Route path="/login" element={<Login />} /> */}
-    //     {/* <Route path="/register" element={<Register />} /> */}
-    //     <Route path="/" element={<HomePage />} />
-    //     {/* <Route path="/home" element={<HomePage />} /> */}
-
-    //     {/* <Route path="/mainpage" element={<MainPage />} /> */}
-    //     {/* <Route path="/expense" element={<ExpenseNotes />} /> */}
-    //     {/* <Route
-    //       path="/entry"
-    //       element={
-    //         <ExpenseEntry expenses={expenses} setExpenses={setExpenses} />
-    //       }
-    //     /> */}
-    //     {/* <Route path="/footer" element={<Footer />} /> */}
-
-    //     {/* <Route path="/analysis" element={<ExpenseAnalysis />} /> */}
-    //   </Routes>
-    // </BrowserRouter>
   );
 }
 const AppStyled = styled.div`
   height: 100vh;
   background-image: url(${(props) => props.bg});
   position: relative;
+  main {
+    flex: 1;
+    background: rgba(252, 246, 249, 0.78);
+    border: 3px solid#FFFFFF;
+    backdrop-filter: blur(4.5px);
+    border-radius: 32px;
+    overflow: auto;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
 `;
 export default App;
