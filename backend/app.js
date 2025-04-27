@@ -53,27 +53,27 @@ app.get("/api/expenses", async (req, res) => {
   }
 });
 
-// //getting all expenses for a specific user and category
-// app.get('/api/expenses/category', async (req, res) => {
-//   try {
-//     const result = await pool.query('SELECT * FROM expenses where user_id = $1 and category_id = $2', [req.query.user_id, req.query.category_id]);
-//     res.status(200).json(result.rows);
-//   } catch (error) {
-//     console.error(error);
-//     res.status(500).json({ error: 'Failed to fetch expense notes' });
-//   }
-// });
+//getting all expenses for a specific user and category
+app.get('/api/expenses/category', async (req, res) => {
+  try {
+    const result = await pool.query('SELECT * FROM expenses where user_id = $1 and category_id = $2', [req.query.user_id, req.query.category_id]);
+    res.status(200).json(result.rows);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Failed to fetch expense notes' });
+  }
+});
 
-// //getting all expenses for a specific user and date range
-// app.get('/api/expenses/date', async (req, res) => {
-//   try {
-//     const result = await pool.query('SELECT * FROM expenses where user_id = $1 and expense_date BETWEEN $2 and $3', [req.query.user_id, req.query.start_date, req.query.end_date]);
-//     res.status(200).json(result.rows);
-//   } catch (error) {
-//     console.error(error);
-//     res.status(500).json({ error: 'Failed to fetch expense notes' });
-//   }
-// });
+//getting all expenses for a specific user and date range
+app.get('/api/expenses/date', async (req, res) => {
+  try {
+    const result = await pool.query('SELECT * FROM expenses where user_id = $1 and expense_date BETWEEN $2 and $3', [req.query.user_id, req.query.start_date, req.query.end_date]);
+    res.status(200).json(result.rows);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Failed to fetch expense notes' });
+  }
+});
 
 // //getting all expenses for a specific user and category and date range
 // app.get('/api/expenses/category/date', async (req, res) => {
