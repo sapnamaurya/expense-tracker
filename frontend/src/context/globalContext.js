@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000/api/v1/";
+const BASE_URL = "http://localhost:3000/api/";
 
 const GlobalContext = React.createContext();
 
@@ -50,18 +50,10 @@ export const GlobalProvider = ({ children }) => {
     getExpenses();
   };
 
-  // const getExpenses = async () => {
-  //   const response = await axios.get(`${BASE_URL}get-expenses`);
-  //   setExpenses(response.data);
-  //   console.log(response.data);
-  // };
   const getExpenses = async () => {
-    try {
-      const response = await axios.get("http://localhost:5000/api/v1/expenses");
-      setExpenses(response.data);
-    } catch (error) {
-      console.error("Error fetching expenses:", error);
-    }
+    const response = await axios.get(`${BASE_URL}get-expenses`);
+    setExpenses(response.data);
+    console.log(response.data);
   };
 
   const deleteExpense = async (id) => {

@@ -9,6 +9,9 @@ const app = express();
 const port = 3000;
 
 app.use(bodyParser.json());
+import cors from "cors"; // add this import
+
+app.use(cors()); // add this middleware
 
 const pool = new Pool({
   user: process.env.DB_USER,
