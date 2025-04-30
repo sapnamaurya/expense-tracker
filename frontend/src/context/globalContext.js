@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000/api/";
+const BASE_URL = "http://localhost:5000/api/transactions/";
 
 const GlobalContext = React.createContext();
 
@@ -10,68 +10,101 @@ export const GlobalProvider = ({ children }) => {
   const [expenses, setExpenses] = useState([]);
   const [error, setError] = useState(null);
 
-  //calculate incomes
-  const addIncome = async (income) => {
-    const response = await axios
-      .post(`${BASE_URL}add-income`, income)
-      .catch((err) => {
-        setError(err.response.data.message);
-      });
-    getIncomes();
-  };
+  // //calculate incomes
+  // const addIncome = async (income) => {
+  //   const response = await axios
+  //     .post(`${BASE_URL}add-income`, income)
+  //     .catch((err) => {
+  //       setError(err.response.data.message);
+  //     });
+  //   getIncomes();
+  // };
 
   const getIncomes = async () => {
-    const response = await axios.get("http://localhost:5000/api/income");
-    setIncomes(response.data);
-    console.log(response.data);
-  };
-
-  const deleteIncome = async (id) => {
-    const res = await axios.delete(`${BASE_URL}delete-income/${id}`);
-    getIncomes();
-  };
-
-  const totalIncome = () => {
-    let totalIncome = 0;
-    incomes.forEach((income) => {
-      totalIncome = totalIncome + income.amount;
-    });
-
-    return totalIncome;
-  };
-
-  //calculate incomes
-  const addExpense = async (income) => {
-    const response = await axios
-      .post(`${BASE_URL}add-expense`, income)
-      .catch((err) => {
-        setError(err.response.data.message);
-      });
-    getExpenses();
-  };
-
-  const getExpenses = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/expenses");
-      setExpenses(response.data);
-    } catch (error) {
-      console.error("Error fetching expenses:", error);
+      const response = await axios.get(`${BASE_URL}incomes`);
+      setIncomes(response.data);
+    } catch (err) {
+      setError("Failed to fetch incomes");
+      console.error(err);
     }
   };
 
+  const addIncome = async (income) => {
+    try {
+      await axios.post(`${BASE_URL}incomes`, income);
+      getIncomes();
+    } catch (err) {
+      setError(err?.response?.data?.message || "Add income failed");
+    }
+  };
+
+  const deleteIncome = async (id) => {
+    try {
+      await axios.delete(`${BASE_URL}incomes/${id}`);
+      getIncomes();
+    } catch (err) {
+      setError("Failed to delete income");
+    }
+  };
+  // Add a new expense
+  const addExpense = async (expenseData) => {
+    try {
+      await axios.post(`${BASE_URL}expenses`, expenseData);
+      getExpenses(); // Refresh the list after adding
+    } catch (err) {
+      setError(err?.response?.data?.message || "Failed to add expense");
+    }
+  };
+
+  // Fetch all expenses
+  const getExpenses = async () => {
+    try {
+      const response = await axios.get(`${BASE_URL}expenses`);
+      setExpenses(response.data);
+    } catch (err) {
+      setError("Failed to fetch expenses");
+      console.error(err);
+    }
+  };
+
+  // Delete an expense by ID
   const deleteExpense = async (id) => {
-    const res = await axios.delete(`${BASE_URL}delete-expense/${id}`);
-    getExpenses();
+    try {
+      await axios.delete(`${BASE_URL}expenses/${id}`);
+      getExpenses(); // Refresh the list after deletion
+    } catch (err) {
+      setError("Failed to delete expense");
+    }
+  };
+
+  // const totalExpenses = () => {
+  //   let totalIncome = 0;
+  //   expenses.forEach((income) => {
+  //     totalIncome = totalIncome + income.amount;
+  //   });
+
+  //   return totalIncome;
+  // };
+  const totalIncome = () => {
+    let total = 0;
+    incomes.forEach((income) => {
+      total += income.amount;
+    });
+    return total;
   };
 
   const totalExpenses = () => {
-    let totalIncome = 0;
-    expenses.forEach((income) => {
-      totalIncome = totalIncome + income.amount;
+    let total = 0;
+    expenses.forEach((expense) => {
+      total += expense.amount;
     });
-
-    return totalIncome;
+    return total;
   };
+
+  // const totalBalance = () => {
+  //   return totalIncome() - totalExpenses();
+  // };
 
   const totalBalance = () => {
     return totalIncome() - totalExpenses();
