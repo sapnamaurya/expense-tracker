@@ -1,56 +1,42 @@
+import axios from "axios";
 import React, { useState } from "react";
-import Button from "react-bootstrap/Button";
-import Header from "../Header";
-import Form from "react-bootstrap/Form";
-import "./style.css"; // Ensure you have your styling here
-import { useLocation, useNavigate, useParams } from "react-router-dom"; // Use useNavigate to navigate
-import Footer from "../Footer/Footer";
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
+import styled from "styled-components";
 
 const Login = () => {
   const [formData, setFormData] = useState({ email: "", password: "" });
-  const [isLoader, setIsLoader] = useState(false); // State for handling loader
-  const [errorMessage, setErrorMessage] = useState(""); // Error message state
-  const navigate = useNavigate(); // Initialize the useNavigate hook
+  const [isLoader, setIsLoader] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+  const navigate = useNavigate();
   const params = useParams();
   const loc = useLocation();
 
-  console.log(params, loc);
+  const savedUserData = localStorage.getItem("userData");
+  const parsedUserData = savedUserData ? JSON.parse(savedUserData) : null;
 
-  // Get saved user data from localStorage safely
-  let parsedUserData = null;
-  try {
-    const savedUserData = localStorage.getItem("userData");
-    parsedUserData = savedUserData ? JSON.parse(savedUserData) : null;
-  } catch (error) {
-    console.error("Error parsing user data:", error);
-  }
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsLoader(true); // Show loader while validating login
+    setIsLoader(true);
 
-    // If no saved user data exists in localStorage, show error
-    if (!parsedUserData) {
-      setErrorMessage("No user found. Please sign up first!");
+    try {
+      const response = await axios.post(
+        "http://localhost:4000/api/transactions/auth/login",
+        {
+          username: formData.email, // Assuming login uses username (not email)
+          password: formData.password,
+        }
+      );
+
+      const { token, user } = response.data;
+      localStorage.setItem("token", token);
+      localStorage.setItem("user", JSON.stringify(user));
+      navigate("/");
+    } catch (error) {
+      console.error("Login failed:", error);
+      setErrorMessage(error.response?.data?.message || "Invalid credentials.");
+    } finally {
       setIsLoader(false);
-      return;
     }
-
-    // Validate login credentials
-    if (
-      formData.email === parsedUserData.email &&
-      formData.password === parsedUserData.password
-    ) {
-      setErrorMessage(""); // Clear any previous error message
-
-      // After successful login, navigate to home page
-      console.log("Login successful!");
-      navigate("/mainpage"); // Redirect to home page (make sure the route is defined)
-    } else {
-      setErrorMessage("Invalid credentials. Please try again.");
-    }
-
-    setIsLoader(false); // Stop loader after checking credentials
   };
 
   const handleChange = (e) => {
@@ -62,69 +48,140 @@ const Login = () => {
   };
 
   return (
-    <>
-      <Header />
-      <div className="login-container">
-        <div className="login-section">
-          <h3 className="login-title">ExpensoMeter Login</h3>
+    <LoginStyled>
+      <div className="form-container">
+        <h2>ExpensoMeter Login</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label>Email</label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-          <Form onSubmit={handleSubmit}>
-            {/* Email Input */}
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Email</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="Enter your email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-              />
-            </Form.Group>
+          <div className="form-group">
+            <label>Password</label>
+            <input
+              type="password"
+              placeholder="Enter your password"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-            {/* Password Input */}
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control
-                type="password"
-                placeholder="Enter your password"
-                name="password"
-                value={formData.password}
-                onChange={handleChange}
-              />
-            </Form.Group>
+          {errorMessage && <p className="error">{errorMessage}</p>}
 
-            {/* Error Message */}
-            {errorMessage && (
-              <div className="error-message">
-                <p>{errorMessage}</p>
-              </div>
-            )}
+          <button type="submit" disabled={isLoader}>
+            {isLoader ? "Loading..." : "Login"}
+          </button>
 
-            {/* Login Button */}
-            <Button
-              variant="primary"
-              type="submit"
-              className="login-btn"
-              disabled={isLoader}
-            >
-              Login
-            </Button>
-
-            {/* Loader */}
-            {isLoader && <div className="loader">Loading...</div>}
-
-            {/* Register New Account */}
-            <div className="register-link">
-              <p>
-                New to ExpensoMeter? <a href="/register">Create an account</a>
-              </p>
-            </div>
-          </Form>
-        </div>
+          <p className="register-link">
+            New to ExpensoMeter? <Link to="/register">Create an account</Link>
+          </p>
+        </form>
       </div>
-      <Footer />
-    </>
+    </LoginStyled>
   );
 };
 
 export default Login;
+const LoginStyled = styled.div`
+  min-height: 100vh;
+  background: #f7f9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .form-container {
+    background: rgba(252, 246, 249, 0.78);
+    border: 3px solid #ffffff;
+    backdrop-filter: blur(6px);
+    border-radius: 24px;
+    line-height: 4vh;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 400px;
+
+    h2 {
+      margin-bottom: 1.5rem;
+      color: #222260;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #333;
+      }
+
+      input {
+        width: 100%;
+        padding: 0.75rem;
+        border-radius: 12px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+        background-color: white;
+
+        &:focus {
+          border-color: #222260;
+          outline: none;
+        }
+      }
+    }
+
+    .error {
+      color: #ff4d4f;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.8rem;
+      background-color: #222260;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #3737a5;
+      }
+
+      &:disabled {
+        background-color: #a0a0b0;
+        cursor: not-allowed;
+      }
+    }
+
+    .register-link {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 0.95rem;
+
+      a {
+        color: #222260;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+`;

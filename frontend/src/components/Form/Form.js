@@ -8,6 +8,8 @@ import { plus } from "../../utils/Icons";
 
 function Form() {
   const { addIncome, getIncomes, error, setError } = useGlobalContext();
+  const [customCategory, setCustomCategory] = useState("");
+
   const [inputState, setInputState] = useState({
     title: "",
     amount: "",
@@ -25,7 +27,10 @@ function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addIncome(inputState);
+    const finalCategory = category === "other" ? customCategory : category;
+
+    addIncome({ ...inputState, category: finalCategory });
+
     setInputState({
       title: "",
       amount: "",
@@ -33,6 +38,7 @@ function Form() {
       category: "",
       description: "",
     });
+    setCustomCategory("");
   };
 
   return (
@@ -80,7 +86,7 @@ function Form() {
           </option>
           <option value="salary">Salary</option>
           <option value="freelancing">Freelancing</option>
-          <option value="investments">Investiments</option>
+          <option value="investments">Investments</option>
           <option value="stocks">Stocks</option>
           <option value="bitcoin">Bitcoin</option>
           <option value="bank">Bank Transfer</option>
@@ -88,6 +94,19 @@ function Form() {
           <option value="other">Other</option>
         </select>
       </div>
+
+      {category === "other" && (
+        <div className="input-control">
+          <input
+            type="text"
+            placeholder="Enter Custom Category"
+            value={customCategory}
+            onChange={(e) => setCustomCategory(e.target.value)}
+            required
+          />
+        </div>
+      )}
+
       <div className="input-control">
         <textarea
           name="description"

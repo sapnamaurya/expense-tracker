@@ -4,12 +4,13 @@ import logo from "../../assests/Icons/logo.jpg";
 import { signout } from "../../utils/Icons";
 import { signIn } from "../../utils/Icons";
 import { menuItems } from "../../utils/menuItems";
+import { Link } from "react-router-dom";
 
 function Navigation({ active, setActive }) {
   return (
     <NavStyled>
       <div className="user-con">
-        <img src={logo} alt="" />
+        <img src={logo} alt="dc" />
         <div className="text">
           <h2>Mike</h2>
           <p>Your Money</p>
@@ -29,9 +30,22 @@ function Navigation({ active, setActive }) {
           );
         })}
       </ul>
+      {/* <div className="bottom-nav">
+        <span>{currentUser?.username}</span>
+        {currentUser ? (
+          <span onClick={logout}>{signout} Sign Out</span>
+        ) : (
+          <Link className="link" to="/login">
+            {signIn}Sign In
+          </Link>
+        )}
+      </div> */}
       <div className="bottom-nav">
-        <li>{signIn}Sign In</li>
-        <li>{signout} Sign Out</li>
+        <span>{signout} Sign Out</span>
+
+        <Link className="link" to="/login">
+          {signIn}Sign In
+        </Link>
       </div>
     </NavStyled>
   );
