@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000/api/transactions/";
+const BASE_URL = "http://localhost:4000/api/transactions/";
 
 const GlobalContext = React.createContext();
 
@@ -78,33 +78,22 @@ export const GlobalProvider = ({ children }) => {
     }
   };
 
-  // const totalExpenses = () => {
-  //   let totalIncome = 0;
-  //   expenses.forEach((income) => {
-  //     totalIncome = totalIncome + income.amount;
-  //   });
-
-  //   return totalIncome;
-  // };
   const totalIncome = () => {
-    let total = 0;
+    let totalIncome = 0;
     incomes.forEach((income) => {
-      total += income.amount;
+      totalIncome += Number(income.amount);
     });
-    return total;
+
+    return totalIncome;
   };
 
   const totalExpenses = () => {
     let total = 0;
     expenses.forEach((expense) => {
-      total += expense.amount;
+      total += Number(expense.amount); // Force amount to be a number
     });
     return total;
   };
-
-  // const totalBalance = () => {
-  //   return totalIncome() - totalExpenses();
-  // };
 
   const totalBalance = () => {
     return totalIncome() - totalExpenses();
