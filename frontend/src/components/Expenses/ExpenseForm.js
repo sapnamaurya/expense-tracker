@@ -8,6 +8,8 @@ import { plus } from "../../utils/Icons";
 
 function ExpenseForm() {
   const { addExpense, error, setError } = useGlobalContext();
+  const [customCategory, setCustomCategory] = useState("");
+
   const [inputState, setInputState] = useState({
     title: "",
     amount: "",
@@ -25,7 +27,10 @@ function ExpenseForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addExpense(inputState);
+    const finalCategory = category === "other" ? customCategory : category;
+
+    addExpense({ ...inputState, category: finalCategory });
+
     setInputState({
       title: "",
       amount: "",
@@ -33,6 +38,7 @@ function ExpenseForm() {
       category: "",
       description: "",
     });
+    setCustomCategory("");
   };
 
   return (
@@ -88,6 +94,19 @@ function ExpenseForm() {
           <option value="other">Other</option>
         </select>
       </div>
+
+      {category === "other" && (
+        <div className="input-control">
+          <input
+            type="text"
+            placeholder="Enter Custom Category"
+            value={customCategory}
+            onChange={(e) => setCustomCategory(e.target.value)}
+            required
+          />
+        </div>
+      )}
+
       <div className="input-control">
         <textarea
           name="description"
