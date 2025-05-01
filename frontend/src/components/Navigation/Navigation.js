@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import logo from "../../assests/Icons/logo.jpg";
 import { signout } from "../../utils/Icons";
+import { signIn } from "../../utils/Icons";
 import { menuItems } from "../../utils/menuItems";
 
 function Navigation({ active, setActive }) {
@@ -29,6 +30,7 @@ function Navigation({ active, setActive }) {
         })}
       </ul>
       <div className="bottom-nav">
+        <li>{signIn}Sign In</li>
         <li>{signout} Sign Out</li>
       </div>
     </NavStyled>

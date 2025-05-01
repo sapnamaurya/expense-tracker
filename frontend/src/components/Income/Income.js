@@ -17,7 +17,11 @@ function Income() {
       <InnerLayout>
         <h1>Incomes</h1>
         <h2 className="total-income">
-          Total Income: <span>${totalIncome()}</span>
+          Total Income:{" "}
+          <span>
+            <i class="fa-solid fa-indian-rupee-sign"></i>
+            {totalIncome()}
+          </span>
         </h2>
         <div className="income-content">
           <div className="form-container">
@@ -25,12 +29,12 @@ function Income() {
           </div>
           <div className="incomes">
             {incomes.map((income) => {
-              const { _id, title, amount, date, category, description, type } =
+              const { id, title, amount, date, category, description, type } =
                 income;
               return (
                 <IncomeItem
-                  key={_id}
-                  id={_id}
+                  key={id}
+                  id={id}
                   title={title}
                   description={description}
                   amount={amount}

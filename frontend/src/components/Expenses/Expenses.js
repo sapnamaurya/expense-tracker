@@ -18,7 +18,7 @@ function Expenses() {
       <InnerLayout>
         <h1>Expenses</h1>
         <h2 className="total-income">
-          Total Expense: ${totalExpenses().toFixed(2)}
+          Total Expense: {totalExpenses().toFixed(2)}
         </h2>
 
         <div className="income-content">
@@ -27,13 +27,13 @@ function Expenses() {
           </div>
           <div className="incomes">
             {expenses.map((income) => {
-              const { _id, title, amount, date, category, description, type } =
+              const { id, title, amount, date, category, description, type } =
                 income;
               console.log(income);
               return (
                 <IncomeItem
-                  key={_id}
-                  id={_id}
+                  key={id}
+                  id={id}
                   title={title}
                   description={description}
                   amount={amount}

@@ -99,7 +99,8 @@ const DashboardStyled = styled.div`
           border-radius: 20px;
           padding: 1rem;
           p {
-            font-size: 3.5rem;
+            font-size: 2rem;
+            margin-top: 7%;
             font-weight: 700;
           }
         }
@@ -113,7 +114,7 @@ const DashboardStyled = styled.div`
           p {
             color: var(--color-green);
             opacity: 0.6;
-            font-size: 4.5rem;
+            font-size: 2.5rem;
           }
         }
       }
