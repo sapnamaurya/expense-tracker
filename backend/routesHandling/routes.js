@@ -16,6 +16,7 @@ import{
     updateIncome, 
     deleteIncome 
 } from './controllers/income.js';
+import { registerUser, loginUser } from './controllers/authorization.js';
 
 //Expense Routes
 router.post('/expenses', addExpense);
@@ -31,5 +32,9 @@ router.get('/incomes', getIncomes);
 router.get('/incomes/:id', getIncomeById); 
 router.put('/incomes/:id', updateIncome); 
 router.delete('/incomes/:id', deleteIncome);
+
+// Authentication Routes
+router.post('/auth/register', registerUser);
+router.post('/auth/login', loginUser);
 
 export default router;
