@@ -17,8 +17,7 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-//app.use("/api/transactions", router);
-app.use("/api", router);
+app.use("/api/", router);
 
 app.listen(port, () => {
   console.log(`Server listening on http://localhost:${port}/`);

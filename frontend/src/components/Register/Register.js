@@ -29,14 +29,11 @@ const Register = () => {
     try {
       const { username, email, password } = input;
 
-      const res = await axios.post(
-        "http://localhost:4000/api/transactions/auth/register",
-        {
-          username,
-          email,
-          password,
-        }
-      );
+      const res = await axios.post("http://localhost:4000/api/auth/register", {
+        username,
+        email,
+        password,
+      });
 
       navigate("/login");
     } catch (err) {

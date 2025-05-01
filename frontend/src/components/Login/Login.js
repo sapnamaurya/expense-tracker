@@ -20,7 +20,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/transactions/auth/login",
+        "http://localhost:4000/api/auth/login",
         {
           username: formData.email, // Assuming login uses username (not email)
           password: formData.password,
