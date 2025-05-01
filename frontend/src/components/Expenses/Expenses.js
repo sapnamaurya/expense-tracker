@@ -5,6 +5,7 @@ import { InnerLayout } from "../../styles/Layouts";
 import Form from "../Form/Form";
 import IncomeItem from "../IncomeItem/IncomeItem";
 import ExpenseForm from "./ExpenseForm";
+import { dollar } from "../../utils/Icons";
 
 function Expenses() {
   const { addIncome, expenses, getExpenses, deleteExpense, totalExpenses } =
@@ -18,7 +19,8 @@ function Expenses() {
       <InnerLayout>
         <h1>Expenses</h1>
         <h2 className="total-income">
-          Total Expense: {totalExpenses().toFixed(2)}
+          Total Expense: {dollar}
+          {totalExpenses().toFixed(2)}
         </h2>
 
         <div className="income-content">

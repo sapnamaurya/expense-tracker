@@ -145,7 +145,7 @@ const DashboardStyled = styled.div`
         align-items: center;
         p {
           font-weight: 600;
-          font-size: 1.6rem;
+          font-size: 1.4rem;
         }
       }
     }
