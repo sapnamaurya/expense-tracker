@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 
 def generate_insights():
     # Connect to PostgreSQL
-    engine = create_engine('postgresql://username:password@localhost:5432/yourdbname')
+    engine = create_engine("postgresql://postgres:yourpassword@localhost:5432/expenseTrackerMinorProject")
     df = pd.read_sql("SELECT amount, category, date FROM expenses", engine)
 
     # Preprocess
