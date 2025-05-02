@@ -46,43 +46,6 @@ export const registerUser = async (req, res) => {
   }
 };
 
-// export const loginUser = async (req, res) => {
-//   const { username, password } = req.body;
-
-//   try {
-//     const findUserQuery = "SELECT * FROM users WHERE username = $1";
-//     const userResult = await pool.query(findUserQuery, [username]);
-//     const user = userResult.rows[0];
-
-//     if (!user) {
-//       return res.status(401).json({ message: "Invalid credentials" });
-//     }
-
-//     //Comparing the provided password with the hashed password from the database
-//     const passwordMatch = await bcrypt.compare(password, user.password);
-
-//     if (!passwordMatch) {
-//       return res.status(401).json({ message: "Invalid credentials" });
-//     }
-
-//     //Generating a JWT token
-//     const token = jwt.sign(
-//       { userId: user.id, username: user.username, email: user.email }, // Payload
-//       JWT_SECRET,
-//       { expiresIn: "1h" } //expiration time
-//     );
-
-//     const { password: _password, ...userWithoutPassword } = user; // Exclude password
-//     res.status(200).json({
-//       message: "Login successful",
-//       user: userWithoutPassword,
-//       token,
-//     });
-//   } catch (error) {
-//     console.error("Error during login:", error);
-//     res.status(500).json({ message: "Server error during login" });
-//   }
-// };
 export const loginUser = async (req, res) => {
   const { email, password } = req.body;
 
