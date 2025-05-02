@@ -5,14 +5,17 @@ import { signout } from "../../utils/Icons";
 import { signIn } from "../../utils/Icons";
 import { menuItems } from "../../utils/menuItems";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../context/authContext"; // ✅ Add this
 
 function Navigation({ active, setActive }) {
+  const { currentUser, logout } = useAuth();
+
   return (
     <NavStyled>
       <div className="user-con">
         <img src={logo} alt="dc" />
         <div className="text">
-          <h2>Mike</h2>
+          <h2>{currentUser?.username || "Guest"}</h2>
           <p>Your Money</p>
         </div>
       </div>
@@ -30,22 +33,18 @@ function Navigation({ active, setActive }) {
           );
         })}
       </ul>
-      {/* <div className="bottom-nav">
-        <span>{currentUser?.username}</span>
+      <div className="bottom-nav">
         {currentUser ? (
-          <span onClick={logout}>{signout} Sign Out</span>
+          <>
+            <span onClick={logout} style={{ cursor: "pointer" }}>
+              {signout} Sign Out
+            </span>
+          </>
         ) : (
           <Link className="link" to="/login">
-            {signIn}Sign In
+            {signIn} Sign In
           </Link>
         )}
-      </div> */}
-      <div className="bottom-nav">
-        <span>{signout} Sign Out</span>
-
-        <Link className="link" to="/login">
-          {signIn}Sign In
-        </Link>
       </div>
     </NavStyled>
   );

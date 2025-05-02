@@ -10,6 +10,7 @@ import Expenses from "./components/Expenses/Expenses";
 import Login from "./components/Login/Login";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Register from "./components/Register/Register";
+import { AuthProvider } from "./context/authContext";
 // import { useGlobalContext } from "./context/globalContext";
 
 function App() {
@@ -39,22 +40,24 @@ function App() {
 
   return (
     <BrowserRouter>
-      <AppStyled bg={bg} className="App">
-        {orbMemo}
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <MainLayout>
-                <Navigation active={active} setActive={setActive} />
-                <main>{displayData()}</main>
-              </MainLayout>
-            }
-          />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-        </Routes>
-      </AppStyled>
+      <AuthProvider>
+        <AppStyled bg={bg} className="App">
+          {orbMemo}
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <MainLayout>
+                  <Navigation active={active} setActive={setActive} />
+                  <main>{displayData()}</main>
+                </MainLayout>
+              }
+            />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+          </Routes>
+        </AppStyled>
+      </AuthProvider>
     </BrowserRouter>
   );
 }

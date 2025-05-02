@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const Login = () => {
@@ -8,11 +8,6 @@ const Login = () => {
   const [isLoader, setIsLoader] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate();
-  const params = useParams();
-  const loc = useLocation();
-
-  const savedUserData = localStorage.getItem("userData");
-  const parsedUserData = savedUserData ? JSON.parse(savedUserData) : null;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -22,7 +17,7 @@ const Login = () => {
       const response = await axios.post(
         "http://localhost:4000/api/auth/login",
         {
-          username: formData.email, // Assuming login uses username (not email)
+          email: formData.email, // Assuming login uses username (not email)
           password: formData.password,
         }
       );
