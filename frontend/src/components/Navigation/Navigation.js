@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import logo from "../../assests/Icons/logo.jpg";
 import { signout } from "../../utils/Icons";
 import { signIn } from "../../utils/Icons";
 import { menuItems } from "../../utils/menuItems";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/authContext"; // ✅ Add this
 
 function Navigation({ active, setActive }) {
   const { currentUser, logout } = useAuth();
+  const navigate = useNavigate();
 
   return (
     <NavStyled>
@@ -35,8 +36,14 @@ function Navigation({ active, setActive }) {
       <div className="bottom-nav">
         {currentUser ? (
           <>
-            <span onClick={logout} style={{ cursor: "pointer" }}>
-              {signout} Sign Out
+            <span
+              onClick={() => {
+                logout();
+                navigate("/"); // ✅ Navigate to home page after logout
+              }}
+              style={{ cursor: "pointer" }}
+            >
+              {signout}Sign Out
             </span>
           </>
         ) : (
