@@ -11,8 +11,13 @@ import Login from "./components/Login/Login";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Register from "./components/Register/Register";
 import { AuthProvider } from "./context/authContext";
+import Choice from "./components/Choice/Choice";
+import MainHome from "./components/Home/Home";
+import Business from "./components/Business/Business";
+import Personal from "./components/Personal/Personal";
 // import { useGlobalContext } from "./context/globalContext";
-
+// const Business = () => <div>Welcome to Business Dashboard</div>;
+// const Personal = () => <div>Welcome to Personal Dashboard</div>;
 function App() {
   const [active, setActive] = useState(1);
 
@@ -39,13 +44,13 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
-      <AuthProvider>
+    <AuthProvider>
+      <BrowserRouter>
         <AppStyled bg={bg} className="App">
           {orbMemo}
           <Routes>
             <Route
-              path="/"
+              path="/main"
               element={
                 <MainLayout>
                   <Navigation active={active} setActive={setActive} />
@@ -55,10 +60,14 @@ function App() {
             />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/choice" element={<Choice />} />
+            <Route path="/" element={<MainHome />} />
+            <Route path="/business" element={<Business />} />
+            <Route path="/personal" element={<Personal />} />
           </Routes>
         </AppStyled>
-      </AuthProvider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </AuthProvider>
   );
 }
 

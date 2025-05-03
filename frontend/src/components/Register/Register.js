@@ -125,7 +125,7 @@ const RegisterStyled = styled.div`
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
     padding: 2.5rem;
     width: 100%;
-    max-width: 400px;
+    max-width: 540px;
 
     h2 {
       margin-bottom: 1.5rem;

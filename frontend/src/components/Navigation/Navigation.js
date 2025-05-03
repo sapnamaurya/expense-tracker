@@ -16,7 +16,6 @@ function Navigation({ active, setActive }) {
         <img src={logo} alt="dc" />
         <div className="text">
           <h2>{currentUser?.username || "Guest"}</h2>
-          <p>Your Money</p>
         </div>
       </div>
       <ul className="menu-items">
@@ -124,6 +123,11 @@ const NavStyled = styled.nav`
       background: #222260;
       border-radius: 0 10px 10px 0;
     }
+  }
+  .link {
+    text-decoration: none;
+    color: rgba(34, 34, 96, 0.6);
+    font-size: 19px;
   }
 `;
 

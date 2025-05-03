@@ -17,7 +17,7 @@ const Login = () => {
       const response = await axios.post(
         "http://localhost:4000/api/auth/login",
         {
-          email: formData.email, // Assuming login uses username (not email)
+          email: formData.email,
           password: formData.password,
         }
       );
@@ -25,9 +25,16 @@ const Login = () => {
       const { token, user } = response.data;
       localStorage.setItem("token", token);
       localStorage.setItem("user", JSON.stringify(user));
-      navigate("/");
+
+      const accountType = localStorage.getItem("accountType");
+      if (accountType === "business") {
+        navigate("/business");
+      } else if (accountType === "personal") {
+        navigate("/main");
+      } else {
+        navigate("/"); // Fallback
+      }
     } catch (error) {
-      console.error("Login failed:", error);
       setErrorMessage(error.response?.data?.message || "Invalid credentials.");
     } finally {
       setIsLoader(false);
