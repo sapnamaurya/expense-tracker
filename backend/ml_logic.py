@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 
 def generate_insights():
     # Connect to PostgreSQL
-    engine = create_engine("postgresql://postgres:yourpassword@localhost:5432/expenseTrackerMinorProject")
+    engine = create_engine("postgresql://postgres:Shafneet123@localhost:5432/expenseTrackerMinorProject")
     df = pd.read_sql("SELECT amount, category, date FROM expenses", engine)
 
     # Preprocess
@@ -12,7 +12,7 @@ def generate_insights():
     X = df[['amount', 'category_code']]
 
     # KMeans clustering
-    kmeans = KMeans(n_clusters=3, random_state=0)
+    kmeans = KMeans(n_clusters=3, random_state=0, n_init='auto')
     df['cluster'] = kmeans.fit_predict(X)
 
     # Summarize results
