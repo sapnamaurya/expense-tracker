@@ -7,14 +7,19 @@ import Navigation from "./components/Navigation/Navigation";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Income from "./components/Income/Income";
 import Expenses from "./components/Expenses/Expenses";
+// import Expense from "./components/Business/Expense";
 import Login from "./components/Login/Login";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Register from "./components/Register/Register";
 import { AuthProvider } from "./context/authContext";
 import Choice from "./components/Choice/Choice";
 import MainHome from "./components/Home/Home";
-import Business from "./components/Business/Business";
-import Personal from "./components/Personal/Personal";
+import BusinessDashboard from "./pages/Business/BusinessDashboard";
+import BusinessIncome from "./pages/Business/BusinessIncome";
+import BusinessExpense from "./pages/Business/BusinessExpense";
+import Analysis from "./pages/Analysis/Analysis";
+
+// import Personal from "./components/Personal/Personal";
 // import { useGlobalContext } from "./context/globalContext";
 // const Business = () => <div>Welcome to Business Dashboard</div>;
 // const Personal = () => <div>Welcome to Personal Dashboard</div>;
@@ -38,7 +43,21 @@ function App() {
         return <Dashboard />;
     }
   };
+  const businessDisplay = () => {
+    switch (active) {
+      case 1:
+      // return <BusinessDashboard />;
+      case 2:
+        return <Dashboard />;
+      case 3:
+        return <BusinessIncome />;
+      case 4:
+        return <BusinessExpense />;
 
+      default:
+      // return <Dashboard />;
+    }
+  };
   const orbMemo = useMemo(() => {
     return <Orb />;
   }, []);
@@ -58,12 +77,21 @@ function App() {
                 </MainLayout>
               }
             />
+            <Route
+              path="/busi"
+              element={
+                <MainLayout>
+                  <Navigation active={active} setActive={setActive} />
+                  <main>{businessDisplay()}</main>
+                </MainLayout>
+              }
+            />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/choice" element={<Choice />} />
             <Route path="/" element={<MainHome />} />
-            <Route path="/business" element={<Business />} />
-            <Route path="/personal" element={<Personal />} />
+            <Route path="/busi" element={<BusinessDashboard />} />
+            <Route path="/nan" element={<Analysis />} />
           </Routes>
         </AppStyled>
       </BrowserRouter>

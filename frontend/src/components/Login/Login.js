@@ -28,7 +28,7 @@ const Login = () => {
 
       const accountType = localStorage.getItem("accountType");
       if (accountType === "business") {
-        navigate("/business");
+        navigate("/busi");
       } else if (accountType === "personal") {
         navigate("/main");
       } else {
