@@ -15,10 +15,21 @@ def generate_insights():
     kmeans = KMeans(n_clusters=3, random_state=0, n_init='auto')
     df['cluster'] = kmeans.fit_predict(X)
 
-    # Summarize results
-    summary = df.groupby('cluster').agg({
+    # Category-wise spending (for pie chart)
+    category_spending = df.groupby('category')['amount'].sum().to_dict()
+
+    # Monthly spending (for bar chart)
+    df['month'] = pd.to_datetime(df['date']).dt.strftime('%b %Y')
+    monthly_spending = df.groupby('month')['amount'].sum().to_dict()
+
+    # Cluster summary (optional, for debugging or extended use)
+    cluster_summary = df.groupby('cluster').agg({
         'amount': 'sum',
         'category': lambda x: x.mode()[0]
-    }).reset_index()
+    }).reset_index().to_dict(orient='records')
 
-    return summary.to_dict(orient='records')
+    return {
+        'categories': category_spending,
+        'monthly': monthly_spending,
+        'clusters': cluster_summary
+    }
