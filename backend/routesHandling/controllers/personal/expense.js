@@ -1,4 +1,4 @@
-import { pool } from "../../db.js";
+import { pool } from "../../../db.js";
 
 export const addExpense = async (req, res) => {
   const { title, amount, category, description, date } = req.body;
