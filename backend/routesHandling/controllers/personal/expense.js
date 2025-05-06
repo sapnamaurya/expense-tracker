@@ -48,7 +48,7 @@ export const deleteExpense = async (req, res) => {
   try {
     const query = `
       DELETE FROM expenses
-      WHERE id = $1;
+      WHERE expense_id = $1;
     `;
     const values = [id];
     const result = await pool.query(query, values);

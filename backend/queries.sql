@@ -138,3 +138,28 @@ ALTER TABLE incomes
 ADD CONSTRAINT fk_income_category
 FOREIGN KEY (category_id)
 REFERENCES categories(category_id);
+
+ALTER TABLE users
+ADD COLUMN category_id INTEGER;
+
+CREATE TABLE businessExpenses (
+    expense_id SERIAL PRIMARY KEY,
+    user_id INT NOT NULL,
+    amount DECIMAL(10, 2) NOT NULL,
+    date DATE NOT NULL,
+    description TEXT,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
+);
+
+CREATE TABLE businessIncome (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(50),
+    user_id INT NOT NULL, 
+    amount DECIMAL(10, 2) NOT NULL,
+    category VARCHAR(50),
+    description TEXT,
+    date DATE NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
+);
