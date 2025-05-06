@@ -74,6 +74,15 @@ export const GlobalProvider = ({ children }) => {
     }
   };
 
+  const updateExpense = async (id) => {
+    try {
+      await axios.put(`${BASE_URL}/expenses/${id}`);
+      getExpenses();
+    } catch (err) {
+      setError("Failed to delete personal expense");
+    }
+  };
+
   // --- BUSINESS INCOME ---
   const getBusinessIncomes = async () => {
     try {
@@ -114,12 +123,13 @@ export const GlobalProvider = ({ children }) => {
 
   const addBusinessExpense = async (expense) => {
     try {
-      await axios.post(`${BASE_URL}/business/expenses`, expense);
-      getBusinessExpenses();
+      const response = await axios.post("/api/business/expenses", {
+        ...expense,
+        user_id: 1, // Temporary: Replace with actual logged-in user ID if available
+      });
+      // update state accordingly...
     } catch (err) {
-      setError(
-        err?.response?.data?.message || "Failed to add business expense"
-      );
+      setError(err.response.data.message);
     }
   };
 
@@ -200,6 +210,7 @@ export const GlobalProvider = ({ children }) => {
         expenses,
         addExpense,
         deleteExpense,
+        editExpense,
         getExpenses,
         totalIncome,
         totalExpenses,
@@ -221,6 +232,7 @@ export const GlobalProvider = ({ children }) => {
         businessTransactionHistory,
 
         // Common
+
         error,
         setError,
       }}

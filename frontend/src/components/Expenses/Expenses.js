@@ -13,7 +13,8 @@ function Expenses() {
   const [editExpense, setEditExpense] = useState(null);
 
   const handleEdit = (id) => {
-    const toEdit = expenses.find((item) => item.id === id);
+    const toEdit = expenses.find((item) => item.expense_id === id);
+    console.log(toEdit);
     setEditExpense(toEdit);
   };
 
@@ -31,17 +32,24 @@ function Expenses() {
 
         <div className="income-content">
           <div className="form-container">
-            <ExpenseForm editExpense={editExpense} />
+            <ExpenseForm expense={editExpense} />
           </div>
           <div className="incomes">
             {expenses.map((income) => {
-              const { id, title, amount, date, category, description, type } =
-                income;
-              console.log(income);
+              const {
+                expense_id,
+                title,
+                amount,
+                date,
+                category,
+                description,
+                type,
+              } = income;
+
               return (
                 <IncomeItem
-                  key={id}
-                  id={id}
+                  key={expense_id}
+                  id={expense_id}
                   title={title}
                   description={description}
                   amount={amount}

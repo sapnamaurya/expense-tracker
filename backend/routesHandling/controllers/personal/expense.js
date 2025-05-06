@@ -43,14 +43,14 @@ export const getAllExpenses = async (req, res) => {
 
 export const deleteExpense = async (req, res) => {
   console.log("req.params:", req.params);
-  const { expense_id } = req.params;
+  const { id } = req.params;
 
   try {
     const query = `
       DELETE FROM expenses
       WHERE expense_id = $1;
     `;
-    const values = [expense_id];
+    const values = [id];
     const result = await pool.query(query, values);
 
     if (result.rowCount > 0) {
@@ -71,7 +71,7 @@ export const getExpenseById = async (req, res) => {
   try {
     const query = `
       SELECT * FROM expenses
-      WHERE id = $1;
+      WHERE expense_id  = $1;
     `;
     const values = [id];
     const result = await pool.query(query, values);
@@ -89,17 +89,50 @@ export const getExpenseById = async (req, res) => {
 
 export const updateExpense = async (req, res) => {
   const { id } = req.params;
-  console.log("req.params:", req.params);
   const { title, amount, category, description, date } = req.body;
 
   try {
+    const fields = [];
+    const values = [];
+    let paramIndex = 1;
+
+    if (title !== undefined) {
+      fields.push(`title = $${paramIndex++}`);
+      values.push(title);
+    }
+    if (amount !== undefined) {
+      fields.push(`amount = $${paramIndex++}`);
+      values.push(amount);
+    }
+    if (category !== undefined) {
+      fields.push(`category = $${paramIndex++}`);
+      values.push(category);
+    }
+    if (description !== undefined) {
+      fields.push(`description = $${paramIndex++}`);
+      values.push(description);
+    }
+    if (date !== undefined) {
+      fields.push(`date = $${paramIndex++}`);
+      values.push(date);
+    }
+
+    // Ensure at least one field is being updated
+    if (fields.length === 0) {
+      return res
+        .status(400)
+        .json({ message: "At least one field must be provided for update." });
+    }
+
+    values.push(id); // Add id as the last parameter
+
     const query = `
       UPDATE expenses
-      SET title = $1, amount = $2, category = $3, description = $4, date = $5
-      WHERE id = $6
+      SET ${fields.join(", ")}
+      WHERE expense_id = $${paramIndex}
       RETURNING *;
     `;
-    const values = [title, amount, category, description, date, id];
+
     const result = await pool.query(query, values);
 
     if (result.rows.length === 0) {

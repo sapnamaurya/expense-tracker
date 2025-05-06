@@ -6,7 +6,7 @@ import { useGlobalContext } from "../../context/globalContext";
 import Button from "../Button/Button";
 import { plus } from "../../utils/Icons";
 
-function ExpenseForm() {
+function ExpenseForm({ expense }) {
   const { addExpense, error, setError, editExpense } = useGlobalContext();
   const [customCategory, setCustomCategory] = useState("");
 
@@ -19,16 +19,16 @@ function ExpenseForm() {
   });
   // Inside ExpenseForm component
   useEffect(() => {
-    if (editExpense) {
+    if (expense) {
       setInputState({
-        title: editExpense.title || "",
-        amount: editExpense.amount || "",
-        date: new Date(editExpense.date) || "",
-        category: editExpense.category || "",
-        description: editExpense.description || "",
+        title: expense.title || "",
+        amount: expense.amount || "",
+        date: new Date(expense.date) || "",
+        category: expense.category_id || "",
+        description: expense.description || "",
       });
     }
-  }, [editExpense]);
+  }, [expense]);
   const { title, amount, date, category, description } = inputState;
 
   const handleInput = (name) => (e) => {
