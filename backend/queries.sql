@@ -142,7 +142,7 @@ REFERENCES categories(category_id);
 ALTER TABLE users
 ADD COLUMN category_id INTEGER;
 
-CREATE TABLE businessExpenses (
+CREATE TABLE businessexpenses (
     expense_id SERIAL PRIMARY KEY,
     user_id INT NOT NULL,
     amount DECIMAL(10, 2) NOT NULL,
@@ -152,7 +152,7 @@ CREATE TABLE businessExpenses (
     FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
 
-CREATE TABLE businessIncome (
+CREATE TABLE businessincome (
     id SERIAL PRIMARY KEY,
     title VARCHAR(50),
     user_id INT NOT NULL, 

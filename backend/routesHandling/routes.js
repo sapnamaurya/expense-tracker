@@ -26,14 +26,14 @@ import {
   getAllBusinessExpenses,
   getBusinessExpenseById,
   updateBusinessExpense,
-  deleteBusinessExpense,
+  deleteBusinessExpense
 } from "./controllers/business/expense.js";
 import {
   createBusinessIncome,
   getAllBusinessIncomes,
   getBusinessIncomeById,
   updateBusinessIncome,
-  deleteBusinessIncome,
+  deleteBusinessIncome
 } from "./controllers/business/income.js";
 
 //Personal Expense Routes

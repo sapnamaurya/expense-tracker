@@ -12,7 +12,7 @@ export const createBusinessIncome = async (req, res) => {
     }
 
     const [result] = await pool.query(
-      "INSERT INTO businessIncome (title, user_id, amount, category, description, date) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *",
+      "INSERT INTO businessincome (title, user_id, amount, category, description, date) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *",
       [title, user_id, amount, category, description, date]
     );
 
@@ -25,7 +25,7 @@ export const createBusinessIncome = async (req, res) => {
 
 export const getAllBusinessIncomes = async (req, res) => {
   try {
-    const [result] = await pool.query("SELECT * FROM businessIncome");
+    const [result] = await pool.query("SELECT * FROM businessincome");
     res.status(200).json(result.rows);
   } catch (error) {
     console.error(error);
@@ -37,7 +37,7 @@ export const getBusinessIncomeById = async (req, res) => {
   try {
     const incomeId = req.params.id;
     const [result] = await pool.query(
-      "SELECT * FROM businessIncome WHERE id = $1",
+      "SELECT * FROM businessincome WHERE id = $1",
       [incomeId]
     );
 
@@ -65,7 +65,7 @@ export const updateBusinessIncome = async (req, res) => {
     }
 
     const [result] = await pool.query(
-      "UPDATE businessIncome SET title = $1, user_id = $2, amount = $3, category = $4, description = $5, date = $6 WHERE id = $7 RETURNING *",
+      "UPDATE businessincome SET title = $1, user_id = $2, amount = $3, category = $4, description = $5, date = $6 WHERE id = $7 RETURNING *",
       [title, user_id, amount, category, description, date, incomeId]
     );
 
@@ -84,7 +84,7 @@ export const deleteBusinessIncome = async (req, res) => {
   try {
     const incomeId = req.params.id;
     const [result] = await pool.query(
-      "DELETE FROM businessIncome WHERE id = $1 RETURNING *",
+      "DELETE FROM businessincome WHERE id = $1 RETURNING *",
       [incomeId]
     );
 
