@@ -26,7 +26,7 @@ VALUES
     ('business')
 
 INSERT INTO expenses (user_id, amount, date, category_id, description, created_at)
-VALUES
+VALUES(
     (1, 1500.00, '2025-04-01', 1, 'Weekly groceries', NOW()),
     (1, 450.00, '2025-04-02', 2, 'Bus ride to work', NOW()),
     (1, 2000.00, '2025-04-03', 1, 'Cinema tickets', NOW()), 
@@ -127,3 +127,14 @@ VALUES
     (1, 3000.00, '2025-07-07', 1, 'Clothing shopping', NOW()), -- Food
     (1, 2000.00, '2025-07-08', 2, 'Car service and maintenance', NOW()),
     (1, 1500.00, '2025-07-09', 1, 'Family picnic in the park', NOW());
+);
+
+DROP TABLE old_expenses; 
+
+ALTER TABLE incomes
+ADD COLUMN category_id INTEGER;
+
+ALTER TABLE incomes
+ADD CONSTRAINT fk_income_category
+FOREIGN KEY (category_id)
+REFERENCES categories(category_id);
