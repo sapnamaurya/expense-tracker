@@ -81,6 +81,7 @@ const IncomeStyled = styled.div`
       flex: 1;
       height: 59vh;
       overflow: auto;
+      font-size: 17px;
     }
   }
 `;

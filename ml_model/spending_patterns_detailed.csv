@@ -1,422 +1,422 @@
-Customer ID,Category,Item,Quantity,Price Per Unit,Total Spent,Payment Method,Location,Transaction Date
-CUST_0159,Groceries,Milk,1,531.25,531.25,Debit Card,Mobile App,2024-11-13
-CUST_0017,Friend Activities,Dinner with Friends,2,4341.52,8683.04,Debit Card,In-store,2023-05-04
-CUST_0094,Housing and Utilities,Water Bill,1,7579.55,7579.55,Digital Wallet,Mobile App,2023-12-16
-CUST_0162,Fitness,Yoga Class,5,653.23,3266.14,Cash,In-store,2024-01-28
-CUST_0129,Gifts,Flowers,3,2540.22,7620.66,Debit Card,In-store,2023-07-28
-CUST_0071,Gifts,Flowers,2,923.00,1846.01,Digital Wallet,Mobile App,2024-07-14
-CUST_0165,Transportation,Car Repair,1,33905.10,33905.10,Debit Card,Mobile App,2024-03-08
-CUST_0147,Fitness,Personal Trainer,1,8167.30,8167.30,Debit Card,Mobile App,2023-01-14
-CUST_0116,Travel,Plane Ticket,1,58730.87,58730.87,Credit Card,In-store,2023-08-15
-CUST_0150,Gifts,Kids Games,5,2721.62,13608.10,Digital Wallet,Online,2024-10-15
-CUST_0048,Groceries,Bread,3,1647.55,4942.65,Digital Wallet,In-store,2023-12-31
-CUST_0110,Transportation,Car Repair,1,31862.89,31862.89,Cash,In-store,2023-05-12
-CUST_0072,Personal Hygiene,Toothpaste,2,984.75,1969.50,Debit Card,Mobile App,2023-12-15
-CUST_0100,Hobbies,Crochet Supplies,4,3553.07,14212.27,Digital Wallet,Mobile App,2024-01-06
-CUST_0199,Housing and Utilities,Gas Bill,1,17054.76,17054.76,Digital Wallet,In-store,2024-11-24
-CUST_0008,Gifts,Jewelry,2,16403.99,32807.99,Credit Card,Mobile App,2023-12-29
-CUST_0065,Shopping,Car,4,49699.34,198797.37,Digital Wallet,In-store,2023-11-27
-CUST_0136,Shopping,Shoes,1,5072.43,5072.43,Cash,In-store,2023-11-29
-CUST_0023,Medical/Dental,Dentist Visit,1,30477.91,30477.91,Credit Card,In-store,2024-08-15
-CUST_0193,Groceries,Chicken,4,3032.45,12129.80,Debit Card,In-store,2024-01-21
-CUST_0041,Shopping,Clothes,3,1568.85,4706.55,Credit Card,Online,2024-11-06
-CUST_0190,Groceries,Snacks,3,6286.65,18859.95,Debit Card,In-store,2023-07-26
-CUST_0163,Food,Fast Food,5,367.22,1836.11,Cash,Mobile App,2024-04-14
-CUST_0155,Food,Restaurant Meal,1,3730.07,3730.07,Credit Card,In-store,2024-09-06
-CUST_0064,Groceries,Milk,2,1341.25,2682.50,Debit Card,Mobile App,2024-04-18
-CUST_0021,Travel,Taxi/Uber,1,1573.43,1573.43,Debit Card,Mobile App,2023-01-14
-CUST_0050,Medical/Dental,Doctor Visit,1,5048.34,5048.34,Debit Card,Online,2023-06-28
-CUST_0109,Transportation,Public Transit,1,652.52,652.52,Credit Card,In-store,2023-03-16
-CUST_0156,Medical/Dental,Medicine,1,4648.87,4648.87,Digital Wallet,Online,2023-12-29
-CUST_0083,Food,Fast Food,2,469.07,938.14,Credit Card,Mobile App,2023-06-05
-CUST_0180,Shopping,Shoes,2,4223.90,8447.80,Credit Card,Mobile App,2024-06-13
-CUST_0028,Transportation,Public Transit,1,650.87,650.87,Debit Card,Online,2023-07-03
-CUST_0140,Groceries,Vegetables,5,2110.00,10550.00,Credit Card,Mobile App,2023-05-16
-CUST_0038,Gifts,Kids Games,5,2242.55,11212.75,Debit Card,Online,2023-01-07
-CUST_0191,Gifts,Jewelry,3,4858.26,14574.78,Credit Card,Mobile App,2024-05-25
-CUST_0001,Housing and Utilities,Gas Bill,1,12199.80,12199.80,Credit Card,Online,2024-07-21
-CUST_0073,Shopping,Car,1,40068.79,40068.79,Debit Card,In-store,2023-09-30
-CUST_0107,Fitness,Yoga Class,4,682.24,2728.96,Digital Wallet,In-store,2024-08-02
-CUST_0058,Transportation,Gas,1,4376.43,4376.43,Cash,In-store,2023-08-09
-CUST_0136,Groceries,Milk,3,1635.50,4906.50,Debit Card,Online,2024-09-29
-CUST_0043,Medical/Dental,Doctor Visit,1,76820.29,76820.29,Cash,In-store,2023-01-05
-CUST_0145,Transportation,Gas,1,3514.37,3514.37,Debit Card,In-store,2023-12-06
-CUST_0042,Gifts,Kids Games,3,2672.44,8017.31,Cash,Mobile App,2024-03-25
-CUST_0046,Travel,Plane Ticket,1,16683.45,16683.45,Digital Wallet,Mobile App,2024-03-03
-CUST_0011,Subscriptions,Streaming Service,1,938.90,938.90,Cash,In-store,2024-08-02
-CUST_0129,Housing and Utilities,Water Bill,1,2401.74,2401.74,Credit Card,Online,2023-01-11
-CUST_0024,Travel,Plane Ticket,1,26067.00,26067.00,Cash,Online,2023-09-06
-CUST_0130,Personal Hygiene,Shampoo,1,1764.90,1764.90,Credit Card,Mobile App,2024-05-10
-CUST_0071,Gifts,Jewelry,2,16981.38,33962.76,Cash,Online,2024-11-29
-CUST_0057,Transportation,Public Transit,1,841.63,841.63,Cash,Online,2023-04-01
-CUST_0091,Friend Activities,Dinner with Friends,2,5735.01,11470.02,Debit Card,In-store,2023-02-20
-CUST_0147,Housing and Utilities,Electricity Bill,1,8620.50,8620.50,Debit Card,Online,2023-01-26
-CUST_0030,Transportation,Gas,1,7770.36,7770.36,Digital Wallet,Mobile App,2023-11-05
-CUST_0042,Personal Hygiene,Skin Care Products,4,148761.75,595047.00,Debit Card,Online,2023-04-19
-CUST_0193,Food,Coffee,4,409.09,1636.37,Credit Card,Online,2023-04-08
-CUST_0053,Hobbies,Art Supplies,3,1367.26,4101.78,Debit Card,Mobile App,2024-05-31
-CUST_0027,Hobbies,Art Supplies,1,2984.46,2984.46,Digital Wallet,In-store,2024-09-19
-CUST_0063,Shopping,Clothes,5,2081.64,10408.21,Debit Card,In-store,2024-01-17
-CUST_0147,Food,Restaurant Meal,3,2788.54,8365.63,Cash,Online,2023-08-01
-CUST_0132,Medical/Dental,Dentist Visit,1,35128.49,35128.49,Cash,Mobile App,2024-09-22
-CUST_0022,Gifts,Kids Games,3,4299.41,12898.24,Cash,Mobile App,2023-06-24
-CUST_0182,Gifts,Jewelry,2,14013.60,28027.20,Cash,Online,2023-12-13
-CUST_0188,Housing and Utilities,Gas Bill,1,12848.70,12848.70,Digital Wallet,Mobile App,2024-01-06
-CUST_0154,Shopping,Car,4,44252.04,177008.15,Debit Card,Mobile App,2023-07-07
-CUST_0048,Fitness,Personal Trainer,4,11571.62,46286.47,Debit Card,Online,2024-02-03
-CUST_0122,Shopping,Shoes,1,4807.38,4807.38,Debit Card,Mobile App,2024-01-25
-CUST_0145,Personal Hygiene,Shampoo,1,2745.00,2745.00,Cash,Mobile App,2023-07-11
-CUST_0096,Food,Coffee,4,377.07,1508.28,Cash,Mobile App,2023-04-22
-CUST_0104,Personal Hygiene,Skin Care Products,2,20787.00,41574.00,Digital Wallet,Mobile App,2023-08-23
-CUST_0076,Friend Activities,Dinner with Friends,2,3872.82,7745.64,Cash,In-store,2024-07-04
-CUST_0107,Subscriptions,Streaming Service,1,1122.66,1122.66,Credit Card,Online,2024-03-16
-CUST_0126,Gifts,Flowers,5,2869.89,14349.45,Credit Card,In-store,2024-11-20
-CUST_0194,Fitness,Personal Trainer,2,4911.67,9823.34,Credit Card,Online,2024-09-26
-CUST_0159,Fitness,Personal Trainer,2,6883.66,13767.32,Credit Card,In-store,2023-05-23
-CUST_0035,Medical/Dental,Dentist Visit,1,13423.39,13423.39,Credit Card,Mobile App,2024-06-29
-CUST_0033,Food,Restaurant Meal,2,5389.36,10778.71,Credit Card,Online,2023-02-10
-CUST_0116,Food,Coffee,1,358.49,358.49,Cash,Online,2023-11-02
-CUST_0195,Groceries,Snacks,5,2692.50,13462.50,Digital Wallet,Mobile App,2024-12-26
-CUST_0076,Subscriptions,Streaming Service,1,743.05,743.05,Credit Card,In-store,2023-08-22
-CUST_0115,Subscriptions,Magazine,1,526.81,526.81,Credit Card,In-store,2024-09-30
-CUST_0109,Groceries,Bread,5,564.40,2822.00,Debit Card,Mobile App,2024-06-24
-CUST_0002,Medical/Dental,Doctor Visit,1,60839.48,60839.48,Credit Card,Online,2024-04-30
-CUST_0112,Shopping,Car,2,62642.54,125285.08,Debit Card,Online,2023-01-25
-CUST_0066,Food,Fast Food,2,833.65,1667.30,Digital Wallet,Mobile App,2023-08-03
-CUST_0020,Friend Activities,Movie Tickets,1,1118.70,1118.70,Debit Card,In-store,2024-07-06
-CUST_0022,Gifts,Jewelry,4,11578.28,46313.10,Debit Card,Mobile App,2024-12-15
-CUST_0008,Transportation,Car Repair,1,33791.00,33791.00,Digital Wallet,Online,2023-03-10
-CUST_0077,Medical/Dental,Dentist Visit,1,21085.34,21085.34,Debit Card,Mobile App,2024-12-13
-CUST_0146,Food,Coffee,5,145.92,729.62,Digital Wallet,In-store,2024-02-08
-CUST_0197,Food,Restaurant Meal,4,4003.94,16015.77,Credit Card,In-store,2023-04-19
-CUST_0198,Fitness,Personal Trainer,5,4345.25,21726.24,Credit Card,Online,2023-07-13
-CUST_0164,Personal Hygiene,Toothpaste,5,645.75,3228.75,Debit Card,In-store,2023-02-08
-CUST_0121,Friend Activities,Movie Tickets,5,374.84,1874.22,Debit Card,Online,2024-01-28
-CUST_0070,Hobbies,Crochet Supplies,5,3168.69,15843.45,Digital Wallet,In-store,2023-06-26
-CUST_0028,Fitness,Workout Equipment,1,5495.04,5495.04,Digital Wallet,Mobile App,2024-11-15
-CUST_0042,Medical/Dental,Medicine,1,47969.30,47969.30,Digital Wallet,Online,2024-04-18
-CUST_0188,Food,Fast Food,4,2174.45,8697.79,Credit Card,In-store,2023-07-22
-CUST_0156,Subscriptions,Streaming Service,1,841.37,841.37,Digital Wallet,In-store,2024-01-06
-CUST_0058,Transportation,Public Transit,1,726.77,726.77,Cash,Online,2024-08-22
-CUST_0022,Groceries,Meat,2,2027.50,4055.00,Debit Card,In-store,2024-04-18
-CUST_0041,Shopping,Car,3,6164.05,18492.14,Digital Wallet,Mobile App,2024-12-03
-CUST_0052,Food,Restaurant Meal,4,3851.49,15405.97,Cash,Mobile App,2023-03-27
-CUST_0072,Shopping,Clothes,4,3564.02,14256.08,Digital Wallet,Mobile App,2024-04-22
-CUST_0185,Transportation,Public Transit,1,230.01,230.01,Cash,Online,2023-06-28
-CUST_0047,Travel,Plane Ticket,1,19733.25,19733.25,Digital Wallet,Online,2024-11-02
-CUST_0189,Housing and Utilities,Rent,1,684901.20,684901.20,Credit Card,Online,2024-04-30
-CUST_0052,Transportation,Car Repair,1,9919.84,9919.84,Cash,Mobile App,2024-07-06
-CUST_0176,Friend Activities,Concert Tickets,1,11443.95,11443.95,Cash,Online,2024-01-16
-CUST_0004,Gifts,Gift Cards,5,3921.53,19607.65,Debit Card,Online,2025-01-03
-CUST_0043,Personal Hygiene,Shampoo,5,2478.75,12393.75,Credit Card,Mobile App,2023-07-17
-CUST_0041,Food,Coffee,3,143.52,430.55,Credit Card,Online,2024-01-22
-CUST_0103,Gifts,Jewelry,2,18025.46,36050.91,Digital Wallet,Online,2023-09-15
-CUST_0005,Food,Coffee,5,350.24,1751.22,Cash,Online,2023-05-19
-CUST_0007,Fitness,Workout Equipment,5,7565.88,37829.40,Cash,Mobile App,2024-12-17
-CUST_0135,Fitness,Workout Equipment,1,25627.20,25627.20,Cash,In-store,2023-05-16
-CUST_0010,Housing and Utilities,Gas Bill,1,19876.08,19876.08,Cash,In-store,2023-11-20
-CUST_0065,Fitness,Workout Equipment,1,6922.80,6922.80,Debit Card,In-store,2024-01-12
-CUST_0145,Gifts,Gift Cards,1,2419.29,2419.29,Credit Card,In-store,2023-11-17
-CUST_0033,Gifts,Gift Cards,4,2445.47,9781.88,Debit Card,In-store,2023-02-01
-CUST_0007,Groceries,Milk,4,477.50,1910.00,Credit Card,Online,2023-12-30
-CUST_0143,Travel,Hotel Stay,1,9331.50,9331.50,Cash,In-store,2023-08-12
-CUST_0042,Friend Activities,Dinner with Friends,5,4770.30,23851.50,Cash,Online,2024-10-04
-CUST_0007,Medical/Dental,Dentist Visit,1,32686.57,32686.57,Digital Wallet,Mobile App,2024-06-01
-CUST_0036,Travel,Hotel Stay,1,33121.95,33121.95,Cash,Online,2024-02-19
-CUST_0165,Shopping,Shoes,4,7263.84,29055.36,Cash,In-store,2024-10-25
-CUST_0107,Personal Hygiene,Soap,1,700.50,700.50,Credit Card,In-store,2024-05-11
-CUST_0046,Hobbies,Books,3,1827.99,5483.97,Digital Wallet,In-store,2023-03-09
-CUST_0160,Travel,Taxi/Uber,1,2492.46,2492.46,Debit Card,Mobile App,2024-08-18
-CUST_0194,Shopping,Electronics,2,29365.30,58730.60,Debit Card,Mobile App,2024-07-06
-CUST_0030,Gifts,Gift Cards,2,3871.92,7743.84,Credit Card,Mobile App,2024-09-17
-CUST_0002,Shopping,Car,1,55420.87,55420.87,Credit Card,Mobile App,2024-01-03
-CUST_0018,Friend Activities,Dinner with Friends,2,2941.26,5882.52,Debit Card,Mobile App,2024-09-24
-CUST_0184,Shopping,Car,1,16113.84,16113.84,Cash,Online,2023-12-06
-CUST_0193,Medical/Dental,Dentist Visit,1,38499.79,38499.79,Debit Card,Online,2023-03-31
-CUST_0120,Transportation,Gas,1,6070.29,6070.29,Debit Card,Mobile App,2024-08-28
-CUST_0178,Transportation,Gas,1,4429.82,4429.82,Debit Card,Online,2024-12-13
-CUST_0129,Shopping,Clothes,5,1652.48,8262.40,Debit Card,Online,2024-11-12
-CUST_0072,Gifts,Kids Games,2,3540.39,7080.78,Digital Wallet,Mobile App,2024-09-12
-CUST_0053,Personal Hygiene,Shampoo,3,2310.00,6930.00,Credit Card,Online,2023-09-24
-CUST_0036,Medical/Dental,Dentist Visit,1,10485.59,10485.59,Debit Card,In-store,2024-10-18
-CUST_0045,Subscriptions,Streaming Service,1,1104.28,1104.28,Credit Card,Mobile App,2023-08-27
-CUST_0026,Housing and Utilities,Rent,1,518197.56,518197.56,Credit Card,Mobile App,2024-07-09
-CUST_0154,Friend Activities,Dinner with Friends,2,3603.66,7207.32,Debit Card,Mobile App,2024-03-14
-CUST_0074,Subscriptions,Magazine,1,852.54,852.54,Debit Card,Online,2024-11-19
-CUST_0102,Friend Activities,Movie Tickets,4,631.55,2526.20,Cash,Online,2023-05-10
-CUST_0039,Food,Restaurant Meal,5,2711.64,13558.21,Credit Card,Mobile App,2023-12-16
-CUST_0014,Housing and Utilities,Gas Bill,1,16482.72,16482.72,Digital Wallet,In-store,2023-03-23
-CUST_0142,Transportation,Public Transit,1,467.44,467.44,Debit Card,Mobile App,2024-02-03
-CUST_0142,Gifts,Flowers,2,1843.56,3687.12,Debit Card,Mobile App,2023-02-21
-CUST_0123,Shopping,Shoes,1,4628.91,4628.91,Debit Card,In-store,2023-08-09
-CUST_0036,Friend Activities,Concert Tickets,2,6892.68,13785.36,Debit Card,Online,2023-09-09
-CUST_0114,Travel,Plane Ticket,1,66301.71,66301.71,Cash,Mobile App,2023-09-17
-CUST_0034,Personal Hygiene,Toothpaste,3,1098.75,3296.25,Digital Wallet,Online,2023-03-27
-CUST_0178,Subscriptions,Streaming Service,1,879.90,879.90,Credit Card,Mobile App,2024-10-28
-CUST_0180,Gifts,Gift Cards,1,4655.10,4655.10,Credit Card,In-store,2025-01-13
-CUST_0111,Groceries,Fruits,5,4130.00,20650.00,Debit Card,Mobile App,2023-10-21
-CUST_0028,Food,Restaurant Meal,1,2791.49,2791.49,Digital Wallet,In-store,2024-08-26
-CUST_0008,Housing and Utilities,Electricity Bill,1,17182.50,17182.50,Cash,In-store,2023-07-31
-CUST_0092,Transportation,Public Transit,1,405.37,405.37,Digital Wallet,Online,2023-11-08
-CUST_0053,Transportation,Gas,1,5504.72,5504.72,Credit Card,Online,2024-10-05
-CUST_0093,Shopping,Electronics,1,46380.65,46380.65,Cash,Mobile App,2023-11-29
-CUST_0183,Gifts,Flowers,1,2492.88,2492.88,Debit Card,In-store,2023-11-27
-CUST_0090,Shopping,Shoes,3,2453.07,7359.20,Debit Card,Mobile App,2024-07-09
-CUST_0108,Shopping,Clothes,2,3747.45,7494.90,Cash,In-store,2023-04-15
-CUST_0075,Friend Activities,Movie Tickets,4,375.92,1503.69,Credit Card,In-store,2023-12-14
-CUST_0116,Medical/Dental,Doctor Visit,1,44666.85,44666.85,Credit Card,Mobile App,2023-04-19
-CUST_0122,Medical/Dental,Dentist Visit,1,24402.29,24402.29,Credit Card,Mobile App,2024-05-20
-CUST_0187,Subscriptions,Magazine,1,837.18,837.18,Debit Card,In-store,2023-09-14
-CUST_0005,Subscriptions,Gym Membership,1,3763.20,3763.20,Debit Card,Online,2023-08-29
-CUST_0091,Personal Hygiene,Soap,1,1710.00,1710.00,Cash,In-store,2023-11-11
-CUST_0135,Personal Hygiene,Toothpaste,3,667.50,2002.50,Debit Card,Online,2023-05-30
-CUST_0041,Housing and Utilities,Rent,1,419277.03,419277.03,Digital Wallet,In-store,2023-07-15
-CUST_0043,Groceries,Chicken,1,7488.75,7488.75,Digital Wallet,Online,2024-05-26
-CUST_0113,Gifts,Gift Cards,2,4497.87,8995.74,Credit Card,Online,2023-01-05
-CUST_0057,Gifts,Flowers,5,861.89,4309.45,Digital Wallet,Mobile App,2023-11-04
-CUST_0196,Fitness,Workout Equipment,4,18531.87,74127.48,Digital Wallet,Online,2024-09-20
-CUST_0073,Shopping,Shoes,1,3842.90,3842.90,Credit Card,Online,2024-02-18
-CUST_0105,Personal Hygiene,Shampoo,4,2310.00,9240.00,Debit Card,Online,2024-02-05
-CUST_0182,Gifts,Flowers,1,1942.02,1942.02,Credit Card,Mobile App,2023-05-01
-CUST_0156,Groceries,Bread,2,768.75,1537.50,Credit Card,In-store,2023-02-01
-CUST_0106,Travel,Hotel Stay,1,9479.10,9479.10,Credit Card,Online,2024-11-07
-CUST_0086,Gifts,Kids Games,3,2439.39,7318.17,Credit Card,Online,2023-07-10
-CUST_0096,Subscriptions,Streaming Service,1,546.00,546.00,Digital Wallet,Mobile App,2023-11-09
-CUST_0127,Hobbies,Books,1,1702.20,1702.20,Credit Card,Online,2023-12-13
-CUST_0114,Subscriptions,Gym Membership,1,2437.35,2437.35,Cash,Mobile App,2023-09-12
-CUST_0126,Travel,Taxi/Uber,1,2335.92,2335.92,Digital Wallet,Online,2023-08-05
-CUST_0161,Hobbies,Video Games,3,1444.77,4334.31,Credit Card,Mobile App,2023-05-22
-CUST_0170,Transportation,Gas,1,6930.79,6930.79,Debit Card,In-store,2023-01-11
-CUST_0076,Housing and Utilities,Water Bill,1,9187.20,9187.20,Debit Card,In-store,2024-07-15
-CUST_0045,Transportation,Car Repair,1,70187.13,70187.13,Debit Card,In-store,2023-05-04
-CUST_0110,Food,Restaurant Meal,5,5234.97,26174.85,Digital Wallet,In-store,2023-07-17
-CUST_0167,Food,Coffee,5,365.34,1826.71,Credit Card,Online,2023-03-09
-CUST_0183,Friend Activities,Concert Tickets,4,41086.35,164345.40,Digital Wallet,Mobile App,2024-05-29
-CUST_0172,Hobbies,Crochet Supplies,4,2014.91,8059.64,Debit Card,Online,2023-02-08
-CUST_0168,Groceries,Snacks,5,1691.25,8456.25,Debit Card,Mobile App,2024-07-29
-CUST_0111,Subscriptions,Magazine,1,512.79,512.79,Debit Card,Online,2025-01-03
-CUST_0163,Travel,Plane Ticket,1,83588.85,83588.85,Cash,Mobile App,2023-09-12
-CUST_0010,Transportation,Car Repair,1,33126.53,33126.53,Debit Card,In-store,2024-04-18
-CUST_0168,Food,Restaurant Meal,1,4345.80,4345.80,Digital Wallet,Online,2024-11-12
-CUST_0128,Groceries,Bread,3,523.50,1570.50,Debit Card,Mobile App,2024-07-30
-CUST_0068,Shopping,Shoes,1,4847.60,4847.60,Digital Wallet,Online,2024-09-03
-CUST_0014,Shopping,Clothes,5,2260.09,11300.44,Digital Wallet,In-store,2024-08-10
-CUST_0012,Medical/Dental,Dentist Visit,1,18512.29,18512.29,Debit Card,Online,2023-11-29
-CUST_0170,Food,Restaurant Meal,1,5070.91,5070.91,Digital Wallet,Mobile App,2023-10-12
-CUST_0167,Travel,Hotel Stay,1,23743.68,23743.68,Credit Card,Online,2023-06-26
-CUST_0056,Housing and Utilities,Electricity Bill,1,15166.29,15166.29,Digital Wallet,Mobile App,2024-03-07
-CUST_0103,Gifts,Flowers,2,1958.70,3917.40,Debit Card,Mobile App,2023-07-25
-CUST_0186,Groceries,Snacks,1,1558.75,1558.75,Cash,Online,2024-04-06
-CUST_0087,Food,Restaurant Meal,1,948.19,948.19,Digital Wallet,Online,2024-11-06
-CUST_0156,Hobbies,Art Supplies,5,2817.54,14087.70,Digital Wallet,In-store,2023-11-09
-CUST_0025,Personal Hygiene,Skin Care Products,2,168851.25,337702.50,Cash,Online,2023-12-15
-CUST_0189,Travel,Taxi/Uber,1,1826.46,1826.46,Digital Wallet,In-store,2023-10-14
-CUST_0026,Personal Hygiene,Shampoo,4,3170.25,12681.00,Credit Card,Online,2023-04-21
-CUST_0016,Groceries,Bread,3,913.75,2741.25,Debit Card,In-store,2024-02-02
-CUST_0016,Medical/Dental,Dentist Visit,1,43234.39,43234.39,Digital Wallet,In-store,2024-10-31
-CUST_0071,Groceries,Chicken,4,4512.50,18050.00,Debit Card,Online,2024-12-25
-CUST_0048,Groceries,Milk,2,946.75,1893.50,Debit Card,In-store,2023-11-29
-CUST_0037,Gifts,Flowers,4,2490.57,9962.28,Credit Card,Mobile App,2023-05-02
-CUST_0001,Medical/Dental,Dentist Visit,1,16187.84,16187.84,Digital Wallet,Online,2024-10-15
-CUST_0073,Groceries,Meat,1,8069.50,8069.50,Credit Card,In-store,2024-04-20
-CUST_0125,Personal Hygiene,Soap,4,1077.00,4308.00,Debit Card,In-store,2024-08-09
-CUST_0026,Shopping,Electronics,5,30551.45,152757.25,Debit Card,In-store,2024-01-27
-CUST_0099,Groceries,Vegetables,5,1312.50,6562.50,Credit Card,Online,2024-02-16
-CUST_0130,Shopping,Clothes,1,1025.47,1025.47,Credit Card,In-store,2024-05-15
-CUST_0159,Hobbies,Art Supplies,1,4905.60,4905.60,Digital Wallet,Online,2023-11-11
-CUST_0001,Groceries,Chicken,4,2548.75,10195.00,Debit Card,In-store,2023-05-08
-CUST_0106,Housing and Utilities,Electricity Bill,1,11733.63,11733.63,Debit Card,In-store,2023-06-15
-CUST_0146,Shopping,Electronics,1,56987.95,56987.95,Debit Card,Online,2023-07-19
-CUST_0122,Hobbies,Crochet Supplies,3,2262.54,6787.62,Credit Card,Online,2023-07-01
-CUST_0013,Travel,Plane Ticket,1,40542.63,40542.63,Credit Card,In-store,2024-08-29
-CUST_0163,Housing and Utilities,Gas Bill,1,18394.32,18394.32,Digital Wallet,In-store,2023-12-18
-CUST_0060,Food,Coffee,5,227.36,1136.80,Credit Card,Mobile App,2023-04-27
-CUST_0150,Transportation,Car Repair,1,61280.28,61280.28,Debit Card,Online,2023-12-19
-CUST_0090,Gifts,Flowers,5,2600.85,13004.25,Cash,Online,2023-05-19
-CUST_0173,Hobbies,Video Games,4,3981.48,15925.92,Cash,Mobile App,2023-08-31
-CUST_0033,Subscriptions,Gym Membership,1,2442.90,2442.90,Credit Card,Online,2023-08-10
-CUST_0010,Hobbies,Video Games,1,3597.54,3597.54,Cash,Online,2024-05-15
-CUST_0060,Transportation,Gas,1,7010.43,7010.43,Credit Card,Online,2024-02-05
-CUST_0081,Medical/Dental,Dentist Visit,1,34056.89,34056.89,Credit Card,Online,2024-02-27
-CUST_0090,Hobbies,Art Supplies,1,2346.66,2346.66,Digital Wallet,Online,2024-01-24
-CUST_0046,Fitness,Yoga Class,2,1023.33,2046.66,Cash,Mobile App,2024-07-02
-CUST_0069,Medical/Dental,Doctor Visit,1,30518.37,30518.37,Credit Card,Online,2025-01-09
-CUST_0077,Groceries,Vegetables,5,1807.50,9037.50,Digital Wallet,Mobile App,2023-09-16
-CUST_0158,Subscriptions,Gym Membership,1,2757.15,2757.15,Credit Card,In-store,2024-11-13
-CUST_0096,Transportation,Public Transit,1,462.64,462.64,Digital Wallet,Online,2024-09-03
-CUST_0068,Hobbies,Books,3,2342.01,7026.03,Debit Card,Mobile App,2024-09-18
-CUST_0189,Medical/Dental,Doctor Visit,1,43621.53,43621.53,Digital Wallet,Online,2025-01-03
-CUST_0071,Travel,Hotel Stay,1,20609.85,20609.85,Debit Card,Online,2023-03-29
-CUST_0009,Personal Hygiene,Skin Care Products,4,36146.25,144585.00,Debit Card,Online,2023-04-04
-CUST_0170,Transportation,Gas,1,3573.47,3573.47,Digital Wallet,In-store,2023-12-25
-CUST_0178,Food,Coffee,2,174.58,349.16,Debit Card,Mobile App,2024-11-19
-CUST_0162,Gifts,Gift Cards,2,5748.54,11497.08,Credit Card,Online,2024-04-03
-CUST_0060,Transportation,Car Repair,1,17886.00,17886.00,Digital Wallet,In-store,2023-10-19
-CUST_0078,Housing and Utilities,Water Bill,1,4945.80,4945.80,Digital Wallet,In-store,2023-09-26
-CUST_0125,Medical/Dental,Medicine,1,66976.47,66976.47,Debit Card,Mobile App,2023-10-12
-CUST_0016,Housing and Utilities,Water Bill,1,9131.70,9131.70,Debit Card,In-store,2023-07-17
-CUST_0072,Food,Coffee,1,449.29,449.29,Credit Card,Mobile App,2024-02-07
-CUST_0199,Gifts,Kids Games,1,885.45,885.45,Credit Card,Online,2023-05-29
-CUST_0130,Medical/Dental,Medicine,1,65894.29,65894.29,Debit Card,In-store,2023-06-08
-CUST_0035,Housing and Utilities,Rent,1,421548.78,421548.78,Credit Card,Online,2023-12-01
-CUST_0176,Shopping,Electronics,4,31002.85,124011.40,Cash,In-store,2024-06-24
-CUST_0055,Groceries,Fruits,1,2260.00,2260.00,Credit Card,In-store,2024-02-29
-CUST_0145,Personal Hygiene,Shampoo,2,3690.00,7380.00,Credit Card,In-store,2023-11-14
-CUST_0078,Fitness,Yoga Class,1,1137.51,1137.51,Cash,Mobile App,2024-08-26
-CUST_0126,Transportation,Car Repair,1,69681.53,69681.53,Cash,Online,2023-03-26
-CUST_0178,Personal Hygiene,Toothpaste,2,871.50,1743.00,Debit Card,In-store,2024-03-08
-CUST_0152,Housing and Utilities,Electricity Bill,1,10393.71,10393.71,Cash,In-store,2024-12-17
-CUST_0087,Fitness,Yoga Class,5,835.59,4177.95,Debit Card,In-store,2024-11-22
-CUST_0169,Food,Restaurant Meal,3,2985.68,8957.04,Debit Card,Online,2023-09-27
-CUST_0150,Housing and Utilities,Electricity Bill,1,15658.80,15658.80,Digital Wallet,Online,2024-11-04
-CUST_0027,Personal Hygiene,Toothpaste,3,855.75,2567.25,Debit Card,In-store,2024-09-08
-CUST_0092,Fitness,Workout Equipment,2,46847.82,93695.64,Credit Card,Mobile App,2024-01-08
-CUST_0008,Hobbies,Video Games,3,3511.20,10533.60,Credit Card,Mobile App,2023-11-03
-CUST_0190,Transportation,Car Repair,1,45137.19,45137.19,Cash,Online,2024-05-25
-CUST_0133,Shopping,Electronics,5,42723.15,213615.75,Cash,In-store,2023-10-05
-CUST_0138,Personal Hygiene,Toothpaste,1,885.75,885.75,Debit Card,Mobile App,2023-03-25
-CUST_0128,Hobbies,Books,4,2616.75,10467.00,Debit Card,Online,2025-01-13
-CUST_0112,Housing and Utilities,Water Bill,1,5902.50,5902.50,Cash,Mobile App,2023-07-12
-CUST_0155,Hobbies,Video Games,5,1832.97,9164.85,Debit Card,Mobile App,2023-09-01
-CUST_0053,Transportation,Car Repair,1,30814.40,30814.40,Digital Wallet,Online,2023-10-25
-CUST_0030,Medical/Dental,Medicine,1,58964.99,58964.99,Debit Card,Online,2023-07-14
-CUST_0178,Personal Hygiene,Soap,4,591.75,2367.00,Digital Wallet,Online,2024-08-01
-CUST_0057,Gifts,Flowers,3,2743.53,8230.59,Cash,In-store,2024-07-08
-CUST_0028,Food,Restaurant Meal,5,2193.75,10968.75,Credit Card,In-store,2023-05-07
-CUST_0106,Transportation,Car Repair,1,48037.69,48037.69,Digital Wallet,In-store,2024-11-14
-CUST_0018,Shopping,Clothes,3,1394.22,4182.65,Digital Wallet,In-store,2024-02-29
-CUST_0138,Fitness,Yoga Class,4,677.49,2709.96,Cash,Mobile App,2023-12-14
-CUST_0144,Medical/Dental,Doctor Visit,1,74655.53,74655.53,Digital Wallet,Mobile App,2024-03-08
-CUST_0152,Food,Restaurant Meal,1,5520.66,5520.66,Digital Wallet,In-store,2024-07-20
-CUST_0049,Hobbies,Books,1,2121.00,2121.00,Digital Wallet,Online,2023-02-16
-CUST_0041,Travel,Hotel Stay,1,27468.21,27468.21,Cash,In-store,2023-09-15
-CUST_0098,Friend Activities,Concert Tickets,5,4756.92,23784.60,Debit Card,Online,2023-08-05
-CUST_0190,Subscriptions,Magazine,1,310.25,310.25,Debit Card,In-store,2024-04-27
-CUST_0083,Transportation,Public Transit,1,680.18,680.18,Cash,Online,2023-11-23
-CUST_0182,Fitness,Yoga Class,3,1285.32,3855.96,Credit Card,Online,2023-09-25
-CUST_0122,Housing and Utilities,Rent,1,324259.47,324259.47,Debit Card,Online,2024-05-26
-CUST_0069,Shopping,Shoes,5,2987.57,14937.85,Debit Card,Online,2023-03-08
-CUST_0144,Travel,Plane Ticket,1,53874.21,53874.21,Cash,Mobile App,2023-04-15
-CUST_0054,Food,Restaurant Meal,3,3472.02,10416.06,Digital Wallet,Mobile App,2024-11-24
-CUST_0138,Food,Fast Food,1,474.29,474.29,Cash,In-store,2024-05-27
-CUST_0152,Subscriptions,Magazine,1,728.09,728.09,Cash,Mobile App,2023-08-13
-CUST_0160,Food,Coffee,2,206.29,412.58,Debit Card,Mobile App,2024-11-09
-CUST_0121,Hobbies,Crochet Supplies,3,1280.52,3841.56,Cash,In-store,2024-10-17
-CUST_0065,Personal Hygiene,Toothpaste,3,992.25,2976.75,Debit Card,Mobile App,2023-12-20
-CUST_0062,Food,Coffee,5,435.75,2178.75,Digital Wallet,In-store,2023-06-07
-CUST_0003,Hobbies,Art Supplies,4,2555.34,10221.36,Cash,In-store,2023-03-01
-CUST_0001,Food,Fast Food,4,808.26,3233.04,Credit Card,In-store,2023-12-19
-CUST_0019,Personal Hygiene,Soap,5,1386.75,6933.75,Debit Card,Online,2023-01-24
-CUST_0024,Food,Fast Food,5,306.14,1530.70,Debit Card,Online,2024-05-27
-CUST_0051,Food,Fast Food,3,790.82,2372.46,Cash,Mobile App,2024-04-13
-CUST_0045,Groceries,Chicken,5,3487.50,17437.50,Cash,In-store,2024-10-15
-CUST_0151,Groceries,Bread,2,689.50,1379.00,Cash,In-store,2024-07-17
-CUST_0012,Subscriptions,Magazine,1,558.66,558.66,Debit Card,In-store,2024-11-08
-CUST_0091,Medical/Dental,Dentist Visit,1,27495.29,27495.29,Debit Card,In-store,2024-02-02
-CUST_0074,Fitness,Personal Trainer,5,8829.48,44147.40,Digital Wallet,In-store,2023-09-06
-CUST_0078,Shopping,Shoes,4,5982.23,23928.90,Digital Wallet,Mobile App,2024-04-16
-CUST_0109,Food,Restaurant Meal,1,4292.64,4292.64,Digital Wallet,In-store,2024-06-18
-CUST_0002,Hobbies,Art Supplies,3,4289.46,12868.38,Debit Card,Mobile App,2024-09-18
-CUST_0051,Travel,Taxi/Uber,1,2571.90,2571.90,Cash,Mobile App,2024-07-01
-CUST_0007,Fitness,Yoga Class,3,1572.51,4725.53,Digital Wallet,Mobile App,2024-02-01
-CUST_0106,Subscriptions,Gym Membership,1,3637.35,3637.35,Digital Wallet,In-store,2024-02-11
-CUST_0168,Personal Hygiene,Toothpaste,3,1050.75,3152.25,Debit Card,Mobile App,2024-01-13
-CUST_0133,Friend Activities,Dinner with Friends,2,1163.34,2326.68,Digital Wallet,Mobile App,2023-11-11
-CUST_0102,Medical/Dental,Dentist Visit,1,35167.57,35167.57,Debit Card,Mobile App,2024-01-03
-CUST_0109,Food,Restaurant Meal,5,1056.06,5280.30,Digital Wallet,Mobile App,2023-01-31
-CUST_0014,Food,Restaurant Meal,4,2568.87,10275.48,Debit Card,Mobile App,2024-09-06
-CUST_0144,Transportation,Gas,1,6196.15,6196.15,Digital Wallet,Mobile App,2024-06-15
-CUST_0131,Travel,Taxi/Uber,1,2766.15,2766.15,Digital Wallet,Online,2023-10-02
-CUST_0016,Housing and Utilities,Electricity Bill,1,5632.62,5632.62,Cash,Online,2023-06-29
-CUST_0071,Personal Hygiene,Skin Care Products,2,96705.00,193410.00,Cash,In-store,2023-08-27
-CUST_0123,Medical/Dental,Dentist Visit,1,43428.63,43428.63,Debit Card,Online,2023-09-12
-CUST_0130,Fitness,Workout Equipment,3,81657.90,244973.70,Cash,Mobile App,2024-08-11
-CUST_0095,Subscriptions,Magazine,1,476.40,476.40,Credit Card,Mobile App,2024-01-08
-CUST_0082,Food,Fast Food,2,488.82,977.64,Cash,Mobile App,2023-07-23
-CUST_0014,Transportation,Public Transit,1,815.24,815.24,Cash,Online,2023-02-21
-CUST_0090,Gifts,Flowers,2,2633.19,5266.38,Cash,Mobile App,2023-02-13
-CUST_0023,Friend Activities,Dinner with Friends,4,5735.01,22940.04,Digital Wallet,Mobile App,2024-09-28
-CUST_0070,Housing and Utilities,Electricity Bill,1,7671.00,7671.00,Cash,In-store,2023-01-07
-CUST_0198,Gifts,Kids Games,5,3762.75,18813.75,Digital Wallet,In-store,2023-09-16
-CUST_0113,Shopping,Car,4,34509.52,138038.07,Credit Card,In-store,2024-11-02
-CUST_0092,Transportation,Gas,1,8169.54,8169.54,Cash,Mobile App,2024-11-16
-CUST_0025,Travel,Hotel Stay,1,10290.66,10290.66,Credit Card,Mobile App,2024-07-29
-CUST_0057,Transportation,Gas,1,5185.99,5185.99,Digital Wallet,In-store,2024-12-21
-CUST_0110,Food,Coffee,4,442.14,1768.56,Debit Card,Online,2024-10-30
-CUST_0178,Groceries,Meat,5,8940.00,44700.00,Debit Card,Online,2024-02-12
-CUST_0123,Fitness,Workout Equipment,1,25294.02,25294.02,Cash,Mobile App,2023-11-02
-CUST_0179,Food,Restaurant Meal,1,2427.03,2427.03,Cash,Mobile App,2023-10-15
-CUST_0138,Fitness,Workout Equipment,2,17938.35,35876.70,Cash,Online,2025-01-13
-CUST_0064,Subscriptions,Magazine,1,839.85,839.85,Cash,Online,2024-10-14
-CUST_0040,Fitness,Yoga Class,5,1288.86,6444.30,Credit Card,Online,2023-03-24
-CUST_0167,Travel,Plane Ticket,1,15003.60,15003.60,Cash,In-store,2024-03-10
-CUST_0185,Fitness,Yoga Class,5,1470.90,7354.50,Credit Card,In-store,2023-07-20
-CUST_0023,Medical/Dental,Doctor Visit,1,46337.53,46337.53,Debit Card,Online,2023-05-22
-CUST_0163,Subscriptions,Magazine,1,363.00,363.00,Digital Wallet,Mobile App,2023-03-13
-CUST_0191,Personal Hygiene,Toothpaste,1,664.50,664.50,Debit Card,In-store,2023-04-30
-CUST_0183,Fitness,Workout Equipment,3,7345.05,22035.15,Cash,In-store,2024-03-29
-CUST_0148,Groceries,Chicken,4,2683.75,10735.00,Digital Wallet,In-store,2024-08-10
-CUST_0067,Friend Activities,Movie Tickets,3,381.69,1145.07,Cash,Online,2025-01-12
-CUST_0033,Friend Activities,Dinner with Friends,5,2721.63,13608.15,Debit Card,Online,2023-07-24
-CUST_0114,Personal Hygiene,Shampoo,2,3562.50,7125.00,Credit Card,In-store,2024-10-28
-CUST_0002,Food,Restaurant Meal,2,4046.88,8093.76,Cash,Online,2023-05-26
-CUST_0172,Hobbies,Art Supplies,1,3540.96,3540.96,Cash,In-store,2023-02-26
-CUST_0055,Housing and Utilities,Water Bill,1,2617.08,2617.08,Debit Card,In-store,2024-04-17
-CUST_0119,Transportation,Car Repair,1,18362.07,18362.07,Debit Card,In-store,2023-06-29
-CUST_0040,Groceries,Vegetables,3,1965.50,5896.50,Credit Card,Online,2024-11-09
-CUST_0078,Shopping,Car,4,11831.54,47326.16,Debit Card,In-store,2024-12-01
-CUST_0182,Hobbies,Books,4,876.54,3506.16,Debit Card,In-store,2023-07-28
-CUST_0114,Hobbies,Video Games,2,3881.97,7763.94,Credit Card,In-store,2024-10-26
-CUST_0002,Hobbies,Art Supplies,2,4812.66,9625.32,Digital Wallet,Mobile App,2024-02-19
-CUST_0039,Personal Hygiene,Skin Care Products,4,17040.00,68160.00,Digital Wallet,Online,2023-08-27
-CUST_0031,Subscriptions,Gym Membership,1,2088.78,2088.78,Credit Card,Mobile App,2023-03-15
-CUST_0136,Food,Restaurant Meal,1,4133.85,4133.85,Digital Wallet,Mobile App,2023-09-15
-CUST_0102,Personal Hygiene,Toothpaste,5,591.75,2958.75,Credit Card,In-store,2023-01-06
-CUST_0022,Groceries,Snacks,3,5266.25,15798.75,Debit Card,Mobile App,2023-08-22
-CUST_0155,Friend Activities,Dinner with Friends,4,5429.19,21716.76,Debit Card,Mobile App,2024-07-23
-CUST_0116,Food,Restaurant Meal,2,4472.31,8944.62,Credit Card,In-store,2024-09-19
-CUST_0028,Transportation,Gas,1,5989.98,5989.98,Cash,In-store,2023-06-02
-CUST_0056,Shopping,Car,2,15612.32,31224.63,Digital Wallet,Online,2024-09-17
-CUST_0191,Housing and Utilities,Rent,1,382201.71,382201.71,Debit Card,Online,2024-05-02
-CUST_0174,Friend Activities,Concert Tickets,1,5971.50,5971.50,Digital Wallet,Mobile App,2024-03-29
-CUST_0035,Travel,Plane Ticket,1,25394.58,25394.58,Cash,Mobile App,2024-02-13
-CUST_0078,Hobbies,Crochet Supplies,5,398.01,1990.05,Credit Card,In-store,2024-10-11
-CUST_0003,Groceries,Meat,2,8250.00,16500.00,Debit Card,In-store,2023-07-14
-CUST_0046,Gifts,Gift Cards,3,5227.47,15682.41,Digital Wallet,Online,2024-02-24
-CUST_0188,Groceries,Milk,4,1379.00,5516.00,Credit Card,Mobile App,2023-06-04
-CUST_0016,Groceries,Meat,3,7545.00,22635.00,Digital Wallet,Mobile App,2024-09-24
-CUST_0194,Hobbies,Crochet Supplies,3,1098.27,3294.81,Digital Wallet,Mobile App,2023-04-07
-CUST_0149,Friend Activities,Concert Tickets,1,6675.54,6675.54,Cash,In-store,2023-09-20
-CUST_0102,Friend Activities,Concert Tickets,5,5411.70,27058.50,Digital Wallet,In-store,2024-01-01
-CUST_0114,Shopping,Electronics,5,38484.03,192420.15,Digital Wallet,Mobile App,2024-09-01
-CUST_0131,Transportation,Gas,1,7878.99,7878.99,Cash,In-store,2023-05-20
-CUST_0138,Housing and Utilities,Water Bill,1,5309.82,5309.82,Credit Card,Online,2024-11-10
-CUST_0181,Medical/Dental,Doctor Visit,1,61953.53,61953.53,Credit Card,Mobile App,2023-09-09
-CUST_0047,Shopping,Clothes,2,3367.65,6735.30,Credit Card,Online,2024-06-10
-CUST_0155,Groceries,Snacks,1,3696.25,3696.25,Debit Card,Online,2023-12-10
-CUST_0122,Gifts,Jewelry,3,28623.48,85870.44,Digital Wallet,Mobile App,2024-07-15
-CUST_0177,Housing and Utilities,Electricity Bill,1,19513.53,19513.53,Digital Wallet,Mobile App,2023-02-05
-CUST_0009,Fitness,Personal Trainer,2,8607.15,17214.30,Debit Card,In-store,2024-08-06
-CUST_0083,Fitness,Personal Trainer,2,9061.41,18122.82,Debit Card,Online,2023-01-31
-CUST_0143,Food,Fast Food,5,1033.29,5166.45,Cash,In-store,2025-01-05
-CUST_0082,Fitness,Workout Equipment,1,16269.21,16269.21,Cash,In-store,2024-06-11
-CUST_0187,Friend Activities,Movie Tickets,3,979.68,2939.04,Digital Wallet,Mobile App,2023-11-15
-CUST_0033,Medical/Dental,Dentist Visit,1,18409.29,18409.29,Cash,Mobile App,2023-09-11
-CUST_0154,Fitness,Personal Trainer,5,3789.96,18949.80,Digital Wallet,Online,2023-01-01
-CUST_0010,Fitness,Personal Trainer,3,18778.80,56336.40,Cash,Online,2024-10-08
-CUST_0151,Groceries,Chicken,3,3225.00,9675.00,Cash,Mobile App,2024-07-09
-CUST_0077,Shopping,Electronics,2,6797.82,13595.63,Digital Wallet,Mobile App,2023-07-12
-CUST_0169,Gifts,Kids Games,2,3955.44,7910.88,Credit Card,Online,2023-01-28
-CUST_0082,Hobbies,Video Games,3,4020.27,12060.81,Debit Card,Mobile App,2024-07-07
-CUST_0020,Hobbies,Video Games,2,2235.36,4470.72,Digital Wallet,Mobile App,2024-12-20
-CUST_0027,Medical/Dental,Dentist Visit,1,42576.29,42576.29,Credit Card,Online,2024-05-29
-CUST_0053,Groceries,Snacks,1,2464.75,2464.75,Debit Card,Mobile App,2024-11-08
-CUST_0136,Transportation,Gas,1,3657.28,3657.28,Digital Wallet,In-store,2024-12-23
-CUST_0009,Hobbies,Books,3,2134.86,6404.58,Credit Card,Mobile App,2023-11-27
-CUST_0096,Friend Activities,Dinner with Friends,5,4306.14,21530.70,Debit Card,In-store,2023-02-22
-CUST_0151,Shopping,Clothes,4,6207.57,24830.28,Debit Card,Mobile App,2023-11-21
-CUST_0103,Gifts,Gift Cards,4,3004.20,12016.80,Digital Wallet,Online,2023-09-04
-CUST_0063,Travel,Taxi/Uber,1,1490.46,1490.46,Credit Card,Online,2024-03-07
-CUST_0056,Food,Coffee,2,157.43,314.86,Credit Card,Mobile App,2023-12-22
-CUST_0055,Medical/Dental,Doctor Visit,1,34025.34,34025.34,Digital Wallet,Online,2024-09-13
-CUST_0198,Subscriptions,Gym Membership,1,347
+Customer ID,Category,Item,Quantity,Price Per Unit,Total Spent,Payment Method,Location,Transaction Date,Currency
+CUST_0159,Groceries,Milk,1,531,531,Debit Card,Mobile App,2024-11-13,INR
+CUST_0017,Friend Activities,Dinner with Friends,2,4342,8683,Debit Card,In-store,2023-05-04,INR
+CUST_0094,Housing and Utilities,Water Bill,1,7580,7580,Digital Wallet,Mobile App,2023-12-16,INR
+CUST_0162,Fitness,Yoga Class,5,653,3266,Cash,In-store,2024-01-28,INR
+CUST_0129,Gifts,Flowers,3,2540,7621,Debit Card,In-store,2023-07-28,INR
+CUST_0071,Gifts,Flowers,2,923,1846,Digital Wallet,Mobile App,2024-07-14,INR
+CUST_0165,Transportation,Car Repair,1,33905,33905,Debit Card,Mobile App,2024-03-08,INR
+CUST_0147,Fitness,Personal Trainer,1,8167,8167,Debit Card,Mobile App,2023-01-14,INR
+CUST_0116,Travel,Plane Ticket,1,58731,58731,Credit Card,In-store,2023-08-15,INR
+CUST_0150,Gifts,Kids Games,5,2722,13608,Digital Wallet,Online,2024-10-15,INR
+CUST_0048,Groceries,Bread,3,1648,4943,Digital Wallet,In-store,2023-12-31,INR
+CUST_0110,Transportation,Car Repair,1,31863,31863,Cash,In-store,2023-05-12,INR
+CUST_0072,Personal Hygiene,Toothpaste,2,985,1970,Debit Card,Mobile App,2023-12-15,INR
+CUST_0100,Hobbies,Crochet Supplies,4,3553,14212,Digital Wallet,Mobile App,2024-01-06,INR
+CUST_0199,Housing and Utilities,Gas Bill,1,17055,17055,Digital Wallet,In-store,2024-11-24,INR
+CUST_0008,Gifts,Jewelry,2,16404,32808,Credit Card,Mobile App,2023-12-29,INR
+CUST_0065,Shopping,Car,4,49699,198797,Digital Wallet,In-store,2023-11-27,INR
+CUST_0136,Shopping,Shoes,1,5072,5072,Cash,In-store,2023-11-29,INR
+CUST_0023,Medical/Dental,Dentist Visit,1,30478,30478,Credit Card,In-store,2024-08-15,INR
+CUST_0193,Groceries,Chicken,4,3032,12130,Debit Card,In-store,2024-01-21,INR
+CUST_0041,Shopping,Clothes,3,1569,4707,Credit Card,Online,2024-11-06,INR
+CUST_0190,Groceries,Snacks,3,6287,18860,Debit Card,In-store,2023-07-26,INR
+CUST_0163,Food,Fast Food,5,367,1836,Cash,Mobile App,2024-04-14,INR
+CUST_0155,Food,Restaurant Meal,1,3730,3730,Credit Card,In-store,2024-09-06,INR
+CUST_0064,Groceries,Milk,2,1341,2683,Debit Card,Mobile App,2024-04-18,INR
+CUST_0021,Travel,Taxi/Uber,1,1573,1573,Debit Card,Mobile App,2023-01-14,INR
+CUST_0050,Medical/Dental,Doctor Visit,1,5048,5048,Debit Card,Online,2023-06-28,INR
+CUST_0109,Transportation,Public Transit,1,653,653,Credit Card,In-store,2023-03-16,INR
+CUST_0156,Medical/Dental,Medicine,1,4649,4649,Digital Wallet,Online,2023-12-29,INR
+CUST_0083,Food,Fast Food,2,469,938,Credit Card,Mobile App,2023-06-05,INR
+CUST_0180,Shopping,Shoes,2,4224,8448,Credit Card,Mobile App,2024-06-13,INR
+CUST_0028,Transportation,Public Transit,1,651,651,Debit Card,Online,2023-07-03,INR
+CUST_0140,Groceries,Vegetables,5,2110,10550,Credit Card,Mobile App,2023-05-16,INR
+CUST_0038,Gifts,Kids Games,5,2243,11213,Debit Card,Online,2023-01-07,INR
+CUST_0191,Gifts,Jewelry,3,4858,14575,Credit Card,Mobile App,2024-05-25,INR
+CUST_0001,Housing and Utilities,Gas Bill,1,12200,12200,Credit Card,Online,2024-07-21,INR
+CUST_0073,Shopping,Car,1,40069,40069,Debit Card,In-store,2023-09-30,INR
+CUST_0107,Fitness,Yoga Class,4,682,2729,Digital Wallet,In-store,2024-08-02,INR
+CUST_0058,Transportation,Gas,1,4376,4376,Cash,In-store,2023-08-09,INR
+CUST_0136,Groceries,Milk,3,1636,4907,Debit Card,Online,2024-09-29,INR
+CUST_0043,Medical/Dental,Doctor Visit,1,76820,76820,Cash,In-store,2023-01-05,INR
+CUST_0145,Transportation,Gas,1,3514,3514,Debit Card,In-store,2023-12-06,INR
+CUST_0042,Gifts,Kids Games,3,2672,8017,Cash,Mobile App,2024-03-25,INR
+CUST_0046,Travel,Plane Ticket,1,16683,16683,Digital Wallet,Mobile App,2024-03-03,INR
+CUST_0011,Subscriptions,Streaming Service,1,939,939,Cash,In-store,2024-08-02,INR
+CUST_0129,Housing and Utilities,Water Bill,1,2402,2402,Credit Card,Online,2023-01-11,INR
+CUST_0024,Travel,Plane Ticket,1,26067,26067,Cash,Online,2023-09-06,INR
+CUST_0130,Personal Hygiene,Shampoo,1,1765,1765,Credit Card,Mobile App,2024-05-10,INR
+CUST_0071,Gifts,Jewelry,2,16981,33963,Cash,Online,2024-11-29,INR
+CUST_0057,Transportation,Public Transit,1,842,842,Cash,Online,2023-04-01,INR
+CUST_0091,Friend Activities,Dinner with Friends,2,5735,11470,Debit Card,In-store,2023-02-20,INR
+CUST_0147,Housing and Utilities,Electricity Bill,1,8621,8621,Debit Card,Online,2023-01-26,INR
+CUST_0030,Transportation,Gas,1,7770,7770,Digital Wallet,Mobile App,2023-11-05,INR
+CUST_0042,Personal Hygiene,Skin Care Products,4,148762,595048,Debit Card,Online,2023-04-19,INR
+CUST_0193,Food,Coffee,4,409,1636,Credit Card,Online,2023-04-08,INR
+CUST_0053,Hobbies,Art Supplies,3,1367,4102,Debit Card,Mobile App,2024-05-31,INR
+CUST_0027,Hobbies,Art Supplies,1,2984,2984,Digital Wallet,In-store,2024-09-19,INR
+CUST_0063,Shopping,Clothes,5,2082,10408,Debit Card,In-store,2024-01-17,INR
+CUST_0147,Food,Restaurant Meal,3,2789,8366,Cash,Online,2023-08-01,INR
+CUST_0132,Medical/Dental,Dentist Visit,1,35128,35128,Cash,Mobile App,2024-09-22,INR
+CUST_0022,Gifts,Kids Games,3,4299,12898,Cash,Mobile App,2023-06-24,INR
+CUST_0182,Gifts,Jewelry,2,14014,28027,Cash,Online,2023-12-13,INR
+CUST_0188,Housing and Utilities,Gas Bill,1,12849,12849,Digital Wallet,Mobile App,2024-01-06,INR
+CUST_0154,Shopping,Car,4,44252,177008,Debit Card,Mobile App,2023-07-07,INR
+CUST_0048,Fitness,Personal Trainer,4,11572,46286,Debit Card,Online,2024-02-03,INR
+CUST_0122,Shopping,Shoes,1,4807,4807,Debit Card,Mobile App,2024-01-25,INR
+CUST_0145,Personal Hygiene,Shampoo,1,2745,2745,Cash,Mobile App,2023-07-11,INR
+CUST_0096,Food,Coffee,4,377,1508,Cash,Mobile App,2023-04-22,INR
+CUST_0104,Personal Hygiene,Skin Care Products,2,20787,41574,Digital Wallet,Mobile App,2023-08-23,INR
+CUST_0076,Friend Activities,Dinner with Friends,2,3873,7746,Cash,In-store,2024-07-04,INR
+CUST_0107,Subscriptions,Streaming Service,1,1123,1123,Credit Card,Online,2024-03-16,INR
+CUST_0126,Gifts,Flowers,5,2870,14349,Credit Card,In-store,2024-11-20,INR
+CUST_0194,Fitness,Personal Trainer,2,4912,9823,Credit Card,Online,2024-09-26,INR
+CUST_0159,Fitness,Personal Trainer,2,6884,13767,Credit Card,In-store,2023-05-23,INR
+CUST_0035,Medical/Dental,Dentist Visit,1,13423,13423,Credit Card,Mobile App,2024-06-29,INR
+CUST_0033,Food,Restaurant Meal,2,5389,10779,Credit Card,Online,2023-02-10,INR
+CUST_0116,Food,Coffee,1,358,358,Cash,Online,2023-11-02,INR
+CUST_0195,Groceries,Snacks,5,2693,13463,Digital Wallet,Mobile App,2024-12-26,INR
+CUST_0076,Subscriptions,Streaming Service,1,743,743,Credit Card,In-store,2023-08-22,INR
+CUST_0115,Subscriptions,Magazine,1,527,527,Credit Card,In-store,2024-09-30,INR
+CUST_0109,Groceries,Bread,5,564,2822,Debit Card,Mobile App,2024-06-24,INR
+CUST_0002,Medical/Dental,Doctor Visit,1,60839,60839,Credit Card,Online,2024-04-30,INR
+CUST_0112,Shopping,Car,2,62643,125285,Debit Card,Online,2023-01-25,INR
+CUST_0066,Food,Fast Food,2,834,1667,Digital Wallet,Mobile App,2023-08-03,INR
+CUST_0020,Friend Activities,Movie Tickets,1,1119,1119,Debit Card,In-store,2024-07-06,INR
+CUST_0022,Gifts,Jewelry,4,11578,46313,Debit Card,Mobile App,2024-12-15,INR
+CUST_0008,Transportation,Car Repair,1,33791,33791,Digital Wallet,Online,2023-03-10,INR
+CUST_0077,Medical/Dental,Dentist Visit,1,21085,21085,Debit Card,Mobile App,2024-12-13,INR
+CUST_0146,Food,Coffee,5,146,730,Digital Wallet,In-store,2024-02-08,INR
+CUST_0197,Food,Restaurant Meal,4,4004,16016,Credit Card,In-store,2023-04-19,INR
+CUST_0198,Fitness,Personal Trainer,5,4345,21726,Credit Card,Online,2023-07-13,INR
+CUST_0164,Personal Hygiene,Toothpaste,5,646,3229,Debit Card,In-store,2023-02-08,INR
+CUST_0121,Friend Activities,Movie Tickets,5,375,1874,Debit Card,Online,2024-01-28,INR
+CUST_0070,Hobbies,Crochet Supplies,5,3169,15843,Digital Wallet,In-store,2023-06-26,INR
+CUST_0028,Fitness,Workout Equipment,1,5495,5495,Digital Wallet,Mobile App,2024-11-15,INR
+CUST_0042,Medical/Dental,Medicine,1,47969,47969,Digital Wallet,Online,2024-04-18,INR
+CUST_0188,Food,Fast Food,4,2174,8698,Credit Card,In-store,2023-07-22,INR
+CUST_0156,Subscriptions,Streaming Service,1,841,841,Digital Wallet,In-store,2024-01-06,INR
+CUST_0058,Transportation,Public Transit,1,727,727,Cash,Online,2024-08-22,INR
+CUST_0022,Groceries,Meat,2,2028,4055,Debit Card,In-store,2024-04-18,INR
+CUST_0041,Shopping,Car,3,6164,18492,Digital Wallet,Mobile App,2024-12-03,INR
+CUST_0052,Food,Restaurant Meal,4,3851,15406,Cash,Mobile App,2023-03-27,INR
+CUST_0072,Shopping,Clothes,4,3564,14256,Digital Wallet,Mobile App,2024-04-22,INR
+CUST_0185,Transportation,Public Transit,1,230,230,Cash,Online,2023-06-28,INR
+CUST_0047,Travel,Plane Ticket,1,19733,19733,Digital Wallet,Online,2024-11-02,INR
+CUST_0189,Housing and Utilities,Rent,1,684901,684901,Credit Card,Online,2024-04-30,INR
+CUST_0052,Transportation,Car Repair,1,9920,9920,Cash,Mobile App,2024-07-06,INR
+CUST_0176,Friend Activities,Concert Tickets,1,11444,11444,Cash,Online,2024-01-16,INR
+CUST_0004,Gifts,Gift Cards,5,3922,19608,Debit Card,Online,2025-01-03,INR
+CUST_0043,Personal Hygiene,Shampoo,5,2479,12394,Credit Card,Mobile App,2023-07-17,INR
+CUST_0041,Food,Coffee,3,144,431,Credit Card,Online,2024-01-22,INR
+CUST_0103,Gifts,Jewelry,2,18025,36051,Digital Wallet,Online,2023-09-15,INR
+CUST_0005,Food,Coffee,5,350,1751,Cash,Online,2023-05-19,INR
+CUST_0007,Fitness,Workout Equipment,5,7566,37829,Cash,Mobile App,2024-12-17,INR
+CUST_0135,Fitness,Workout Equipment,1,25627,25627,Cash,In-store,2023-05-16,INR
+CUST_0010,Housing and Utilities,Gas Bill,1,19876,19876,Cash,In-store,2023-11-20,INR
+CUST_0065,Fitness,Workout Equipment,1,6923,6923,Debit Card,In-store,2024-01-12,INR
+CUST_0145,Gifts,Gift Cards,1,2419,2419,Credit Card,In-store,2023-11-17,INR
+CUST_0033,Gifts,Gift Cards,4,2445,9782,Debit Card,In-store,2023-02-01,INR
+CUST_0007,Groceries,Milk,4,478,1910,Credit Card,Online,2023-12-30,INR
+CUST_0143,Travel,Hotel Stay,1,9332,9332,Cash,In-store,2023-08-12,INR
+CUST_0042,Friend Activities,Dinner with Friends,5,4770,23852,Cash,Online,2024-10-04,INR
+CUST_0007,Medical/Dental,Dentist Visit,1,32687,32687,Digital Wallet,Mobile App,2024-06-01,INR
+CUST_0036,Travel,Hotel Stay,1,33122,33122,Cash,Online,2024-02-19,INR
+CUST_0165,Shopping,Shoes,4,7264,29055,Cash,In-store,2024-10-25,INR
+CUST_0107,Personal Hygiene,Soap,1,701,701,Credit Card,In-store,2024-05-11,INR
+CUST_0046,Hobbies,Books,3,1828,5484,Digital Wallet,In-store,2023-03-09,INR
+CUST_0160,Travel,Taxi/Uber,1,2492,2492,Debit Card,Mobile App,2024-08-18,INR
+CUST_0194,Shopping,Electronics,2,29365,58731,Debit Card,Mobile App,2024-07-06,INR
+CUST_0030,Gifts,Gift Cards,2,3872,7744,Credit Card,Mobile App,2024-09-17,INR
+CUST_0002,Shopping,Car,1,55421,55421,Credit Card,Mobile App,2024-01-03,INR
+CUST_0018,Friend Activities,Dinner with Friends,2,2941,5883,Debit Card,Mobile App,2024-09-24,INR
+CUST_0184,Shopping,Car,1,16114,16114,Cash,Online,2023-12-06,INR
+CUST_0193,Medical/Dental,Dentist Visit,1,38500,38500,Debit Card,Online,2023-03-31,INR
+CUST_0120,Transportation,Gas,1,6070,6070,Debit Card,Mobile App,2024-08-28,INR
+CUST_0178,Transportation,Gas,1,4430,4430,Debit Card,Online,2024-12-13,INR
+CUST_0129,Shopping,Clothes,5,1652,8262,Debit Card,Online,2024-11-12,INR
+CUST_0072,Gifts,Kids Games,2,3540,7081,Digital Wallet,Mobile App,2024-09-12,INR
+CUST_0053,Personal Hygiene,Shampoo,3,2310,6930,Credit Card,Online,2023-09-24,INR
+CUST_0036,Medical/Dental,Dentist Visit,1,10486,10486,Debit Card,In-store,2024-10-18,INR
+CUST_0045,Subscriptions,Streaming Service,1,1104,1104,Credit Card,Mobile App,2023-08-27,INR
+CUST_0026,Housing and Utilities,Rent,1,518198,518198,Credit Card,Mobile App,2024-07-09,INR
+CUST_0154,Friend Activities,Dinner with Friends,2,3604,7207,Debit Card,Mobile App,2024-03-14,INR
+CUST_0074,Subscriptions,Magazine,1,853,853,Debit Card,Online,2024-11-19,INR
+CUST_0102,Friend Activities,Movie Tickets,4,632,2526,Cash,Online,2023-05-10,INR
+CUST_0039,Food,Restaurant Meal,5,2712,13558,Credit Card,Mobile App,2023-12-16,INR
+CUST_0014,Housing and Utilities,Gas Bill,1,16483,16483,Digital Wallet,In-store,2023-03-23,INR
+CUST_0142,Transportation,Public Transit,1,467,467,Debit Card,Mobile App,2024-02-03,INR
+CUST_0142,Gifts,Flowers,2,1844,3687,Debit Card,Mobile App,2023-02-21,INR
+CUST_0123,Shopping,Shoes,1,4629,4629,Debit Card,In-store,2023-08-09,INR
+CUST_0036,Friend Activities,Concert Tickets,2,6893,13785,Debit Card,Online,2023-09-09,INR
+CUST_0114,Travel,Plane Ticket,1,66302,66302,Cash,Mobile App,2023-09-17,INR
+CUST_0034,Personal Hygiene,Toothpaste,3,1099,3296,Digital Wallet,Online,2023-03-27,INR
+CUST_0178,Subscriptions,Streaming Service,1,880,880,Credit Card,Mobile App,2024-10-28,INR
+CUST_0180,Gifts,Gift Cards,1,4655,4655,Credit Card,In-store,2025-01-13,INR
+CUST_0111,Groceries,Fruits,5,4130,20650,Debit Card,Mobile App,2023-10-21,INR
+CUST_0028,Food,Restaurant Meal,1,2791,2791,Digital Wallet,In-store,2024-08-26,INR
+CUST_0008,Housing and Utilities,Electricity Bill,1,17183,17183,Cash,In-store,2023-07-31,INR
+CUST_0092,Transportation,Public Transit,1,405,405,Digital Wallet,Online,2023-11-08,INR
+CUST_0053,Transportation,Gas,1,5505,5505,Credit Card,Online,2024-10-05,INR
+CUST_0093,Shopping,Electronics,1,46381,46381,Cash,Mobile App,2023-11-29,INR
+CUST_0183,Gifts,Flowers,1,2493,2493,Debit Card,In-store,2023-11-27,INR
+CUST_0090,Shopping,Shoes,3,2453,7359,Debit Card,Mobile App,2024-07-09,INR
+CUST_0108,Shopping,Clothes,2,3747,7495,Cash,In-store,2023-04-15,INR
+CUST_0075,Friend Activities,Movie Tickets,4,376,1504,Credit Card,In-store,2023-12-14,INR
+CUST_0116,Medical/Dental,Doctor Visit,1,44667,44667,Credit Card,Mobile App,2023-04-19,INR
+CUST_0122,Medical/Dental,Dentist Visit,1,24402,24402,Credit Card,Mobile App,2024-05-20,INR
+CUST_0187,Subscriptions,Magazine,1,837,837,Debit Card,In-store,2023-09-14,INR
+CUST_0005,Subscriptions,Gym Membership,1,3763,3763,Debit Card,Online,2023-08-29,INR
+CUST_0091,Personal Hygiene,Soap,1,1710,1710,Cash,In-store,2023-11-11,INR
+CUST_0135,Personal Hygiene,Toothpaste,3,668,2003,Debit Card,Online,2023-05-30,INR
+CUST_0041,Housing and Utilities,Rent,1,419277,419277,Digital Wallet,In-store,2023-07-15,INR
+CUST_0043,Groceries,Chicken,1,7489,7489,Digital Wallet,Online,2024-05-26,INR
+CUST_0113,Gifts,Gift Cards,2,4498,8996,Credit Card,Online,2023-01-05,INR
+CUST_0057,Gifts,Flowers,5,862,4309,Digital Wallet,Mobile App,2023-11-04,INR
+CUST_0196,Fitness,Workout Equipment,4,18532,74128,Digital Wallet,Online,2024-09-20,INR
+CUST_0073,Shopping,Shoes,1,3843,3843,Credit Card,Online,2024-02-18,INR
+CUST_0105,Personal Hygiene,Shampoo,4,2310,9240,Debit Card,Online,2024-02-05,INR
+CUST_0182,Gifts,Flowers,1,1942,1942,Credit Card,Mobile App,2023-05-01,INR
+CUST_0156,Groceries,Bread,2,769,1538,Credit Card,In-store,2023-02-01,INR
+CUST_0106,Travel,Hotel Stay,1,9479,9479,Credit Card,Online,2024-11-07,INR
+CUST_0086,Gifts,Kids Games,3,2439,7318,Credit Card,Online,2023-07-10,INR
+CUST_0096,Subscriptions,Streaming Service,1,546,546,Digital Wallet,Mobile App,2023-11-09,INR
+CUST_0127,Hobbies,Books,1,1702,1702,Credit Card,Online,2023-12-13,INR
+CUST_0114,Subscriptions,Gym Membership,1,2437,2437,Cash,Mobile App,2023-09-12,INR
+CUST_0126,Travel,Taxi/Uber,1,2336,2336,Digital Wallet,Online,2023-08-05,INR
+CUST_0161,Hobbies,Video Games,3,1445,4334,Credit Card,Mobile App,2023-05-22,INR
+CUST_0170,Transportation,Gas,1,6931,6931,Debit Card,In-store,2023-01-11,INR
+CUST_0076,Housing and Utilities,Water Bill,1,9187,9187,Debit Card,In-store,2024-07-15,INR
+CUST_0045,Transportation,Car Repair,1,70187,70187,Debit Card,In-store,2023-05-04,INR
+CUST_0110,Food,Restaurant Meal,5,5235,26175,Digital Wallet,In-store,2023-07-17,INR
+CUST_0167,Food,Coffee,5,365,1827,Credit Card,Online,2023-03-09,INR
+CUST_0183,Friend Activities,Concert Tickets,4,41086,164345,Digital Wallet,Mobile App,2024-05-29,INR
+CUST_0172,Hobbies,Crochet Supplies,4,2015,8060,Debit Card,Online,2023-02-08,INR
+CUST_0168,Groceries,Snacks,5,1691,8456,Debit Card,Mobile App,2024-07-29,INR
+CUST_0111,Subscriptions,Magazine,1,513,513,Debit Card,Online,2025-01-03,INR
+CUST_0163,Travel,Plane Ticket,1,83589,83589,Cash,Mobile App,2023-09-12,INR
+CUST_0010,Transportation,Car Repair,1,33127,33127,Debit Card,In-store,2024-04-18,INR
+CUST_0168,Food,Restaurant Meal,1,4346,4346,Digital Wallet,Online,2024-11-12,INR
+CUST_0128,Groceries,Bread,3,524,1571,Debit Card,Mobile App,2024-07-30,INR
+CUST_0068,Shopping,Shoes,1,4848,4848,Digital Wallet,Online,2024-09-03,INR
+CUST_0014,Shopping,Clothes,5,2260,11300,Digital Wallet,In-store,2024-08-10,INR
+CUST_0012,Medical/Dental,Dentist Visit,1,18512,18512,Debit Card,Online,2023-11-29,INR
+CUST_0170,Food,Restaurant Meal,1,5071,5071,Digital Wallet,Mobile App,2023-10-12,INR
+CUST_0167,Travel,Hotel Stay,1,23744,23744,Credit Card,Online,2023-06-26,INR
+CUST_0056,Housing and Utilities,Electricity Bill,1,15166,15166,Digital Wallet,Mobile App,2024-03-07,INR
+CUST_0103,Gifts,Flowers,2,1959,3917,Debit Card,Mobile App,2023-07-25,INR
+CUST_0186,Groceries,Snacks,1,1559,1559,Cash,Online,2024-04-06,INR
+CUST_0087,Food,Restaurant Meal,1,948,948,Digital Wallet,Online,2024-11-06,INR
+CUST_0156,Hobbies,Art Supplies,5,2818,14088,Digital Wallet,In-store,2023-11-09,INR
+CUST_0025,Personal Hygiene,Skin Care Products,2,168851,337703,Cash,Online,2023-12-15,INR
+CUST_0189,Travel,Taxi/Uber,1,1826,1826,Digital Wallet,In-store,2023-10-14,INR
+CUST_0026,Personal Hygiene,Shampoo,4,3170,12681,Credit Card,Online,2023-04-21,INR
+CUST_0016,Groceries,Bread,3,914,2741,Debit Card,In-store,2024-02-02,INR
+CUST_0016,Medical/Dental,Dentist Visit,1,43234,43234,Digital Wallet,In-store,2024-10-31,INR
+CUST_0071,Groceries,Chicken,4,4513,18050,Debit Card,Online,2024-12-25,INR
+CUST_0048,Groceries,Milk,2,947,1894,Debit Card,In-store,2023-11-29,INR
+CUST_0037,Gifts,Flowers,4,2491,9962,Credit Card,Mobile App,2023-05-02,INR
+CUST_0001,Medical/Dental,Dentist Visit,1,16188,16188,Digital Wallet,Online,2024-10-15,INR
+CUST_0073,Groceries,Meat,1,8070,8070,Credit Card,In-store,2024-04-20,INR
+CUST_0125,Personal Hygiene,Soap,4,1077,4308,Debit Card,In-store,2024-08-09,INR
+CUST_0026,Shopping,Electronics,5,30551,152757,Debit Card,In-store,2024-01-27,INR
+CUST_0099,Groceries,Vegetables,5,1313,6563,Credit Card,Online,2024-02-16,INR
+CUST_0130,Shopping,Clothes,1,1025,1025,Credit Card,In-store,2024-05-15,INR
+CUST_0159,Hobbies,Art Supplies,1,4906,4906,Digital Wallet,Online,2023-11-11,INR
+CUST_0001,Groceries,Chicken,4,2549,10195,Debit Card,In-store,2023-05-08,INR
+CUST_0106,Housing and Utilities,Electricity Bill,1,11734,11734,Debit Card,In-store,2023-06-15,INR
+CUST_0146,Shopping,Electronics,1,56988,56988,Debit Card,Online,2023-07-19,INR
+CUST_0122,Hobbies,Crochet Supplies,3,2263,6788,Credit Card,Online,2023-07-01,INR
+CUST_0013,Travel,Plane Ticket,1,40543,40543,Credit Card,In-store,2024-08-29,INR
+CUST_0163,Housing and Utilities,Gas Bill,1,18394,18394,Digital Wallet,In-store,2023-12-18,INR
+CUST_0060,Food,Coffee,5,227,1137,Credit Card,Mobile App,2023-04-27,INR
+CUST_0150,Transportation,Car Repair,1,61280,61280,Debit Card,Online,2023-12-19,INR
+CUST_0090,Gifts,Flowers,5,2601,13004,Cash,Online,2023-05-19,INR
+CUST_0173,Hobbies,Video Games,4,3981,15926,Cash,Mobile App,2023-08-31,INR
+CUST_0033,Subscriptions,Gym Membership,1,2443,2443,Credit Card,Online,2023-08-10,INR
+CUST_0010,Hobbies,Video Games,1,3598,3598,Cash,Online,2024-05-15,INR
+CUST_0060,Transportation,Gas,1,7010,7010,Credit Card,Online,2024-02-05,INR
+CUST_0081,Medical/Dental,Dentist Visit,1,34057,34057,Credit Card,Online,2024-02-27,INR
+CUST_0090,Hobbies,Art Supplies,1,2347,2347,Digital Wallet,Online,2024-01-24,INR
+CUST_0046,Fitness,Yoga Class,2,1023,2047,Cash,Mobile App,2024-07-02,INR
+CUST_0069,Medical/Dental,Doctor Visit,1,30518,30518,Credit Card,Online,2025-01-09,INR
+CUST_0077,Groceries,Vegetables,5,1808,9038,Digital Wallet,Mobile App,2023-09-16,INR
+CUST_0158,Subscriptions,Gym Membership,1,2757,2757,Credit Card,In-store,2024-11-13,INR
+CUST_0096,Transportation,Public Transit,1,463,463,Digital Wallet,Online,2024-09-03,INR
+CUST_0068,Hobbies,Books,3,2342,7026,Debit Card,Mobile App,2024-09-18,INR
+CUST_0189,Medical/Dental,Doctor Visit,1,43622,43622,Digital Wallet,Online,2025-01-03,INR
+CUST_0071,Travel,Hotel Stay,1,20610,20610,Debit Card,Online,2023-03-29,INR
+CUST_0009,Personal Hygiene,Skin Care Products,4,36146,144585,Debit Card,Online,2023-04-04,INR
+CUST_0170,Transportation,Gas,1,3573,3573,Digital Wallet,In-store,2023-12-25,INR
+CUST_0178,Food,Coffee,2,175,349,Debit Card,Mobile App,2024-11-19,INR
+CUST_0162,Gifts,Gift Cards,2,5749,11497,Credit Card,Online,2024-04-03,INR
+CUST_0060,Transportation,Car Repair,1,17886,17886,Digital Wallet,In-store,2023-10-19,INR
+CUST_0078,Housing and Utilities,Water Bill,1,4946,4946,Digital Wallet,In-store,2023-09-26,INR
+CUST_0125,Medical/Dental,Medicine,1,66976,66976,Debit Card,Mobile App,2023-10-12,INR
+CUST_0016,Housing and Utilities,Water Bill,1,9132,9132,Debit Card,In-store,2023-07-17,INR
+CUST_0072,Food,Coffee,1,449,449,Credit Card,Mobile App,2024-02-07,INR
+CUST_0199,Gifts,Kids Games,1,885,885,Credit Card,Online,2023-05-29,INR
+CUST_0130,Medical/Dental,Medicine,1,65894,65894,Debit Card,In-store,2023-06-08,INR
+CUST_0035,Housing and Utilities,Rent,1,421549,421549,Credit Card,Online,2023-12-01,INR
+CUST_0176,Shopping,Electronics,4,31003,124011,Cash,In-store,2024-06-24,INR
+CUST_0055,Groceries,Fruits,1,2260,2260,Credit Card,In-store,2024-02-29,INR
+CUST_0145,Personal Hygiene,Shampoo,2,3690,7380,Credit Card,In-store,2023-11-14,INR
+CUST_0078,Fitness,Yoga Class,1,1138,1138,Cash,Mobile App,2024-08-26,INR
+CUST_0126,Transportation,Car Repair,1,69682,69682,Cash,Online,2023-03-26,INR
+CUST_0178,Personal Hygiene,Toothpaste,2,872,1743,Debit Card,In-store,2024-03-08,INR
+CUST_0152,Housing and Utilities,Electricity Bill,1,10394,10394,Cash,In-store,2024-12-17,INR
+CUST_0087,Fitness,Yoga Class,5,836,4178,Debit Card,In-store,2024-11-22,INR
+CUST_0169,Food,Restaurant Meal,3,2986,8957,Debit Card,Online,2023-09-27,INR
+CUST_0150,Housing and Utilities,Electricity Bill,1,15659,15659,Digital Wallet,Online,2024-11-04,INR
+CUST_0027,Personal Hygiene,Toothpaste,3,856,2567,Debit Card,In-store,2024-09-08,INR
+CUST_0092,Fitness,Workout Equipment,2,46848,93696,Credit Card,Mobile App,2024-01-08,INR
+CUST_0008,Hobbies,Video Games,3,3511,10534,Credit Card,Mobile App,2023-11-03,INR
+CUST_0190,Transportation,Car Repair,1,45137,45137,Cash,Online,2024-05-25,INR
+CUST_0133,Shopping,Electronics,5,42723,213616,Cash,In-store,2023-10-05,INR
+CUST_0138,Personal Hygiene,Toothpaste,1,886,886,Debit Card,Mobile App,2023-03-25,INR
+CUST_0128,Hobbies,Books,4,2617,10467,Debit Card,Online,2025-01-13,INR
+CUST_0112,Housing and Utilities,Water Bill,1,5903,5903,Cash,Mobile App,2023-07-12,INR
+CUST_0155,Hobbies,Video Games,5,1833,9165,Debit Card,Mobile App,2023-09-01,INR
+CUST_0053,Transportation,Car Repair,1,30814,30814,Digital Wallet,Online,2023-10-25,INR
+CUST_0030,Medical/Dental,Medicine,1,58965,58965,Debit Card,Online,2023-07-14,INR
+CUST_0178,Personal Hygiene,Soap,4,592,2367,Digital Wallet,Online,2024-08-01,INR
+CUST_0057,Gifts,Flowers,3,2744,8231,Cash,In-store,2024-07-08,INR
+CUST_0028,Food,Restaurant Meal,5,2194,10969,Credit Card,In-store,2023-05-07,INR
+CUST_0106,Transportation,Car Repair,1,48038,48038,Digital Wallet,In-store,2024-11-14,INR
+CUST_0018,Shopping,Clothes,3,1394,4183,Digital Wallet,In-store,2024-02-29,INR
+CUST_0138,Fitness,Yoga Class,4,677,2710,Cash,Mobile App,2023-12-14,INR
+CUST_0144,Medical/Dental,Doctor Visit,1,74656,74656,Digital Wallet,Mobile App,2024-03-08,INR
+CUST_0152,Food,Restaurant Meal,1,5521,5521,Digital Wallet,In-store,2024-07-20,INR
+CUST_0049,Hobbies,Books,1,2121,2121,Digital Wallet,Online,2023-02-16,INR
+CUST_0041,Travel,Hotel Stay,1,27468,27468,Cash,In-store,2023-09-15,INR
+CUST_0098,Friend Activities,Concert Tickets,5,4757,23785,Debit Card,Online,2023-08-05,INR
+CUST_0190,Subscriptions,Magazine,1,310,310,Debit Card,In-store,2024-04-27,INR
+CUST_0083,Transportation,Public Transit,1,680,680,Cash,Online,2023-11-23,INR
+CUST_0182,Fitness,Yoga Class,3,1285,3856,Credit Card,Online,2023-09-25,INR
+CUST_0122,Housing and Utilities,Rent,1,324259,324259,Debit Card,Online,2024-05-26,INR
+CUST_0069,Shopping,Shoes,5,2988,14938,Debit Card,Online,2023-03-08,INR
+CUST_0144,Travel,Plane Ticket,1,53874,53874,Cash,Mobile App,2023-04-15,INR
+CUST_0054,Food,Restaurant Meal,3,3472,10416,Digital Wallet,Mobile App,2024-11-24,INR
+CUST_0138,Food,Fast Food,1,474,474,Cash,In-store,2024-05-27,INR
+CUST_0152,Subscriptions,Magazine,1,728,728,Cash,Mobile App,2023-08-13,INR
+CUST_0160,Food,Coffee,2,206,413,Debit Card,Mobile App,2024-11-09,INR
+CUST_0121,Hobbies,Crochet Supplies,3,1281,3842,Cash,In-store,2024-10-17,INR
+CUST_0065,Personal Hygiene,Toothpaste,3,992,2977,Debit Card,Mobile App,2023-12-20,INR
+CUST_0062,Food,Coffee,5,436,2179,Digital Wallet,In-store,2023-06-07,INR
+CUST_0003,Hobbies,Art Supplies,4,2555,10221,Cash,In-store,2023-03-01,INR
+CUST_0001,Food,Fast Food,4,808,3233,Credit Card,In-store,2023-12-19,INR
+CUST_0019,Personal Hygiene,Soap,5,1387,6934,Debit Card,Online,2023-01-24,INR
+CUST_0024,Food,Fast Food,5,306,1531,Debit Card,Online,2024-05-27,INR
+CUST_0051,Food,Fast Food,3,791,2372,Cash,Mobile App,2024-04-13,INR
+CUST_0045,Groceries,Chicken,5,3488,17438,Cash,In-store,2024-10-15,INR
+CUST_0151,Groceries,Bread,2,690,1379,Cash,In-store,2024-07-17,INR
+CUST_0012,Subscriptions,Magazine,1,559,559,Debit Card,In-store,2024-11-08,INR
+CUST_0091,Medical/Dental,Dentist Visit,1,27495,27495,Debit Card,In-store,2024-02-02,INR
+CUST_0074,Fitness,Personal Trainer,5,8829,44147,Digital Wallet,In-store,2023-09-06,INR
+CUST_0078,Shopping,Shoes,4,5982,23929,Digital Wallet,Mobile App,2024-04-16,INR
+CUST_0109,Food,Restaurant Meal,1,4293,4293,Digital Wallet,In-store,2024-06-18,INR
+CUST_0002,Hobbies,Art Supplies,3,4289,12868,Debit Card,Mobile App,2024-09-18,INR
+CUST_0051,Travel,Taxi/Uber,1,2572,2572,Cash,Mobile App,2024-07-01,INR
+CUST_0007,Fitness,Yoga Class,3,1573,4726,Digital Wallet,Mobile App,2024-02-01,INR
+CUST_0106,Subscriptions,Gym Membership,1,3637,3637,Digital Wallet,In-store,2024-02-11,INR
+CUST_0168,Personal Hygiene,Toothpaste,3,1051,3152,Debit Card,Mobile App,2024-01-13,INR
+CUST_0133,Friend Activities,Dinner with Friends,2,1163,2327,Digital Wallet,Mobile App,2023-11-11,INR
+CUST_0102,Medical/Dental,Dentist Visit,1,35168,35168,Debit Card,Mobile App,2024-01-03,INR
+CUST_0109,Food,Restaurant Meal,5,1056,5280,Digital Wallet,Mobile App,2023-01-31,INR
+CUST_0014,Food,Restaurant Meal,4,2569,10275,Debit Card,Mobile App,2024-09-06,INR
+CUST_0144,Transportation,Gas,1,6196,6196,Digital Wallet,Mobile App,2024-06-15,INR
+CUST_0131,Travel,Taxi/Uber,1,2766,2766,Digital Wallet,Online,2023-10-02,INR
+CUST_0016,Housing and Utilities,Electricity Bill,1,5633,5633,Cash,Online,2023-06-29,INR
+CUST_0071,Personal Hygiene,Skin Care Products,2,96705,193410,Cash,In-store,2023-08-27,INR
+CUST_0123,Medical/Dental,Dentist Visit,1,43429,43429,Debit Card,Online,2023-09-12,INR
+CUST_0130,Fitness,Workout Equipment,3,81658,244974,Cash,Mobile App,2024-08-11,INR
+CUST_0095,Subscriptions,Magazine,1,476,476,Credit Card,Mobile App,2024-01-08,INR
+CUST_0082,Food,Fast Food,2,489,978,Cash,Mobile App,2023-07-23,INR
+CUST_0014,Transportation,Public Transit,1,815,815,Cash,Online,2023-02-21,INR
+CUST_0090,Gifts,Flowers,2,2633,5266,Cash,Mobile App,2023-02-13,INR
+CUST_0023,Friend Activities,Dinner with Friends,4,5735,22940,Digital Wallet,Mobile App,2024-09-28,INR
+CUST_0070,Housing and Utilities,Electricity Bill,1,7671,7671,Cash,In-store,2023-01-07,INR
+CUST_0198,Gifts,Kids Games,5,3763,18814,Digital Wallet,In-store,2023-09-16,INR
+CUST_0113,Shopping,Car,4,34510,138038,Credit Card,In-store,2024-11-02,INR
+CUST_0092,Transportation,Gas,1,8170,8170,Cash,Mobile App,2024-11-16,INR
+CUST_0025,Travel,Hotel Stay,1,10291,10291,Credit Card,Mobile App,2024-07-29,INR
+CUST_0057,Transportation,Gas,1,5186,5186,Digital Wallet,In-store,2024-12-21,INR
+CUST_0110,Food,Coffee,4,442,1769,Debit Card,Online,2024-10-30,INR
+CUST_0178,Groceries,Meat,5,8940,44700,Debit Card,Online,2024-02-12,INR
+CUST_0123,Fitness,Workout Equipment,1,25294,25294,Cash,Mobile App,2023-11-02,INR
+CUST_0179,Food,Restaurant Meal,1,2427,2427,Cash,Mobile App,2023-10-15,INR
+CUST_0138,Fitness,Workout Equipment,2,17938,35877,Cash,Online,2025-01-13,INR
+CUST_0064,Subscriptions,Magazine,1,840,840,Cash,Online,2024-10-14,INR
+CUST_0040,Fitness,Yoga Class,5,1289,6444,Credit Card,Online,2023-03-24,INR
+CUST_0167,Travel,Plane Ticket,1,15004,15004,Cash,In-store,2024-03-10,INR
+CUST_0185,Fitness,Yoga Class,5,1471,7355,Credit Card,In-store,2023-07-20,INR
+CUST_0023,Medical/Dental,Doctor Visit,1,46338,46338,Debit Card,Online,2023-05-22,INR
+CUST_0163,Subscriptions,Magazine,1,363,363,Digital Wallet,Mobile App,2023-03-13,INR
+CUST_0191,Personal Hygiene,Toothpaste,1,665,665,Debit Card,In-store,2023-04-30,INR
+CUST_0183,Fitness,Workout Equipment,3,7345,22035,Cash,In-store,2024-03-29,INR
+CUST_0148,Groceries,Chicken,4,2684,10735,Digital Wallet,In-store,2024-08-10,INR
+CUST_0067,Friend Activities,Movie Tickets,3,382,1145,Cash,Online,2025-01-12,INR
+CUST_0033,Friend Activities,Dinner with Friends,5,2722,13608,Debit Card,Online,2023-07-24,INR
+CUST_0114,Personal Hygiene,Shampoo,2,3563,7125,Credit Card,In-store,2024-10-28,INR
+CUST_0002,Food,Restaurant Meal,2,4047,8094,Cash,Online,2023-05-26,INR
+CUST_0172,Hobbies,Art Supplies,1,3541,3541,Cash,In-store,2023-02-26,INR
+CUST_0055,Housing and Utilities,Water Bill,1,2617,2617,Debit Card,In-store,2024-04-17,INR
+CUST_0119,Transportation,Car Repair,1,18362,18362,Debit Card,In-store,2023-06-29,INR
+CUST_0040,Groceries,Vegetables,3,1966,5897,Credit Card,Online,2024-11-09,INR
+CUST_0078,Shopping,Car,4,11832,47326,Debit Card,In-store,2024-12-01,INR
+CUST_0182,Hobbies,Books,4,877,3506,Debit Card,In-store,2023-07-28,INR
+CUST_0114,Hobbies,Video Games,2,3882,7764,Credit Card,In-store,2024-10-26,INR
+CUST_0002,Hobbies,Art Supplies,2,4813,9625,Digital Wallet,Mobile App,2024-02-19,INR
+CUST_0039,Personal Hygiene,Skin Care Products,4,17040,68160,Digital Wallet,Online,2023-08-27,INR
+CUST_0031,Subscriptions,Gym Membership,1,2089,2089,Credit Card,Mobile App,2023-03-15,INR
+CUST_0136,Food,Restaurant Meal,1,4134,4134,Digital Wallet,Mobile App,2023-09-15,INR
+CUST_0102,Personal Hygiene,Toothpaste,5,592,2959,Credit Card,In-store,2023-01-06,INR
+CUST_0022,Groceries,Snacks,3,5266,15799,Debit Card,Mobile App,2023-08-22,INR
+CUST_0155,Friend Activities,Dinner with Friends,4,5429,21717,Debit Card,Mobile App,2024-07-23,INR
+CUST_0116,Food,Restaurant Meal,2,4472,8945,Credit Card,In-store,2024-09-19,INR
+CUST_0028,Transportation,Gas,1,5990,5990,Cash,In-store,2023-06-02,INR
+CUST_0056,Shopping,Car,2,15612,31225,Digital Wallet,Online,2024-09-17,INR
+CUST_0191,Housing and Utilities,Rent,1,382202,382202,Debit Card,Online,2024-05-02,INR
+CUST_0174,Friend Activities,Concert Tickets,1,5972,5972,Digital Wallet,Mobile App,2024-03-29,INR
+CUST_0035,Travel,Plane Ticket,1,25395,25395,Cash,Mobile App,2024-02-13,INR
+CUST_0078,Hobbies,Crochet Supplies,5,398,1990,Credit Card,In-store,2024-10-11,INR
+CUST_0003,Groceries,Meat,2,8250,16500,Debit Card,In-store,2023-07-14,INR
+CUST_0046,Gifts,Gift Cards,3,5227,15682,Digital Wallet,Online,2024-02-24,INR
+CUST_0188,Groceries,Milk,4,1379,5516,Credit Card,Mobile App,2023-06-04,INR
+CUST_0016,Groceries,Meat,3,7545,22635,Digital Wallet,Mobile App,2024-09-24,INR
+CUST_0194,Hobbies,Crochet Supplies,3,1098,3295,Digital Wallet,Mobile App,2023-04-07,INR
+CUST_0149,Friend Activities,Concert Tickets,1,6676,6676,Cash,In-store,2023-09-20,INR
+CUST_0102,Friend Activities,Concert Tickets,5,5412,27059,Digital Wallet,In-store,2024-01-01,INR
+CUST_0114,Shopping,Electronics,5,38484,192420,Digital Wallet,Mobile App,2024-09-01,INR
+CUST_0131,Transportation,Gas,1,7879,7879,Cash,In-store,2023-05-20,INR
+CUST_0138,Housing and Utilities,Water Bill,1,5310,5310,Credit Card,Online,2024-11-10,INR
+CUST_0181,Medical/Dental,Doctor Visit,1,61954,61954,Credit Card,Mobile App,2023-09-09,INR
+CUST_0047,Shopping,Clothes,2,3368,6735,Credit Card,Online,2024-06-10,INR
+CUST_0155,Groceries,Snacks,1,3696,3696,Debit Card,Online,2023-12-10,INR
+CUST_0122,Gifts,Jewelry,3,28623,85870,Digital Wallet,Mobile App,2024-07-15,INR
+CUST_0177,Housing and Utilities,Electricity Bill,1,19514,19514,Digital Wallet,Mobile App,2023-02-05,INR
+CUST_0009,Fitness,Personal Trainer,2,8607,17214,Debit Card,In-store,2024-08-06,INR
+CUST_0083,Fitness,Personal Trainer,2,9061,18123,Debit Card,Online,2023-01-31,INR
+CUST_0143,Food,Fast Food,5,1033,5166,Cash,In-store,2025-01-05,INR
+CUST_0082,Fitness,Workout Equipment,1,16269,16269,Cash,In-store,2024-06-11,INR
+CUST_0187,Friend Activities,Movie Tickets,3,980,2939,Digital Wallet,Mobile App,2023-11-15,INR
+CUST_0033,Medical/Dental,Dentist Visit,1,18409,18409,Cash,Mobile App,2023-09-11,INR
+CUST_0154,Fitness,Personal Trainer,5,3790,18950,Digital Wallet,Online,2023-01-01,INR
+CUST_0010,Fitness,Personal Trainer,3,18779,56336,Cash,Online,2024-10-08,INR
+CUST_0151,Groceries,Chicken,3,3225,9675,Cash,Mobile App,2024-07-09,INR
+CUST_0077,Shopping,Electronics,2,6798,13596,Digital Wallet,Mobile App,2023-07-12,INR
+CUST_0169,Gifts,Kids Games,2,3955,7911,Credit Card,Online,2023-01-28,INR
+CUST_0082,Hobbies,Video Games,3,4020,12061,Debit Card,Mobile App,2024-07-07,INR
+CUST_0020,Hobbies,Video Games,2,2235,4471,Digital Wallet,Mobile App,2024-12-20,INR
+CUST_0027,Medical/Dental,Dentist Visit,1,42576,42576,Credit Card,Online,2024-05-29,INR
+CUST_0053,Groceries,Snacks,1,2465,2465,Debit Card,Mobile App,2024-11-08,INR
+CUST_0136,Transportation,Gas,1,3657,3657,Digital Wallet,In-store,2024-12-23,INR
+CUST_0009,Hobbies,Books,3,2135,6405,Credit Card,Mobile App,2023-11-27,INR
+CUST_0096,Friend Activities,Dinner with Friends,5,4306,21531,Debit Card,In-store,2023-02-22,INR
+CUST_0151,Shopping,Clothes,4,6208,24830,Debit Card,Mobile App,2023-11-21,INR
+CUST_0103,Gifts,Gift Cards,4,3004,12017,Digital Wallet,Online,2023-09-04,INR
+CUST_0063,Travel,Taxi/Uber,1,1490,1490,Credit Card,Online,2024-03-07,INR
+CUST_0056,Food,Coffee,2,157,315,Credit Card,Mobile App,2023-12-22,INR
+CUST_0055,Medical/Dental,Doctor Visit,1,34025,34025,Digital Wallet,Online,2024-09-13,INR
+CUST_0198,Subscriptions,Gym Membership,1,347,347,Digital Wallet,In-store,2023-09-16,INR

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -7,7 +7,7 @@ import Button from "../Button/Button";
 import { plus } from "../../utils/Icons";
 
 function ExpenseForm() {
-  const { addExpense, error, setError } = useGlobalContext();
+  const { addExpense, error, setError, editExpense } = useGlobalContext();
   const [customCategory, setCustomCategory] = useState("");
 
   const [inputState, setInputState] = useState({
@@ -17,7 +17,18 @@ function ExpenseForm() {
     category: "",
     description: "",
   });
-
+  // Inside ExpenseForm component
+  useEffect(() => {
+    if (editExpense) {
+      setInputState({
+        title: editExpense.title || "",
+        amount: editExpense.amount || "",
+        date: new Date(editExpense.date) || "",
+        category: editExpense.category || "",
+        description: editExpense.description || "",
+      });
+    }
+  }, [editExpense]);
   const { title, amount, date, category, description } = inputState;
 
   const handleInput = (name) => (e) => {

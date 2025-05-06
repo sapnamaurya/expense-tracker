@@ -1,18 +1,14 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-// import Header from '../components/Header';
 
 const Analysis = () => {
   const [results, setResults] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Fetch results from results.json in public/static
     fetch("/static/results.json")
       .then((response) => response.json())
-      .then((data) => {
-        setResults(data);
-      })
+      .then((data) => setResults(data))
       .catch((err) => {
         console.error("Error fetching results:", err);
         setError("Failed to load analysis results");
@@ -21,20 +17,16 @@ const Analysis = () => {
 
   return (
     <AnalysisStyled>
-      <div className="bg-gray-100 min-h-screen font-sans analysis">
-        {/* Header */}
-        {/* <Header /> */}
-
-        {/* Main Content */}
+      <div className="bg-gray-100 min-h-screen font-sans">
         <main className="container mx-auto py-10 px-4">
           {error ? (
             <p className="text-red-500 text-center">{error}</p>
           ) : (
             <>
-              {/* Aim 1: Pie Chart */}
+              {/* Aim 1 */}
               <section className="mb-10">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
-                  Aim 1: Expense Distribution by Category (USD)
+                  Expense Distribution by Category (INR)
                 </h2>
                 <div className="bg-white rounded-lg shadow-md p-6 transform transition duration-300 hover:scale-102 hover:shadow-lg section-1">
                   <img
@@ -45,15 +37,14 @@ const Analysis = () => {
                 </div>
               </section>
 
-              {/* Aim 2: Spending Patterns and Clustering */}
+              {/* Aim 2 */}
               <section className="mb-10">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
-                  Aim 2: Spending Patterns Analysis
+                  Spending Patterns Analysis
                 </h2>
-                {/* Monthly Spending Bar Chart */}
                 <div className="bg-white rounded-lg shadow-md p-6 transform transition duration-300 hover:scale-102 hover:shadow-lg mb-6 section-2">
                   <h3 className="text-xl font-semibold text-gray-700 mb-4 text-center">
-                    Monthly Spending by Category (USD)
+                    Monthly Spending by Category (INR)
                   </h3>
                   <img
                     src="/static/monthly_spending_bar_chart.png"
@@ -61,8 +52,7 @@ const Analysis = () => {
                     className="w-full h-auto rounded-lg"
                   />
                 </div>
-                {/* Clustering Insights */}
-                {results && (
+                {results?.clusters && (
                   <div className="bg-white rounded-lg shadow-md p-6">
                     <h3 className="text-xl font-semibold text-gray-700 mb-4 text-center">
                       K-means Clustering Insights
@@ -85,16 +75,16 @@ const Analysis = () => {
                 )}
               </section>
 
-              {/* Aim 3: Prediction */}
+              {/* Aim 3 */}
               <section className="bg-white rounded-lg shadow-md p-6 text-center">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-                  Aim 3: Prediction for{" "}
+                  Prediction for{" "}
                   {results ? results.prediction_month : "Loading..."}
                 </h2>
                 {results ? (
                   <>
                     <p className="text-lg text-gray-700 mb-2 p">
-                      Predicted Total Expenses: ${results.prediction.toFixed(2)}
+                      Predicted Total Expenses: ₹{results.prediction.toFixed(2)}
                     </p>
                     <p className="text-lg text-gray-700">
                       Test RMSE: {results.rmse.toFixed(2)}
@@ -107,34 +97,33 @@ const Analysis = () => {
             </>
           )}
         </main>
-
-        {/* Footer */}
-        <footer className="bg-gray-800 text-white py-4">
-          <div className="container mx-auto text-center">
-            <p>© 2025 Expense Tracker. All rights reserved.</p>
-          </div>
-        </footer>
       </div>
     </AnalysisStyled>
   );
 };
+
 const AnalysisStyled = styled.div`
   display: flex;
+
   main {
     display: flex;
     width: 106%;
     padding: 2%;
+
     h2 {
       font-size: 22px;
     }
+
     .section-1 {
       height: 74vh;
+
       img {
         margin-top: 8%;
         height: 64vh;
         width: 93%;
       }
     }
+
     .section-2 {
       width: 76%;
 
@@ -143,15 +132,18 @@ const AnalysisStyled = styled.div`
         margin-top: 2%;
         font-size: 19px;
       }
+
       img {
         height: 61vh;
         width: 123%;
       }
     }
+
     .p {
       margin-bottom: 6%;
       margin-top: 11%;
     }
   }
 `;
+
 export default Analysis;

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { useGlobalContext } from "../../context/globalContext";
 import { InnerLayout } from "../../styles/Layouts";
@@ -10,6 +10,12 @@ import { dollar } from "../../utils/Icons";
 function Expenses() {
   const { addIncome, expenses, getExpenses, deleteExpense, totalExpenses } =
     useGlobalContext();
+  const [editExpense, setEditExpense] = useState(null);
+
+  const handleEdit = (id) => {
+    const toEdit = expenses.find((item) => item.id === id);
+    setEditExpense(toEdit);
+  };
 
   useEffect(() => {
     getExpenses();
@@ -25,7 +31,7 @@ function Expenses() {
 
         <div className="income-content">
           <div className="form-container">
-            <ExpenseForm />
+            <ExpenseForm editExpense={editExpense} />
           </div>
           <div className="incomes">
             {expenses.map((income) => {
@@ -44,6 +50,7 @@ function Expenses() {
                   category={category}
                   indicatorColor="var(--color-green)"
                   deleteItem={deleteExpense}
+                  handleEdit={handleEdit} // ✅ added
                 />
               );
             })}
