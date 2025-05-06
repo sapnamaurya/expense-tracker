@@ -163,3 +163,28 @@ CREATE TABLE businessIncome (
     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
     FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
+
+ALTER TABLE expenses
+DROP COLUMN category_id;
+
+ALTER TABLE incomes
+DROP COLUMN category_id;
+
+ALTER TABLE incomes
+DROP COLUMN updated_at;
+
+ALTER TABLE users
+DROP COLUMN category_id;
+
+ALTER TABLE users
+DROP COLUMN updated_at;
+
+DROP TABLE categories; 
+
+ALTER TABLE incomes
+ADD COLUMN user_id INTEGER;
+
+ALTER TABLE incomes
+ADD CONSTRAINT fk_user
+FOREIGN KEY (user_id)
+REFERENCES users(user_id);
