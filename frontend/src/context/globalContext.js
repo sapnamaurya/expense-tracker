@@ -131,6 +131,25 @@ export const GlobalProvider = ({ children }) => {
       setError("Failed to delete business expense");
     }
   };
+  // PERSONAL EXPENSE - EDIT
+  const editExpense = async (id, updatedExpense) => {
+    try {
+      await axios.put(`${BASE_URL}/expenses/${id}`, updatedExpense);
+      getExpenses();
+    } catch (err) {
+      setError("Failed to update personal expense");
+    }
+  };
+
+  // BUSINESS EXPENSE - EDIT
+  const editBusinessExpense = async (id, updatedExpense) => {
+    try {
+      await axios.put(`${BASE_URL}/business/expenses/${id}`, updatedExpense);
+      getBusinessExpenses();
+    } catch (err) {
+      setError("Failed to update business expense");
+    }
+  };
 
   // --- CALCULATIONS ---
   const totalIncome = () =>

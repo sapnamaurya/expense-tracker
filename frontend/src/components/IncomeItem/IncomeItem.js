@@ -21,6 +21,7 @@ import {
   tv,
   users,
   yt,
+  edit, // ✅ Make sure this icon exists in your Icons file
 } from "../../utils/Icons";
 import Button from "../Button/Button";
 
@@ -34,6 +35,7 @@ function IncomeItem({
   deleteItem,
   indicatorColor,
   type,
+  handleEdit, // ✅ New prop
 }) {
   const categoryIcon = () => {
     switch (category) {
@@ -81,8 +83,6 @@ function IncomeItem({
     }
   };
 
-  console.log("type", type);
-
   return (
     <IncomeItemStyled indicator={indicatorColor}>
       <div className="icon">
@@ -105,10 +105,20 @@ function IncomeItem({
           </div>
           <div className="btn-con">
             <Button
+              icon={edit}
+              bPad={"1rem"}
+              bRad={"50%"}
+              bg={"var(--primary-color)"}
+              color={"#fff"}
+              iColor={"#fff"}
+              hColor={"var(--color-green)"}
+              onClick={() => handleEdit(id)}
+            />
+            <Button
               icon={trash}
               bPad={"1rem"}
               bRad={"50%"}
-              bg={"var(--primary-color"}
+              bg={"var(--primary-color)"}
               color={"#fff"}
               iColor={"#fff"}
               hColor={"var(--color-green)"}
@@ -177,12 +187,27 @@ const IncomeItemStyled = styled.div`
         display: flex;
         align-items: center;
         gap: 1.5rem;
+        font-size: 17px;
         p {
           display: flex;
           align-items: center;
           gap: 0.5rem;
           color: var(--primary-color);
           opacity: 0.8;
+        }
+      }
+      .btn-con {
+        display: flex;
+
+        gap: 4px;
+        Button {
+          height: 5vh;
+          width: 87%;
+          font-size: 13px;
+          background: var(--primary-color);
+          padding: 0.5rem;
+          border-radius: 50%;
+          color: rgb(255, 255, 255);
         }
       }
     }

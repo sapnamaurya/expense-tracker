@@ -32,10 +32,10 @@ export const createBusinessExpense = async (req, res) => {
   }
 };
 export const getAllBusinessExpenses = async (req, res) => {
-  console.log("GET /business/expenses called"); // Add this
+  console.log("GET /business/expenses called");
   try {
     const [expenses] = await pool.query(
-      "SELECT * FROM expenses WHERE type = 'business'"
+      "SELECT * FROM expenses WHERE category_type = 'business'"
     );
     res.status(200).json(expenses);
   } catch (error) {
