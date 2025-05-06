@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Header from '../components/Header';
 
 const Analysis = () => {
   const [results, setResults] = useState(null);
@@ -20,9 +19,6 @@ const Analysis = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen font-sans">
-      {/* Header */}
-      <Header />
-
       {/* Main Content */}
       <main className="container mx-auto py-10 px-4">
         {error ? (
