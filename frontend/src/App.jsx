@@ -15,9 +15,11 @@ import { AuthProvider } from "./context/authContext";
 import Choice from "./components/Choice/Choice";
 import MainHome from "./components/Home/Home";
 import BusinessDashboard from "./pages/Business/BusinessDashboard";
-import BusinessIncome from "./pages/Business/BusinessIncome";
-import BusinessExpense from "./pages/Business/BusinessExpense";
+import BusinessIncome from "./pages/Business//BusinessIncomeFold/BusinessIncome";
 import Analysis from "./pages/Analysis/Analysis";
+// import BusinessExpenseForm from "./pages/Business/BusinessExpense/ExpenseForm";
+// import BusinessIncomeForm from "./pages/Business/BusinessIncomefold/BusinessIncomeForm";
+import BusinessExpense from "./pages/Business/BusinessExpense/BusinessExpense";
 
 // import Personal from "./components/Personal/Personal";
 // import { useGlobalContext } from "./context/globalContext";

@@ -1,128 +1,207 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import axios from "axios";
 
-const BASE_URL = "http://localhost:4000/api/";
+const BASE_URL = "http://localhost:4000/api";
 
 const GlobalContext = React.createContext();
 
 export const GlobalProvider = ({ children }) => {
+  // Personal
   const [incomes, setIncomes] = useState([]);
   const [expenses, setExpenses] = useState([]);
+
+  // Business
+  const [businessIncomes, setBusinessIncomes] = useState([]);
+  const [businessExpenses, setBusinessExpenses] = useState([]);
+
   const [error, setError] = useState(null);
 
-  // //calculate incomes
-  // const addIncome = async (income) => {
-  //   const response = await axios
-  //     .post(`${BASE_URL}add-income`, income)
-  //     .catch((err) => {
-  //       setError(err.response.data.message);
-  //     });
-  //   getIncomes();
-  // };
-
+  // --- PERSONAL INCOME ---
   const getIncomes = async () => {
     try {
-      const response = await axios.get(`${BASE_URL}incomes`);
-      setIncomes(response.data);
+      const res = await axios.get(`${BASE_URL}/incomes`);
+      setIncomes(res.data);
     } catch (err) {
-      setError("Failed to fetch incomes");
-      console.error(err);
+      setError("Failed to fetch personal incomes");
     }
   };
 
   const addIncome = async (income) => {
     try {
-      await axios.post(`${BASE_URL}incomes`, income);
+      await axios.post(`${BASE_URL}/incomes`, income);
       getIncomes();
     } catch (err) {
-      setError(err?.response?.data?.message || "Add income failed");
+      setError(err?.response?.data?.message || "Failed to add personal income");
     }
   };
 
   const deleteIncome = async (id) => {
     try {
-      await axios.delete(`${BASE_URL}incomes/${id}`);
+      await axios.delete(`${BASE_URL}/incomes/${id}`);
       getIncomes();
     } catch (err) {
-      setError("Failed to delete income");
-    }
-  };
-  // Add a new expense
-  const addExpense = async (expenseData) => {
-    try {
-      await axios.post(`${BASE_URL}expenses`, expenseData);
-      getExpenses(); // Refresh the list after adding
-    } catch (err) {
-      setError(err?.response?.data?.message || "Failed to add expense");
+      setError("Failed to delete personal income");
     }
   };
 
-  // Fetch all expenses
+  // --- PERSONAL EXPENSE ---
   const getExpenses = async () => {
     try {
-      const response = await axios.get(`${BASE_URL}expenses`);
-      setExpenses(response.data);
+      const res = await axios.get(`${BASE_URL}/expenses`);
+      setExpenses(res.data);
     } catch (err) {
-      setError("Failed to fetch expenses");
-      console.error(err);
+      setError("Failed to fetch personal expenses");
     }
   };
 
-  // Delete an expense by ID
+  const addExpense = async (expense) => {
+    try {
+      await axios.post(`${BASE_URL}/expenses`, expense);
+      getExpenses();
+    } catch (err) {
+      setError(
+        err?.response?.data?.message || "Failed to add personal expense"
+      );
+    }
+  };
+
   const deleteExpense = async (id) => {
     try {
-      await axios.delete(`${BASE_URL}expenses/${id}`);
-      getExpenses(); // Refresh the list after deletion
+      await axios.delete(`${BASE_URL}/expenses/${id}`);
+      getExpenses();
     } catch (err) {
-      setError("Failed to delete expense");
+      setError("Failed to delete personal expense");
     }
   };
 
-  const totalIncome = () => {
-    let totalIncome = 0;
-    incomes.forEach((income) => {
-      totalIncome += Number(income.amount);
-    });
-
-    return totalIncome;
+  // --- BUSINESS INCOME ---
+  const getBusinessIncomes = async () => {
+    try {
+      const res = await axios.get(`${BASE_URL}/business/incomes`);
+      setBusinessIncomes(res.data);
+    } catch (err) {
+      setError("Failed to fetch business incomes");
+    }
   };
 
-  const totalExpenses = () => {
-    let total = 0;
-    expenses.forEach((expense) => {
-      total += Number(expense.amount); // Force amount to be a number
-    });
-    return total;
+  const addBusinessIncome = async (income) => {
+    try {
+      await axios.post(`${BASE_URL}/business/incomes`, income);
+      getBusinessIncomes();
+    } catch (err) {
+      setError(err?.response?.data?.message || "Failed to add business income");
+    }
   };
 
-  const totalBalance = () => {
-    return totalIncome() - totalExpenses();
+  const deleteBusinessIncome = async (id) => {
+    try {
+      await axios.delete(`${BASE_URL}/business/incomes/${id}`);
+      getBusinessIncomes();
+    } catch (err) {
+      setError("Failed to delete business income");
+    }
   };
+
+  // --- BUSINESS EXPENSE ---
+  const getBusinessExpenses = async () => {
+    try {
+      const res = await axios.get(`${BASE_URL}/business/expenses`);
+      setBusinessExpenses(res.data);
+    } catch (err) {
+      setError("Failed to fetch business expenses");
+    }
+  };
+
+  const addBusinessExpense = async (expense) => {
+    try {
+      await axios.post(`${BASE_URL}/business/expenses`, expense);
+      getBusinessExpenses();
+    } catch (err) {
+      setError(
+        err?.response?.data?.message || "Failed to add business expense"
+      );
+    }
+  };
+
+  const deleteBusinessExpense = async (id) => {
+    try {
+      await axios.delete(`${BASE_URL}/business/expenses/${id}`);
+      getBusinessExpenses();
+    } catch (err) {
+      setError("Failed to delete business expense");
+    }
+  };
+
+  // --- CALCULATIONS ---
+  const totalIncome = () =>
+    incomes.reduce((sum, item) => sum + Number(item.amount || 0), 0);
+
+  const totalExpenses = () =>
+    expenses.reduce((sum, item) => sum + Number(item.amount || 0), 0);
+
+  const totalBalance = () => totalIncome() - totalExpenses();
+
+  const totalBusinessIncome = () =>
+    businessIncomes.reduce((sum, item) => sum + Number(item.amount || 0), 0);
+
+  const totalBusinessExpenses = () =>
+    businessExpenses.reduce((sum, item) => sum + Number(item.amount || 0), 0);
+
+  const totalBusinessBalance = () =>
+    totalBusinessIncome() - totalBusinessExpenses();
 
   const transactionHistory = () => {
     const history = [...incomes, ...expenses];
-    history.sort((a, b) => {
-      return new Date(b.createdAt) - new Date(a.createdAt);
-    });
-
+    history.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
     return history.slice(0, 3);
   };
+
+  const businessTransactionHistory = () => {
+    const history = [...businessIncomes, ...businessExpenses];
+    history.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+    return history.slice(0, 3);
+  };
+
+  // --- FETCH INITIAL DATA ---
+  useEffect(() => {
+    getIncomes();
+    getExpenses();
+    getBusinessIncomes();
+    getBusinessExpenses();
+  }, []);
 
   return (
     <GlobalContext.Provider
       value={{
-        addIncome,
-        getIncomes,
+        // Personal
         incomes,
+        addIncome,
         deleteIncome,
+        getIncomes,
         expenses,
-        totalIncome,
         addExpense,
-        getExpenses,
         deleteExpense,
+        getExpenses,
+        totalIncome,
         totalExpenses,
         totalBalance,
         transactionHistory,
+
+        // Business
+        businessIncomes,
+        addBusinessIncome,
+        deleteBusinessIncome,
+        getBusinessIncomes,
+        businessExpenses,
+        addBusinessExpense,
+        deleteBusinessExpense,
+        getBusinessExpenses,
+        totalBusinessIncome,
+        totalBusinessExpenses,
+        totalBusinessBalance,
+        businessTransactionHistory,
+
+        // Common
         error,
         setError,
       }}
@@ -132,6 +211,4 @@ export const GlobalProvider = ({ children }) => {
   );
 };
 
-export const useGlobalContext = () => {
-  return useContext(GlobalContext);
-};
+export const useGlobalContext = () => useContext(GlobalContext);

@@ -24,6 +24,7 @@ import {
 import {
   createBusinessExpense,
   getBusinessExpense,
+  getAllBusinessExpenses,
   updateBusinessExpense,
   deleteBusinessExpense,
 } from "./controllers/business/expense.js";
@@ -51,6 +52,8 @@ router.delete("/incomes/:id", deleteIncome);
 
 // Business Expense Routes
 router.post("/business/expenses", createBusinessExpense);
+router.get("/business/expenses", getAllBusinessExpenses);
+
 router.get("/business/expenses/:expense_id", getBusinessExpense);
 router.put("/business/expenses/:expense_id", updateBusinessExpense);
 router.delete("/business/expenses/:expense_id", deleteBusinessExpense);
