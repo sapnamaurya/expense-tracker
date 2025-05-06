@@ -7,14 +7,15 @@ from sklearn.metrics import mean_squared_error
 import numpy as np
 from datetime import datetime, timedelta
 import os
+import json
 
-# Ensure output directory exists
-output_dir = '.'  # Save images in current directory (ml_model)
+# Define the output directory as frontend/public/static
+output_dir = os.path.join('..', 'frontend', 'public', 'static')
 os.makedirs(output_dir, exist_ok=True)
 
 # Load the dataset
 try:
-    data = pd.read_csv('spending_patterns_detailed.csv')  # CSV in same directory as script
+    data = pd.read_csv('spending_patterns_detailed.csv')  # Use original dataset in USD
 except FileNotFoundError:
     print("Error: 'spending_patterns_detailed.csv' not found in 'ml_model' directory.")
     exit(1)
@@ -33,7 +34,7 @@ category_spending['Percentage'] = (category_spending['Total Spent'] / total_spen
 # Generate Pie Chart
 plt.figure(figsize=(10, 8))
 plt.pie(category_spending['Percentage'], labels=category_spending['Category'], autopct='%1.1f%%', startangle=140)
-plt.title('Expense Distribution by Category')
+plt.title('Expense Distribution by Category (USD)')
 plt.savefig(os.path.join(output_dir, 'expense_pie_chart.png'))
 plt.close()
 print(f"Pie chart saved to {os.path.join(output_dir, 'expense_pie_chart.png')}")
@@ -50,6 +51,9 @@ X_cluster = (X_cluster - X_cluster.mean()) / X_cluster.std()
 kmeans = KMeans(n_clusters=3, random_state=42)
 data['Cluster'] = kmeans.fit_predict(X_cluster)
 
+# Count transactions per cluster for insights
+cluster_counts = data['Cluster'].value_counts().to_dict()
+
 # Visualize monthly spending by category
 data['YearMonth'] = data['Transaction Date'].dt.to_period('M')
 monthly_spending = data.groupby(['YearMonth', 'Category'])['Total Spent'].sum().unstack().fillna(0)
@@ -57,9 +61,9 @@ monthly_spending = data.groupby(['YearMonth', 'Category'])['Total Spent'].sum().
 # Generate Bar Chart
 plt.figure(figsize=(14, 8))
 monthly_spending.plot(kind='bar', stacked=True)
-plt.title('Monthly Spending by Category')
+plt.title('Monthly Spending by Category (USD)')
 plt.xlabel('Year-Month')
-plt.ylabel('Total Spent')
+plt.ylabel('Total Spent (USD)')
 plt.legend(title='Category', bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.tight_layout()
 plt.savefig(os.path.join(output_dir, 'monthly_spending_bar_chart.png'))
@@ -101,3 +105,17 @@ next_month_num = next_month.month
 next_pred = model.predict([[next_index, next_month_num]])[0]
 
 print(f"Predicted Total Expenses for {next_month.strftime('%Y-%m')}: ${next_pred:.2f}")
+
+# Save all outputs to a JSON file for the frontend
+results = {
+    "prediction": float(next_pred),
+    "prediction_month": next_month.strftime('%Y-%m'),
+    "rmse": float(rmse),
+    "clusters": {
+        "Cluster 0": int(cluster_counts.get(0, 0)),
+        "Cluster 1": int(cluster_counts.get(1, 0)),
+        "Cluster 2": int(cluster_counts.get(2, 0))
+    }
+}
+with open(os.path.join(output_dir, 'results.json'), 'w') as f:
+    json.dump(results, f)
