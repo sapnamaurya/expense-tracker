@@ -15,6 +15,12 @@ const Analysis = () => {
       });
   }, []);
 
+  // Function to format the prediction month (e.g., "2025-06" to "June 2025")
+  const formatPredictionMonth = (monthString) => {
+    const date = new Date(`${monthString}-01`); // Parse "YYYY-MM" as a date
+    return date.toLocaleString('default', { month: 'long', year: 'numeric' });
+  };
+
   return (
     <AnalysisStyled>
       <div className="bg-gray-100 min-h-screen font-sans">
@@ -79,15 +85,15 @@ const Analysis = () => {
               <section className="bg-white rounded-lg shadow-md p-6 text-center">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                   Prediction for{" "}
-                  {results ? results.prediction_month : "Loading..."}
+                  {results ? formatPredictionMonth(results.prediction_month) : "Loading..."}
                 </h2>
                 {results ? (
                   <>
                     <p className="text-lg text-gray-700 mb-2 p">
-                      Predicted Total Expenses: ₹{results.prediction.toFixed(2)}
+                      Predicted Total Expenses: ₹{results.prediction.toLocaleString()}
                     </p>
                     <p className="text-lg text-gray-700">
-                      Test RMSE: {results.rmse.toFixed(2)}
+                      Test RMSE: {results.rmse.toLocaleString()}
                     </p>
                   </>
                 ) : (
