@@ -15,24 +15,24 @@ import {
   getIncomeById,
   updateIncome,
   deleteIncome,
-} from "./controllers/income.js";
+} from "./controllers/personal/income.js";
 import {
   registerUser,
   loginUser,
 } from "./controllers/personal/authorization.js";
 
 import {
-  createExpense as createBusinessExpense,
-  getExpense as getBusinessExpense,
-  updateExpense as updateBusinessExpense,
-  deleteExpense as deleteBusinessExpense,
-} from "../controllers/business/expense.js";
+  createBusinessExpense,
+  getBusinessExpense,
+  updateBusinessExpense,
+  deleteBusinessExpense,
+} from "./controllers/business/expense.js";
 import {
-  createIncome as createBusinessIncome,
-  getIncome as getBusinessIncome,
-  updateIncome as updateBusinessIncome,
-  deleteIncome as deleteBusinessIncome,
-} from "../controllers/business/income.js";
+  createBusinessIncome,
+  getBusinessIncome,
+  updateBusinessIncome,
+  deleteBusinessIncome,
+} from "./controllers/business/income.js";
 
 //Personal Expense Routes
 router.post("/expenses", addExpense);
