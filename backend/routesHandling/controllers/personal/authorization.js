@@ -1,12 +1,8 @@
 import { pool } from "../../../db.js";
-import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 
 dotenv.config();
-
-const JWT_SECRET = process.env.JWT_SECRET;
-const SALT_ROUNDS = 10; // Number of rounds for bcrypt hashing
 
 export const registerUser = async (req, res) => {
   const { username, email, password } = req.body;
@@ -22,18 +18,15 @@ export const registerUser = async (req, res) => {
         .json({ message: "Username or email already exists" });
     }
 
-    //Hashing the password
-    const hashedPassword = await bcrypt.hash(password, SALT_ROUNDS);
-
     const insertUserQuery = `
             INSERT INTO users (username, email, password)
             VALUES ($1, $2, $3)
-            RETURNING id, username, email, created_at, updated_at;
+            RETURNING user_id, username, email, created_at, updated_at;
         `;
     const newUserResult = await pool.query(insertUserQuery, [
       username,
       email,
-      hashedPassword,
+      password,
     ]);
     const newUser = newUserResult.rows[0];
 
@@ -63,7 +56,7 @@ export const loginUser = async (req, res) => {
         .json({ message: "Invalid credentials: user not found" });
     }
 
-    const passwordMatch = await bcrypt.compare(password, user.password);
+    const passwordMatch = (password==user.password);
     console.log("Password match:", passwordMatch);
 
     if (!passwordMatch) {
@@ -79,7 +72,7 @@ export const loginUser = async (req, res) => {
       { expiresIn: "1h" }
     );
 
-    const { password: _password, ...userWithoutPassword } = user; // Exclude password
+    const { password: _password, ...userWithoutPassword } = user; 
     res.status(200).json({
       message: "Login successful",
       user: userWithoutPassword,
