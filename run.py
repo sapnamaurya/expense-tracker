@@ -1,8 +1,12 @@
-from backend import create_app
-from flask_cors import CORS
+from flask import Flask, jsonify
+from insights import generate_insights
 
-app = create_app()
-CORS(app)  # Enable CORS for all routes
+app = Flask(__name__)
 
-if __name__ == '__main__':
-    app.run(debug=True, port=4000)
+@app.route("/", methods=["GET"])
+def insights():
+    data = generate_insights()
+    return jsonify(data)  # ✅ ye line zaroori hai!
+
+if __name__ == "__main__":
+    app.run(port=4000)

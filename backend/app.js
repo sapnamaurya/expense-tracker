@@ -14,7 +14,7 @@ app.use(cors()); // add this middleware
 connectDb();
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send({ message: "hello World!" });
 });
 
 app.use("/api/", router);
