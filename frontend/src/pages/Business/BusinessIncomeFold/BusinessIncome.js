@@ -86,6 +86,8 @@ const IncomeStyled = styled.div`
     gap: 2rem;
     .incomes {
       flex: 1;
+      height: 59vh;
+      overflow: auto;
     }
   }
 `;
