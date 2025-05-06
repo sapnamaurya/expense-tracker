@@ -41,6 +41,8 @@ function App() {
         return <Income />;
       case 4:
         return <Expenses />;
+      case 5:
+        return <Analysis />;
       default:
         return <Dashboard />;
     }

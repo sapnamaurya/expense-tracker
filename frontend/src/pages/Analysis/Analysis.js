@@ -108,7 +108,7 @@ const AnalysisStyled = styled.div`
   main {
     display: flex;
     width: 106%;
-    padding: 2%;
+    padding: 8%2% 2%;
 
     h2 {
       font-size: 22px;
@@ -119,13 +119,13 @@ const AnalysisStyled = styled.div`
 
       img {
         margin-top: 8%;
-        height: 64vh;
-        width: 93%;
+        height: 49vh;
+        width: 95%;
       }
     }
 
     .section-2 {
-      width: 76%;
+      width: 89%;
 
       h3 {
         margin-bottom: 2%;
@@ -134,8 +134,8 @@ const AnalysisStyled = styled.div`
       }
 
       img {
-        height: 61vh;
-        width: 123%;
+        height: 46vh;
+        width: 100%;
       }
     }
 
