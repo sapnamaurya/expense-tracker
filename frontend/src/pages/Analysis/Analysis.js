@@ -28,7 +28,7 @@ const Analysis = () => {
             {/* Aim 1: Pie Chart */}
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
-                Expense Distribution by Category (USD)
+                Aim 1: Expense Distribution by Category (INR)
               </h2>
               <div className="bg-white rounded-lg shadow-md p-6 transform transition duration-300 hover:scale-102 hover:shadow-lg">
                 <img
@@ -42,12 +42,12 @@ const Analysis = () => {
             {/* Aim 2: Spending Patterns and Clustering */}
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
-                Spending Patterns Analysis
+                Aim 2: Spending Patterns Analysis
               </h2>
               {/* Monthly Spending Bar Chart */}
               <div className="bg-white rounded-lg shadow-md p-6 transform transition duration-300 hover:scale-102 hover:shadow-lg mb-6">
                 <h3 className="text-xl font-semibold text-gray-700 mb-4 text-center">
-                  Monthly Spending by Category (USD)
+                  Monthly Spending by Category (INR)
                 </h3>
                 <img
                   src="/static/monthly_spending_bar_chart.png"
@@ -76,12 +76,12 @@ const Analysis = () => {
             {/* Aim 3: Prediction */}
             <section className="bg-white rounded-lg shadow-md p-6 text-center">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-                Prediction for {results ? results.prediction_month : 'Loading...'}
+                Aim 3: Prediction for {results ? results.prediction_month : 'Loading...'}
               </h2>
               {results ? (
                 <>
                   <p className="text-lg text-gray-700 mb-2">
-                    Predicted Total Expenses: ${results.prediction.toFixed(2)}
+                    Predicted Total Expenses: ₹{results.prediction.toFixed(2)}
                   </p>
                   <p className="text-lg text-gray-700">
                     Test RMSE: {results.rmse.toFixed(2)}
