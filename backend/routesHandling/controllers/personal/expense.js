@@ -43,14 +43,14 @@ export const getAllExpenses = async (req, res) => {
 
 export const deleteExpense = async (req, res) => {
   console.log("req.params:", req.params);
-  const { id } = req.params;
+  const { expense_id } = req.params;
 
   try {
     const query = `
       DELETE FROM expenses
       WHERE expense_id = $1;
     `;
-    const values = [id];
+    const values = [expense_id];
     const result = await pool.query(query, values);
 
     if (result.rowCount > 0) {

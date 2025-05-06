@@ -1,115 +1,96 @@
 import { pool } from "../../../db.js";
 
-// Create a new business expense
 export const createBusinessExpense = async (req, res) => {
   try {
-    const { user_id, amount, date, category_id, description } = req.body;
-    const query = `
-            INSERT INTO expenses (user_id, amount, date, category_id, description, created_at)
-            VALUES ($1, $2, $3, $4, $5, NOW())
-        `;
-    const [result] = await db.query(query, [
-      user_id,
-      amount,
-      date,
-      category_id,
-      description,
-    ]);
+    const { user_id, amount, date, description } = req.body;
 
-    const expense_id = result.insertId;
+    // Basic validation
+    if (!user_id || !amount || !date) {
+      return res.status(400).json({ message: "user_id, amount, and date are required" });
+    }
 
-    // Fetch the newly created expense to return in the response
-    const [expenses] = await db.query(
-      "SELECT * FROM expenses WHERE expense_id = $1",
-      [expense_id]
+    const [result] = await db.query(
+      "INSERT INTO businessExpenses (user_id, amount, date, description) VALUES ($1, $2, $3, $4) RETURNING *",
+      [user_id, amount, date, description]
     );
-    const newExpense = expenses[0];
 
-    res.status(201).json(newExpense); // 201 Created
+    res.status(201).json(result.rows[0]);
   } catch (error) {
     console.error(error);
-    res.status(500).json({ message: "Failed to create expense" });
+    res.status(500).json({ message: "Failed to create business expense" });
   }
 };
+
 export const getAllBusinessExpenses = async (req, res) => {
-  console.log("GET /business/expenses called");
   try {
-    const [expenses] = await pool.query(
-      "SELECT * FROM expenses WHERE category_type = 'business'"
-    );
-    res.status(200).json(expenses);
+    const [result] = await db.query("SELECT * FROM businessExpenses");
+    res.status(200).json(result.rows);
   } catch (error) {
-    console.error("Error fetching business expenses:", error);
+    console.error(error);
     res.status(500).json({ message: "Failed to retrieve business expenses" });
   }
 };
 
-// Get a specific business expense
-export const getBusinessExpense = async (req, res) => {
+export const getBusinessExpenseById = async (req, res) => {
   try {
-    const expense_id = req.params.expense_id;
-    const [expenses] = await db.query(
-      "SELECT * FROM expenses WHERE expense_id = $1",
-      [expense_id]
+    const expenseId = req.params.id;
+    const [result] = await db.query(
+      "SELECT * FROM businessExpenses WHERE expense_id = $1",
+      [expenseId]
     );
 
-    if (expenses.length === 0) {
-      return res.status(404).json({ message: "Expense not found" });
+    if (result.rows.length === 0) {
+      return res.status(404).json({ message: "Business expense not found" });
     }
 
-    const expense = expenses[0];
-    res.status(200).json(expense);
+    res.status(200).json(result.rows[0]);
   } catch (error) {
     console.error(error);
-    res.status(500).json({ message: "Failed to retrieve expense" });
+    res.status(500).json({ message: "Failed to retrieve business expense" });
   }
 };
 
-// Update a specific business expense
 export const updateBusinessExpense = async (req, res) => {
   try {
-    const expense_id = req.params.expense_id;
-    const { amount, description } = req.body;
-    const query = `
-            UPDATE expenses
-            SET amount = $1, description = $2
-            WHERE expense_id = $3
-        `;
-    const [result] = await db.query(query, [amount, description, expense_id]);
+    const expenseId = req.params.id;
+    const { user_id, amount, date, description } = req.body;
 
-    if (result.affectedRows === 0) {
-      return res.status(404).json({ message: "Expense not found" });
+    // Basic validation
+     if (!user_id || !amount || !date) {
+      return res.status(400).json({ message: "user_id, amount, and date are required" });
     }
 
-    // Fetch the updated expense to return
-    const [expenses] = await db.query(
-      "SELECT * FROM expenses WHERE expense_id = $1",
-      [expense_id]
+    const [result] = await db.query(
+      "UPDATE businessExpenses SET user_id = $1, amount = $2, date = $3, description = $4 WHERE expense_id = $5 RETURNING *",
+      [user_id, amount, date, description, expenseId]
     );
-    const updatedExpense = expenses[0];
-    res.status(200).json(updatedExpense);
+
+    if (result.rows.length === 0) {
+      return res.status(404).json({ message: "Business expense not found" });
+    }
+
+    res.status(200).json(result.rows[0]);
   } catch (error) {
     console.error(error);
-    res.status(500).json({ message: "Failed to update expense" });
+    res.status(500).json({ message: "Failed to update business expense" });
   }
 };
 
-// Delete a specific business expense
 export const deleteBusinessExpense = async (req, res) => {
   try {
-    const expense_id = req.params.expense_id;
+    const expenseId = req.params.id;
     const [result] = await db.query(
-      "DELETE FROM expenses WHERE expense_id = $1",
-      [expense_id]
+      "DELETE FROM businessExpenses WHERE expense_id = $1 RETURNING *",
+      [expenseId]
     );
 
-    if (result.affectedRows === 0) {
-      return res.status(404).json({ message: "Expense not found" });
+    if (result.rows.length === 0) {
+      return res.status(404).json({ message: "Business expense not found" });
     }
 
     res.status(204).send(); // 204 No Content
   } catch (error) {
     console.error(error);
-    res.status(500).json({ message: "Failed to delete expense" });
+    res.status(500).json({ message: "Failed to delete business expense" });
   }
 };

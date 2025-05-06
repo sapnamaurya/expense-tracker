@@ -1,86 +1,97 @@
 import {pool} from '../../../db.js';
 
-// Create a new business income entry
 export const createBusinessIncome = async (req, res) => {
     try {
-        const { title, amount, category, description, date, category_id } = req.body; 
-        const query = `
-            INSERT INTO income (title, amount, category, description, date, created_at, updated_at, category_id) 
-            VALUES (?, ?, ?, ?, ?, NOW(), NOW(), ?)
-        `;
-        const [result] = await db.query(query, [title, amount, category, description, date, category_id]); 
-
-        const income_id = result.insertId;
-
-        // Fetch the newly created income to return in the response
-        const [incomes] = await db.query('SELECT * FROM income WHERE id = ?', [income_id]);
-        const newIncome = incomes[0];
-
-        res.status(201).json(newIncome); // 201 Created
+      const { title, user_id, amount, category, description, date } = req.body;
+  
+      // Basic validation
+      if (!user_id || !amount || !date) {
+        return res.status(400).json({ message: "user_id, amount, and date are required" });
+      }
+  
+      const [result] = await db.query(
+        "INSERT INTO businessIncome (title, user_id, amount, category, description, date) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *",
+        [title, user_id, amount, category, description, date]
+      );
+  
+      res.status(201).json(result.rows[0]);
     } catch (error) {
-        console.error(error);
-        res.status(500).json({ message: 'Failed to create income' });
+      console.error(error);
+      res.status(500).json({ message: "Failed to create business income" });
     }
-};
-
-// Get a specific business income entry
-export const getBusinessIncome = async (req, res) => {
+  };
+  
+  export const getAllBusinessIncomes = async (req, res) => {
     try {
-        const income_id = req.params.income_id;
-        const [incomes] = await db.query('SELECT * FROM income WHERE id = ?', [income_id]);
-
-        if (incomes.length === 0) {
-            return res.status(404).json({ message: 'Income not found' });
-        }
-
-        const income = incomes[0];
-        res.status(200).json(income);
+      const [result] = await db.query("SELECT * FROM businessIncome");
+      res.status(200).json(result.rows);
     } catch (error) {
-        console.error(error);
-        res.status(500).json({ message: 'Failed to retrieve income' });
+      console.error(error);
+      res.status(500).json({ message: "Failed to retrieve business incomes" });
     }
-};
-
-// Update a specific business income entry
-export const updateBusinessIncome = async (req, res) => {
+  };
+  
+  export const getBusinessIncomeById = async (req, res) => {
     try {
-        const income_id = req.params.income_id;
-        const { title, amount, category, description, date, category_id } = req.body; 
-        const query = `
-            UPDATE income
-            SET title = ?, amount = ?, category = ?, description = ?, date = ?, updated_at = NOW(), category_id = ? 
-            WHERE id = ?
-        `;
-        const [result] = await db.query(query, [title, amount, category, description, date, category_id, income_id]); 
-
-        if (result.affectedRows === 0) {
-            return res.status(404).json({ message: 'Income not found' });
-        }
-
-        // Fetch the updated income to return
-        const [incomes] = await db.query('SELECT * FROM income WHERE id = ?', [income_id]);
-        const updatedIncome = incomes[0];
-        res.status(200).json(updatedIncome);
+      const incomeId = req.params.id;
+      const [result] = await db.query(
+        "SELECT * FROM businessIncome WHERE id = $1",
+        [incomeId]
+      );
+  
+      if (result.rows.length === 0) {
+        return res.status(404).json({ message: "Business income not found" });
+      }
+  
+      res.status(200).json(result.rows[0]);
     } catch (error) {
-        console.error(error);
-        res.status(500).json({ message: 'Failed to update income' });
+      console.error(error);
+      res.status(500).json({ message: "Failed to retrieve business income" });
     }
-};
-
-// Delete a specific business income entry
-export const deleteBusinessIncome = async (req, res) => {
+  };
+  
+  export const updateBusinessIncome = async (req, res) => {
     try {
-        const income_id = req.params.income_id;
-        const [result] = await db.query('DELETE FROM income WHERE id = ?', [income_id]);
-
-        if (result.affectedRows === 0) {
-            return res.status(404).json({ message: 'Income not found' });
-        }
-
-        res.status(204).send(); // 204 No Content
+      const incomeId = req.params.id;
+      const { title, user_id, amount, category, description, date } = req.body;
+  
+      // Basic validation
+      if (!user_id || !amount || !date) {
+        return res.status(400).json({ message: "user_id, amount, and date are required" });
+      }
+  
+      const [result] = await db.query(
+        "UPDATE businessIncome SET title = $1, user_id = $2, amount = $3, category = $4, description = $5, date = $6 WHERE id = $7 RETURNING *",
+        [title, user_id, amount, category, description, date, incomeId]
+      );
+  
+      if (result.rows.length === 0) {
+        return res.status(404).json({ message: "Business income not found" });
+      }
+  
+      res.status(200).json(result.rows[0]);
     } catch (error) {
-        console.error(error);
-        res.status(500).json({ message: 'Failed to delete income' });
+      console.error(error);
+      res.status(500).json({ message: "Failed to update business income" });
     }
-};
-
+  };
+  
+  export const deleteBusinessIncome = async (req, res) => {
+    try {
+      const incomeId = req.params.id;
+      const [result] = await db.query(
+        "DELETE FROM businessIncome WHERE id = $1 RETURNING *",
+        [incomeId]
+      );
+  
+      if (result.rows.length === 0) {
+        return res.status(404).json({ message: "Business income not found" });
+      }
+  
+      res.status(204).send(); // 204 No Content
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: "Failed to delete business income" });
+    }
+  };
+  

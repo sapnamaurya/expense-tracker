@@ -23,14 +23,15 @@ import {
 
 import {
   createBusinessExpense,
-  getBusinessExpense,
   getAllBusinessExpenses,
+  getBusinessExpenseById,
   updateBusinessExpense,
   deleteBusinessExpense,
 } from "./controllers/business/expense.js";
 import {
   createBusinessIncome,
-  getBusinessIncome,
+  getAllBusinessIncomes,
+  getBusinessIncomeById,
   updateBusinessIncome,
   deleteBusinessIncome,
 } from "./controllers/business/income.js";
@@ -53,14 +54,14 @@ router.delete("/incomes/:id", deleteIncome);
 // Business Expense Routes
 router.post("/business/expenses", createBusinessExpense);
 router.get("/business/expenses", getAllBusinessExpenses);
-
-router.get("/business/expenses/:expense_id", getBusinessExpense);
+router.get("/business/expenses/:expense_id", getBusinessExpenseById);
 router.put("/business/expenses/:expense_id", updateBusinessExpense);
 router.delete("/business/expenses/:expense_id", deleteBusinessExpense);
 
 // Business Income Routes
 router.post("/business/incomes", createBusinessIncome);
-router.get("/business/incomes/:income_id", getBusinessIncome);
+router.get("/business/incomes", getAllBusinessIncomes);
+router.get("/business/incomes/:income_id", getBusinessIncomeById);
 router.put("/business/incomes/:income_id", updateBusinessIncome);
 router.delete("/business/incomes/:income_id", deleteBusinessIncome);
 
