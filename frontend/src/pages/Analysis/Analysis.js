@@ -28,7 +28,7 @@ const Analysis = () => {
             {/* Aim 1: Pie Chart */}
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
-                Aim 1: Expense Distribution by Category (USD)
+                Expense Distribution by Category (USD)
               </h2>
               <div className="bg-white rounded-lg shadow-md p-6 transform transition duration-300 hover:scale-102 hover:shadow-lg">
                 <img
@@ -42,7 +42,7 @@ const Analysis = () => {
             {/* Aim 2: Spending Patterns and Clustering */}
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
-                Aim 2: Spending Patterns Analysis
+                Spending Patterns Analysis
               </h2>
               {/* Monthly Spending Bar Chart */}
               <div className="bg-white rounded-lg shadow-md p-6 transform transition duration-300 hover:scale-102 hover:shadow-lg mb-6">
@@ -76,7 +76,7 @@ const Analysis = () => {
             {/* Aim 3: Prediction */}
             <section className="bg-white rounded-lg shadow-md p-6 text-center">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-                Aim 3: Prediction for {results ? results.prediction_month : 'Loading...'}
+                Prediction for {results ? results.prediction_month : 'Loading...'}
               </h2>
               {results ? (
                 <>
