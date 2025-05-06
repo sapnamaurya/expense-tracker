@@ -1,7 +1,7 @@
-import db from '../../../db.js';
+import {pool} from '../../../db.js';
 
 // Create a new business income entry
-const createIncome = async (req, res) => {
+export const createBusinessIncome = async (req, res) => {
     try {
         const { title, amount, category, description, date, category_id } = req.body; 
         const query = `
@@ -24,7 +24,7 @@ const createIncome = async (req, res) => {
 };
 
 // Get a specific business income entry
-const getIncome = async (req, res) => {
+export const getBusinessIncome = async (req, res) => {
     try {
         const income_id = req.params.income_id;
         const [incomes] = await db.query('SELECT * FROM income WHERE id = ?', [income_id]);
@@ -42,7 +42,7 @@ const getIncome = async (req, res) => {
 };
 
 // Update a specific business income entry
-const updateIncome = async (req, res) => {
+export const updateBusinessIncome = async (req, res) => {
     try {
         const income_id = req.params.income_id;
         const { title, amount, category, description, date, category_id } = req.body; 
@@ -68,7 +68,7 @@ const updateIncome = async (req, res) => {
 };
 
 // Delete a specific business income entry
-const deleteIncome = async (req, res) => {
+export const deleteBusinessIncome = async (req, res) => {
     try {
         const income_id = req.params.income_id;
         const [result] = await db.query('DELETE FROM income WHERE id = ?', [income_id]);
@@ -84,9 +84,3 @@ const deleteIncome = async (req, res) => {
     }
 };
 
-module.exports = {
-    createIncome,
-    getIncome,
-    updateIncome,
-    deleteIncome,
-};

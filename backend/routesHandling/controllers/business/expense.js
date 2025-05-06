@@ -1,7 +1,7 @@
-import db from '../../../db.js';
+import {pool} from '../../../db.js';
 
 // Create a new business expense
-const createExpense = async (req, res) => {
+export const createBusinessExpense = async (req, res) => {
     try {
         const { user_id, amount, date, category_id, description } = req.body;
         const query = `
@@ -24,7 +24,7 @@ const createExpense = async (req, res) => {
 };
 
 // Get a specific business expense
-const getExpense = async (req, res) => {
+export const getBusinessExpense = async (req, res) => {
     try {
         const expense_id = req.params.expense_id;
         const [expenses] = await db.query('SELECT * FROM expenses WHERE expense_id = $1', [expense_id]);
@@ -42,7 +42,7 @@ const getExpense = async (req, res) => {
 };
 
 // Update a specific business expense
-const updateExpense = async (req, res) => {
+export const updateBusinessExpense = async (req, res) => {
     try {
         const expense_id = req.params.expense_id;
         const { amount, description } = req.body;
@@ -68,7 +68,7 @@ const updateExpense = async (req, res) => {
 };
 
 // Delete a specific business expense
-const deleteExpense = async (req, res) => {
+export const deleteBusinessExpense = async (req, res) => {
     try {
         const expense_id = req.params.expense_id;
         const [result] = await db.query('DELETE FROM expenses WHERE expense_id = $1', [expense_id]);
@@ -84,9 +84,3 @@ const deleteExpense = async (req, res) => {
     }
 };
 
-module.exports = {
-    createExpense,
-    getExpense,
-    updateExpense,
-    deleteExpense,
-};
