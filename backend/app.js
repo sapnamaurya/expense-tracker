@@ -6,7 +6,8 @@ import router from "./routesHandling/routes.js";
 const app = express();
 const port = 4000;
 
-app.use(bodyParser.json());
+//app.use(bodyParser.json());
+app.use(express.json());
 import cors from "cors"; // add this import
 
 app.use(cors()); // add this middleware
