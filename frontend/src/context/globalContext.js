@@ -123,13 +123,10 @@ export const GlobalProvider = ({ children }) => {
 
   const addBusinessExpense = async (expense) => {
     try {
-      const response = await axios.post("/api/business/expenses", {
-        ...expense,
-        user_id: 1, // Temporary: Replace with actual logged-in user ID if available
-      });
+      await axios.post("/api/business/expenses", expense); // Temporary: Replace with actual logged-in user ID if available);
       // update state accordingly...
     } catch (err) {
-      setError(err.response.data.message);
+      setError(err?.response?.data?.message);
     }
   };
 

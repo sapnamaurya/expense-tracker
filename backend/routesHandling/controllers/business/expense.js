@@ -1,19 +1,39 @@
 import { pool } from "../../../db.js";
 
+// export const createBusinessExpense = async (req, res) => {
+//   try {
+//     const { user_id, amount, date, description } = req.body;
+
+//     // Basic validation
+//     if (!user_id || !amount || !date) {
+//       return res
+//         .status(400)
+//         .json({ message: "user_id, amount, and date are required" });
+//     }
+
+//     const [result] = await pool.query(
+//       "INSERT INTO businessExpenses (user_id, amount, date, description) VALUES ($1, $2, $3, $4) RETURNING *",
+//       [user_id, amount, date, description]
+//     );
+
+//     res.status(201).json(result.rows[0]);
+//   } catch (error) {
+//     console.error(error);
+//     res.status(500).json({ message: "Failed to create business expense" });
+//   }
+// };
 export const createBusinessExpense = async (req, res) => {
   try {
-    const { user_id, amount, date, description } = req.body;
+    const { user_id, title, amount, date, category, description, type } =
+      req.body;
 
-    // Basic validation
-    if (!user_id || !amount || !date) {
-      return res
-        .status(400)
-        .json({ message: "user_id, amount, and date are required" });
+    if (!user_id || !title || !amount || !date || !category || !type) {
+      return res.status(400).json({ message: "Missing required fields" });
     }
 
     const [result] = await pool.query(
-      "INSERT INTO businessExpenses (user_id, amount, date, description) VALUES ($1, $2, $3, $4) RETURNING *",
-      [user_id, amount, date, description]
+      "INSERT INTO businessExpenses (user_id, title, amount, date, category, description, type) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING *",
+      [user_id, title, amount, date, category, description, type]
     );
 
     res.status(201).json(result.rows[0]);

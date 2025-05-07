@@ -30,7 +30,11 @@ function BusinessExpenseForm() {
     e.preventDefault();
     const finalCategory = category === "other" ? customCategory : category;
 
-    addBusinessExpense({ ...inputState, category: finalCategory });
+    addBusinessExpense({
+      ...inputState,
+      category: finalCategory,
+      type: "expense",
+    });
 
     setInputState({
       title: "",

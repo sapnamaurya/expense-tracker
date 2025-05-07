@@ -4,7 +4,7 @@ import { useGlobalContext } from "../../../context/globalContext";
 import { InnerLayout } from "../../../styles/Layouts";
 // import Form from "../Form/Form";
 import IncomeItem from "../IncomeItem";
-import BusinessExpenseForm from "../BusinessExpense/ExpenseForm";
+import BusinessExpenseForm from "../BusinessExpense/BusinessExpenseForm";
 import { dollar } from "../../../utils/Icons";
 
 function BusinessExpense() {

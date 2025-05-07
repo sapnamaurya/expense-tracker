@@ -6,76 +6,77 @@ import { InnerLayout } from "../../styles/Layouts";
 import { dollar } from "../../utils/Icons";
 import Chart from "../../components/Chart/Chart";
 
-function Dashboard() {
+function BusinessDashboard() {
   const {
-    totalExpenses,
-    incomes,
-    expenses,
-    totalIncome,
-    totalBalance,
-    getIncomes,
-    getExpenses,
+    getBusinessIncomes,
+    getBusinessExpenses,
+    businessIncomes,
+    businessExpenses,
+    totalBusinessIncome,
+    totalBusinessExpenses,
+    totalBusinessBalance,
   } = useGlobalContext();
 
   useEffect(() => {
-    getIncomes();
-    getExpenses();
+    getBusinessIncomes();
+    getBusinessExpenses();
   }, []);
 
   return (
     <DashboardStyled>
       <InnerLayout>
-        <h1>All Transactions</h1>
+        <h1>Business Transactions</h1>
         <div className="stats-con">
           <div className="chart-con">
-            <Chart />
+            <Chart data={businessIncomes} expenses={businessExpenses} />
             <div className="amount-con">
               <div className="income">
-                <h2>Total Income</h2>
+                <h2>Total Business Income</h2>
                 <p>
-                  {dollar} {totalIncome()}
+                  {dollar} {totalBusinessIncome()}
                 </p>
               </div>
               <div className="expense">
-                <h2>Total Expense</h2>
+                <h2>Total Business Expense</h2>
                 <p>
-                  {dollar} {totalExpenses()}
+                  {dollar} {totalBusinessExpenses()}
                 </p>
               </div>
               <div className="balance">
-                <h2>Total Balance</h2>
+                <h2>Total Business Balance</h2>
                 <p>
-                  {dollar} {totalBalance()}
+                  {dollar} {totalBusinessBalance()}
                 </p>
               </div>
             </div>
           </div>
+
           <div className="history-con">
-            <History />
+            <History data={businessIncomes.concat(businessExpenses)} />
             <h2 className="salary-title">
-              Min <span>Salary</span>Max
+              Min <span>Business Income</span>Max
             </h2>
             <div className="salary-item">
               <p>
                 {dollar}
-                {Math.min(...incomes.map((item) => item.amount))}
+                {Math.min(...businessIncomes.map((item) => item.amount))}
               </p>
               <p>
                 {dollar}
-                {Math.max(...incomes.map((item) => item.amount))}
+                {Math.max(...businessIncomes.map((item) => item.amount))}
               </p>
             </div>
             <h2 className="salary-title">
-              Min <span>Expense</span>Max
+              Min <span>Business Expense</span>Max
             </h2>
             <div className="salary-item">
               <p>
                 {dollar}
-                {Math.min(...expenses.map((item) => item.amount))}
+                {Math.min(...businessExpenses.map((item) => item.amount))}
               </p>
               <p>
                 {dollar}
-                {Math.max(...expenses.map((item) => item.amount))}
+                {Math.max(...businessExpenses.map((item) => item.amount))}
               </p>
             </div>
           </div>
@@ -164,4 +165,4 @@ const DashboardStyled = styled.div`
   }
 `;
 
-export default Dashboard;
+export default BusinessDashboard;
